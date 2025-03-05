@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url(../fonts/Kanit/Kanit-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Work_Sans';
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
+
+.title {
+    font-family: 'Kanit', 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+.title1 {
+    font-family: 'Kanit';   
+    font-weight: 200;
+}
+.title2 {
+    font-family: 'Work_Sans';   
+    font-weight: 400;
+}
+
+.product {
+    padding: 20px;
+    margin: 50px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.product img {
+    display: block;
+    margin: 20px auto 10px;
+    width: 90%;
+    object-fit: cover;
+}
+.product p {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+.product-body {
+    margin-top: 20px;
+}
+.product-body-price1 {
+    display: block;
+    margin-bottom: 5px;
+    color: #999999;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.product-body-price2 {
+    color: #B02B19; 
+    font-size: 30px;
+}
+.product-body-title {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.product-body-discount {
+    padding: 2px 5px;
+    margin-left: 20px;
+    border: 2px solid #B02B19;
+    color: #B02B19;
+    background-color: rgb(246, 199, 199);
+    font-size: 14px;
+    border-radius: 4px;
+}
+.product-footer {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+}
+.product-footer img {
+    width: 30px;
+    margin: 0;
+    margin-bottom: 6px;
+    display: inline;
+    vertical-align: middle;
+}
+.product-footer-title{
+    width: 30%; 
+    height: 50px;
+    color : #FDC501;
+}
+.col-5{
+    color: #B02B19;
+    width: 79px;
+    padding-right :0px;
+}
+.col-7{
+    margin-top : 15px;
+    width: 150px;
+    padding-left : 0px;
+    font-size : 15px;
+    color: #999999;
+}
+.end-btn{
+    width: 100%;
+    font-size : 20px;
+    padding : 8px 0px;
+    border-radius: 10px;
+    background-color: #B02B19;
+    color : white;
+    border : none;
+}
+.product:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
