@@ -12,7 +12,7 @@
     margin-left : 280px;
     height: 550px;
     width: 2px;
-    background-color: red ;
+    background-color:  #B02B19 ;
 }
 .slidebar-header{
     margin-top : 100px;
@@ -33,7 +33,7 @@
     
 }
 .slidebar-header-line {
-    background-color: rgb(253, 26, 26);
+    background-color:  #B02B19;
     height: 1px;
     width: 280px;
 }
@@ -91,6 +91,5 @@
     font-weight: 400;
 }
 .title1 {
-    font-family: 'Kanit'    ;   
+    font-family: 'Kanit';   
 }
-
