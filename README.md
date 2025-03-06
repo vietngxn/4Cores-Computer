@@ -1,5 +1,7 @@
 # 4Cores-Computer
-Giới thiệu
-Chào mừng bạn đến với 4 Cores Computer - trang web chuyên cung cấp các dòng máy tính cá nhân (PC) chất lượng cao, đa dạng cấu hình từ cơ bản đến cao cấp, phù hợp với nhu cầu học tập, làm việc, chơi game và sáng tạo nội dung.
+![logo](https://github.com/user-attachments/assets/a1222284-afa8-40ef-8113-4859a1b843b2)
 
-Dự án này được xây dựng nhằm mang đến trải nghiệm mua sắm trực tuyến tiện lợi, nhanh chóng và đáng tin cậy cho khách hàng.
+**Giới thiệu**
+
+Dự án phục vụ cho đề tài môn Hệ Thống và Công nghệ Web tại trường Đại học Công Nghiệp TPHCM.
+Dự án được thực hiện bởi 4Cores Team và sẽ phát triển để trở thành 1 trang web hoàn chỉnh trong tương lai.
