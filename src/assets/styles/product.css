@@ -49,7 +49,7 @@
     display: block;
     margin-bottom: 5px;
     color: #999999;
-    font-size: 10px;
+    font-size: 15px;
     text-decoration: line-through;
 }
 .product-body-price2 {
@@ -87,13 +87,16 @@
     height: 50px;
     color : #FDC501;
 }
-.col-5{
+.product-star{
     color: #B02B19;
-    width: 79px;
+    width: 62px;
     padding-right :0px;
 }
-.col-7{
-    margin-top : 10px;
+.product-star p{
+    width: 100%;
+}
+.comment{
+    margin-top : 13px;
     width: 100px;
     padding-left : 0px;
     padding-right: 0px;
@@ -103,18 +106,22 @@
 .end-btn{
     width: 100%;
     font-size : 15px;
-    padding : 8px 0px;
+    padding : 5px 0px;
     border-radius: 10px;
     background-color: #B02B19;
     color : white;
     border : none;
+    border: 2px solid #B02B19;
     transition: all 0.3s ease-in-out;
 }
 .end-btn:hover{
     cursor: pointer;
-    letter-spacing: 1px;
+    color : #B02B19;
+    background-color: white;
+    border: 2px solid #B02B19;
 }
 .product:hover{
     transform: translateY(-15px);
     cursor: pointer;
+    
 }
