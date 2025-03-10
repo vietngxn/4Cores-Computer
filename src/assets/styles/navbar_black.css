@@ -1,10 +1,11 @@
 #navbar_logo {
     width: 203.33px;
     height: 61px;
-    display:flex;
-    justify-content: center;
 }
-
+.navbar_container{
+    max-width: 1800px;
+    margin: auto;
+}
 #navbar{
     background-color: rgb(35, 32, 27);
 }
@@ -35,3 +36,20 @@
 #navbar-list{
     margin-right: 100px;
 }
+
+#xemthem_dropdown_item{
+    background-color: rgb(35, 32, 27);
+    color: white;
+    font-family: "SF Pro Display";
+}
+
+#xemthem_dropdown_item:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 32, 27);
+}
+
+ /* Ẩn mũi tên mặc định */
+.dropdown-toggle::after {
+    display: none !important;
+}
+

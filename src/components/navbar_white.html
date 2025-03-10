@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="../assets/styles/navbar_white.css">
     <link rel="stylesheet" href="../assets/styles/boostrap/bootstrap.min.css">
     <script src="../assets/styles/boostrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
     <div class="navbar_container">
         <div class="container-fluid" id="navbar">
+            <div class="navbar_container">
             <nav class="navbar navbar-expand-xl">
                 <a class="navbar-brand" href="#">
                     <img src="../assets/images/logo/logo.png" alt="" id="navbar_logo">
@@ -26,11 +29,19 @@
                         <li class="nav-item"><a class="nav-link" href="#" id="navbar-link">Chính sách bảo hành</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" id="navbar-link">Showroom</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" id="navbar-link">Giỏ hàng</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="navbar-link">Liên hệ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-link" data-bs-toggle="dropdown">Xem thêm <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" id="xemthem_dropdown_item">Tablet</a></li>
+                                <li><a class="dropdown-item" href="#" id="xemthem_dropdown_item">Smartphone</a></li>
+                                <li><a class="dropdown-item" href="#" id="xemthem_dropdown_item">Laptop</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><input type="button" class="btn btn-primary" id="dangnhap_btn" value="Đăng nhập"></li>
                     </ul>
                 </div>
             </nav>
+        </div>
         </div>
     </div>
     
