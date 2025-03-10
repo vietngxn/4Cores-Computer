@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#background {
+    width:98%; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: #DDDDDD;
+    overflow: hidden;
+    z-index: -1; 
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+.ball {
+    position: absolute;
+    border-radius: 50%;
+}
+#ball1 { width: 400px; height: 400px; background: #B02B19; }
+#ball2 { width: 100px; height: 100px; background: #23201B; }
+#ball3 { width: 100px; height: 100px; background: #B02B19; }
+#ball4 { width: 420px; height: 420px; background: #23201B; }
+.main-container{
+    position: absolute;
+    width: 64%; 
+    height: 700px;
+    right: 10%;
+    left: 28%;
+    top: 60px;
+}
+
+#content-container {
+    width: 500px; /* chỉnh rộng dài của content chính ở đây */
+    height: 700px; /* chỉnh rộng dài của content chính ở đây */
+    background-color: #9b3737;
+    z-index: 1;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    border-radius: 20px;
+
+
+}
+.sidebar{
+    background-color: #333;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+}
