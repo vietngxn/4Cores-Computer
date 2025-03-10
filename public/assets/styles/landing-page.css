@@ -61,6 +61,7 @@
     font-size: 16px;
     border-radius: 8px;
     transition: 0.3s;
+    width: 200px;
 }
 .buy-now{
     background-color: #B02B19;
@@ -237,3 +238,4 @@ header{
     background-position: 65% 50%;
     background-repeat: no-repeat;
 }
+
