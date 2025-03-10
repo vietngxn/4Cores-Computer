@@ -1,6 +1,12 @@
+.navbar_container{
+ 
+}
+
 #navbar_logo {
-    width: 200px;
-    height: 70px;
+    width: 203.33px;
+    height: 61px;
+    display:flex;
+    justify-content: center;
 }
 
 #navbar{
@@ -19,6 +25,11 @@
     margin-right: 30px;
     font-family: "SF Pro Display";
     font-weight: bold; 
+}
+
+#dangnhap_btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(176, 43, 25);
 }
 
 #navbar-link{

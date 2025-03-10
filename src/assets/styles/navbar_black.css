@@ -6,7 +6,7 @@
 }
 
 #navbar{
-    background-color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
 }
 
 #dangnhap_btn{
@@ -17,14 +17,14 @@
     padding-bottom: 5px;
     border-radius: 8px;
     border:none;  
-    color:rgb(176, 43, 25);
+    color:rgb(35, 32, 27);
     margin-right: 30px;
     font-family: "SF Pro Display";
     font-weight: bold; 
 }
 
 #dangnhap_btn:hover{
-    background-color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
     color: rgb(255, 255, 255);
 }
 #navbar-link{
