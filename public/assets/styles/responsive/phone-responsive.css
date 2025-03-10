@@ -1,0 +1,249 @@
+
+
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'Kanit-Regular';
+        src: url(../../../src/assets/fonts/Kanit/Kanit-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'WorkSans-Regular';
+        src: url(../../../src/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+    }
+    body{
+        width: 1200px;
+    }
+    .containerr{
+        width: 100% !important;
+        margin: 0 !important;
+        height: 100% !important;
+    }
+    .container_fisrt-part{
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .container_first-part_content{
+        width: 100%;
+        height: 100%;
+        margin: 20px 0 auto auto;
+        z-index: 1;
+    }
+    .container_first-part_content h1{
+        font-size: 70px;
+        color: #fff;
+        margin-top: 0px;
+        text-align: center;
+        font-family: 'Kanit-Regular';
+    
+    }
+    #mainVideo{
+        width: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .video-container{
+        position: absolute;
+        width: 100%;
+        height: 55%;
+        z-index: -1000;
+        bottom: 500px;
+        overflow: hidden;
+    }
+    .button-group{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .button-group button{
+        margin: 0 20px;
+        padding: 8px 20px;
+        font-family: 'WorkSans-Regular';
+        font-size: 16px;
+        border-radius: 8px;
+        transition: 0.3s;
+        width: 200px;
+    }
+    .buy-now{
+        background-color: #B02B19;
+        color: #fff;
+        border: none;
+    }
+    .buy-now:hover{
+        color:  #fff;
+    }
+    button svg{
+        transition: 0.3s;
+        margin-left: 8px;
+    }
+    button:hover svg{
+        transform: rotate(45deg);
+    }
+    button:focus{
+        outline: none;
+        box-shadow: none!important;
+        border: none!important;
+    }
+    button:active{
+        transform: scale(1.1);
+    }
+    .find-more{
+        background-color: #fff!important;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+    }
+    .container_about-part {
+        margin-top: -650px; 
+        background-color: #23201B;
+        height: 800px;
+        z-index: 1111;
+    }
+    .container_about-part_content,
+    content{
+        padding-top: 80px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-right: 0px!important;
+    }
+    .container_about-part_content h1,
+    header{
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        font-family: 'Kanit-Regular';
+        width: 100%;
+    }
+    .container_about-part_content span{
+        color: #B02B19;
+    }
+    .img{}
+    .img img{
+        width: 400px;
+        height: 400px;
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-left: 260px;    }
+    .container_about-part_content p{
+        margin-top: 120px;
+        font-size: 20px;
+        color: #fff;
+        text-align: justify;
+        font-family: 'Kanit-Regular';
+        line-height: 38px;
+    
+    }
+    .sub-paragraph{
+        margin-top: 30px!important;
+        text-align: center!important;
+    }
+    .container_aim-part{
+        height: 800px;
+    }
+    .container_aim-part canvas{
+        position: absolute;
+        top: 1480px!important;
+    }
+    .list{
+        margin-top: 130px;
+        margin-left: 60px;
+    }
+    .list svg{
+        margin-right: 24px;
+    }
+    .list li{
+        font-size: 28px;
+        margin: 20px 0;
+        font-family: 'Kanit-Regular';
+        color: #fff;
+    }
+    .logo-white{
+        filter: brightness(200%);
+    }
+    .container_commit-part{
+        position: relative;
+        background-color: #D9D9D9;
+    }
+    .partern{
+        width: 100%;
+        background-image: url(../../../src/assets/images/landing-page_resourse/Group\ 65.png);
+        height: 185px;
+        position: absolute;
+        top: -140px;
+    }
+    .container_commit-part_content h1{
+        font-size: 50px;
+        color: #000;
+        text-align: center;
+        font-family: 'Kanit-Regular';
+    }
+    .container_commit-part_content p{
+        color: #23201B;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .container_commit-part{
+        height: 1500px;
+    }
+    .img-showcase{
+        width: 100%;
+        height: 600px;
+        margin-top: 120px;
+    }
+    .img-showcase .img-container{
+        width: 18%;
+        height: 100%;
+        margin: 20px auto;
+        filter: grayscale(100%);
+        transition: 0.3s;
+        border-radius: 10px;
+    
+    }
+    .img-showcase .img-container:hover{
+        filter: grayscale(0%);
+        scale: 1.1;
+        cursor: pointer;
+        width: 24%;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .img-showcase .cont-1{
+        background-image: url(../../../src/assets/images/landing-page_resourse/post-02_9702182bb1934e96b7244b91edd9a296_grande.webp);
+        background-size: cover;
+        background-position: 68% 50%;
+        background-repeat: no-repeat;
+    
+    }
+    .img-showcase .cont-2{
+        background-image: url(../../../src/assets/images/landing-page_resourse/post-03_57a569bef5b8498f9d758ac51794ac2e_grande.webp);
+        background-size: cover;
+        background-position: 65% 50%;
+        background-repeat: no-repeat;
+        margin-top: 100px;
+    }
+    .img-showcase .cont-3{
+        background-image: url(../../../src/assets/images/landing-page_resourse/post-15_82e2a5c014c3481ea73077612d026b52_grande.webp);
+        background-size: cover;
+        background-position: 55% 50%;
+        background-repeat: no-repeat;
+    }
+    .img-showcase .cont-4{
+        background-image: url(../../../src/assets/images/landing-page_resourse/post-04_a989ab65d1464f5f8567d07c21321acd_grande.webp);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        margin-top: 100px;
+    }
+    .img-showcase .cont-5{
+        background-image: url(../../../src/assets/images/landing-page_resourse/post-03_b36543eda2954b2fa05d8524070ae5ac_grande.webp);
+        background-size: cover;
+        background-position: 65% 50%;
+        background-repeat: no-repeat;
+    }
+}
