@@ -3,56 +3,59 @@
     height: 61px;
     filter: brightness(200%);
 }
-.navbar_container{
+
+.navbar_container {
     max-width: 1800px;
     margin: auto;
 }
 
-#navbar{
+#navbar {
     background-color: rgb(176, 43, 25);
+    max-width: 1800px;
+    height: 80px;
 }
 
-#dangnhap_btn{
-    background-color: rgb(255,255,255); 
+#dangnhap_btn {
+    background-color: rgb(255, 255, 255);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
-    border:none;  
-    color:rgb(176, 43, 25);
+    border: none;
+    color: rgb(176, 43, 25);
     margin-right: 30px;
     font-family: "SF Pro Display";
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-#dangnhap_btn:hover{
+#dangnhap_btn:hover {
     background-color: rgb(176, 43, 25);
     color: rgb(255, 255, 255);
 }
-#navbar-link{
+
+#navbar-link {
     color: white;
     font-family: "SF Pro Display";
 }
 
-#navbar-list{
+#navbar-list {
     margin-right: 100px;
 }
 
 
-#xemthem_dropdown_item{
+#xemthem_dropdown_item {
     background-color: white;
     color: rgb(176, 43, 25);
     font-family: "SF Pro Display";
 }
 
-#xemthem_dropdown_item:hover{
+#xemthem_dropdown_item:hover {
     background-color: rgb(176, 43, 25);
     color: white;
 }
 
- /* Ẩn mũi tên mặc định */
+/* Ẩn mũi tên mặc định */
 .dropdown-toggle::after {
     display: none !important;
 }
-

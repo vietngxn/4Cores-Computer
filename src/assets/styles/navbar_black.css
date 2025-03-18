@@ -8,6 +8,8 @@
 }
 #navbar{
     background-color: rgb(35, 32, 27);
+    max-width: 1800px;
+    height: 80px;
 }
 
 #dangnhap_btn{
