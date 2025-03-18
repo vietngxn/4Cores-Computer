@@ -17,7 +17,7 @@
 }
 .title2 {
     font-family: 'Work_Sans';   
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .product {
@@ -45,6 +45,11 @@
 .product-body {
     margin-top: 15px;
 }
+.product-foter-danhgia{
+    font-size: 13px;
+    width: 60px;
+    margin-top: 30px;
+}
 .product-body-price1 {
     display: block;
     margin-bottom: 5px;
@@ -71,7 +76,6 @@
     border-radius: 4px;
 }
 .product-footer {
-    display: flex;
     align-items: center;
     width: 100%;
 }
