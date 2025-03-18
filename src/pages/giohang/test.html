@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            transition: right 0.5s ease-in-out;
+        }
+
+        /* Khi thêm class active, container sẽ trượt vào */
+        #container.active {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" id="trigger">Chuyển Trang</a>
+    <div id="container">Nội dung trang mới</div>
+
+</body>
+<script>
+    document.getElementById("trigger").addEventListener("click", function (e) {
+        e.preventDefault(); // Ngăn chặn chuyển trang ngay lập tức
+        document.getElementById("container").classList.add("active");
+    });
+
+</script>
+
+</html>
