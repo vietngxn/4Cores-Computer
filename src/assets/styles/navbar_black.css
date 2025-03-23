@@ -1,57 +1,62 @@
-#navbar_logo {
-    width: 203.33px;
-    height: 61px;
-}
-.navbar_container{
-    max-width: 1800px;
-    margin: auto;
-}
-#navbar{
-    background-color: rgb(35, 32, 27);
-    max-width: 1800px;
-    height: 80px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro Display";
 }
 
-#dangnhap_btn{
-    background-color: rgb(255,255,255); 
+.navbar_container{
+    max-width: 1920px;
+    height: 70px;
+    background-color: rgb(35, 32,27);
+   
+}
+
+nav{
+    height: 70px;
+}
+
+#navbar_logo{
+    width: 200px;
+    height: 60px;
+}
+
+#navbar-link {
+    color: white;
+    font-family: "SF Pro Display";
+    margin-left: 10px ;
+    font-weight: bold;
+}
+
+
+/* Ẩn mũi tên mặc định */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+
+#dangnhap_btn {
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px ;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
-    border:none;  
-    color:rgb(35, 32, 27);
+    border: none;
+    color: rgb(35, 32, 27);
     margin-right: 30px;
     font-family: "SF Pro Display";
-    font-weight: bold; 
+    font-weight: bold;
+    
 }
 
-#dangnhap_btn:hover{
+#dangnhap_btn:hover {
     background-color: rgb(35, 32, 27);
     color: rgb(255, 255, 255);
-}
-#navbar-link{
-    color: white;
     font-family: "SF Pro Display";
 }
 
-#navbar-list{
-    margin-right: 100px;
+#collapsibleNavbar {
+    background-color: rgb(35, 32, 27); 
 }
-
-#xemthem_dropdown_item{
-    background-color: rgb(35, 32, 27);
-    color: white;
-    font-family: "SF Pro Display";
-}
-
-#xemthem_dropdown_item:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgb(35, 32, 27);
-}
-
- /* Ẩn mũi tên mặc định */
-.dropdown-toggle::after {
-    display: none !important;
-}
-
