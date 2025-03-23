@@ -5,14 +5,13 @@
 }
 
 .navbar_container{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.navbar_container nav{ 
     max-width: 1800px;
     height: 70px;
-    background-color: rgb(255, 255, 255);
     margin: auto;
-}
-
-nav{
-    height: 70px;
 }
 
 #navbar_logo{

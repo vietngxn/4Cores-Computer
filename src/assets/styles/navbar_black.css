@@ -4,16 +4,16 @@
     font-family: "SF Pro Display";
 }
 
+
 .navbar_container{
-    max-width: 1800px;
-    height: 70px;
+    width: 100%;
     background-color: rgb(35, 32,27);
-    margin: auto;
-   
 }
 
-nav{
+.navbar_container nav{
+    max-width: 1800px;
     height: 70px;
+    margin: auto;
 }
 
 #navbar_logo{
