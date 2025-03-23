@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/loginRegister.css">
+    <script src="../../assets/styles/js/three.min.js"></script>
+    <script src="../../assets/styles/js/vanta.net.min.js"></script>
+
+</head>
+<body id="body-bg">
+    <div class="container">
+        <div class="signin d-hide" id="signup-form"> 
+
+            <div class="content"> 
+            <a class="back-to-home" href="#">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.41667 10.2918L1.625 6.50016M1.625 6.50016L5.41667 2.7085M1.625 6.50016H11.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                Trở về trang chủ
+                </a>
+             <h2>ĐĂNG KÍ</h2> 
+        
+             <div class="form"> 
+                <div class="inputBox"> 
+        
+                    <input type="text" required> <i>Email</i> 
+             
+                   </div> 
+        
+              <div class="inputBox"> 
+        
+               <input type="text" required> <i>Tên tài khoản</i> 
+        
+              </div> 
+        
+              <div class="inputBox"> 
+        
+               <input type="password" required> <i>Mật khẩu</i> 
+        
+              </div> 
+              <div class="inputBox"> 
+        
+                <input type="password" required> <i>Nhập lại mật khẩu</i> 
+         
+               </div> 
+        
+              <div class="links">
+                <input id="dieukhoan" type="checkbox" value="" placeholder="">
+                <label for="dieukhoan">Tôi đồng ý với điều khoản và chính sách</label>
+                
+              </div> 
+        
+              <div class="inputBox"> 
+        
+               <input type="submit" value="Đăng kí"> 
+        
+        
+              </div> 
+              <div class="signup-url">
+                <p>Đã có tài khoản ? <a href="#" onclick="ShowSignInForm()">Đăng nhập ngay</a> </p>
+              </div>
+              
+        
+             </div> 
+        
+            </div> 
+        
+           </div> 
+        
+           <!-- Form đăng nhập -->
+           <div class="signin" id="sigin-form"> 
+        
+            <div class="content"> 
+            <a class="back-to-home" href="#">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.41667 10.2918L1.625 6.50016M1.625 6.50016L5.41667 2.7085M1.625 6.50016H11.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                Trở về trang chủ
+                </a>
+             <h2>ĐĂNG NHẬP</h2> 
+        
+             <div class="form"> 
+        
+              <div class="inputBox"> 
+        
+               <input type="text" required> <i>Tên tài khoản</i> 
+        
+              </div> 
+        
+              <div class="inputBox"> 
+        
+               <input type="password" required> <i>Mật khẩu</i> 
+        
+              </div> 
+        
+              <div class="links">
+                <input id="dieukhoan2" type="checkbox" value="" placeholder="">
+                <label for="dieukhoan2">Nhớ mật khẩu</label>
+                
+              </div> 
+        
+              <div class="inputBox"> 
+        
+               <input type="submit" value="Đăng nhập"> 
+        
+        
+              </div> 
+              <div class="signup-url">
+                <p>Chưa có tài khoản ? <a id="login-now" href="#" onclick="ShowSignUpForm()">Đăng kí ngay</a> </p>
+              </div>
+              
+        
+             </div> 
+        
+            </div> 
+        
+           </div> 
+        
+    </div>
+    <script src="../../assets/styles/js/loginRegisterPage.js">
+    </script>
+</body>
+</html>

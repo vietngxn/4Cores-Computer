@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: "Kanit-Regular";
+    src: url(../fonts/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+    font-family: "Kanit-SemiBold";
+    src: url(../fonts/Kanit/Kanit-SemiBold.ttf);
+}
+*{
+ padding: 0;
+ margin: 0;    
+}
+.container{
+    width: 1600px;
+    margin: auto;
+    position: relative;
+}
+.background-c{
+    background-color: #9db2ae;
+    width: 100%;
+    height: 533.33px;
+    position: absolute;
+}
+.banner{
+    width: 100%;;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    filter: brightness(75%);
+}
+.banner-title{
+    transform: translate(20px,-340px);
+    text-align: center;
+}
+.banner h1,
+.banner h4{
+    color: white;
+}
+.banner h1{
+    font-size: 48px;
+    font-family: "Kanit-SemiBold";
+}
+
+.banner h4{
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    font-family: "Kanit-Regular";
+}
+.select-side{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.select-side-title{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Kanit-SemiBold";
+}
+.select-side-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.select-side-side{
+    width: 30%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.select-side-side img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+.select-side-side-title{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: "Kanit-SemiBold";
+}
+.selection-side{
+    border: 2px solid #FD304F;
+}
+.selection-side-title{
+    color: #FD304F;
+}
+
+.selection-side img{
+    filter: grayscale(10%) !important;
+}
+.northside-show{
+    width: 1200px;
+    margin: auto;
+    display: none;
+}
+.northside-address{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.northside-show-title{
+    color: #FD304F;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Kanit-SemiBold";
+    text-align: center;
+}
+.address-infomation{
+    transform: translateX(-80px);
+}
+.address-title{
+    font-size: 30px;
+    color: #FD304F;
+    font-weight: bold;
+    font-family: "Kanit-SemiBold";
+}
+.address-details{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: "Kanit-Regular";
+    letter-spacing: 1px;
+}
+.display-show{
+    display: block;
+}

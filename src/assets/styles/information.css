@@ -1,0 +1,191 @@
+@font-face {
+    font-family:'Inter1' ;
+    src: url(../../assets/fonts/Inter/static/Inter_18pt-Medium.ttf);
+}
+@font-face {
+    font-family:'Inter2' ;
+    src: url(../../assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf);
+}
+.title1{
+    font-family: 'Inter1';
+    font-weight: 100;   
+    font-size : 13px;
+}
+.title3{
+    font-family: 'Inter1';
+    font-weight: 100;   
+    font-size : 10px;
+}
+.title2{
+    font-family: 'Inter2';
+    font-weight: 500;   
+    font-size : 30px;
+}
+#side-bar{
+    position: absolute;
+} 
+.main-container{
+    left : 20% !important;
+}
+#content-container
+{
+    width: 600px !important;
+    background-color: white !important;
+    padding : 25px !important;
+}
+
+.information {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    width: 600px;
+    height: auto;
+}
+.information__header{
+    height: 80px;
+}
+.information form{
+    height: 500px;
+}
+.information__body table{
+    border-spacing: 0px 10px ;
+    padding : 0;
+    margin : 0;
+}
+.information__header{
+    padding-right : 50px;
+}
+.information__header p{
+    font-size : 13px;
+    color : #C8C8D0;
+    padding-top : 15px;
+    padding-bottom: 30px;
+}
+.information__body table tr{
+    display : block;
+    width: 500px;
+}
+.information__body__name-input tr{
+    padding:0;
+}
+.information__body__name-input td>input{
+    display : block;
+    width: 525px;
+    height: 38px;
+    background-color: rgb(232, 231, 231);
+    border : none;
+    margin-top: -10px;
+}
+.information__body__name-input td>input::placeholder{    
+    padding-left :20px;
+    font-family: 'Inter1';
+    color :#C8C8D0;
+}
+.information__body__sex-male {
+    padding-left : 80px;
+}
+.information__body__sex-male span:last-child {
+    padding-left : 10px;
+    display : inline;
+    position: relative;
+    top :-8px;
+}
+.information__body__sex-female {
+    padding-left : 40px;
+}
+.information__body__sex-female span:last-child {
+    padding-left : 10px;
+    display : inline;
+    position: relative;
+    top :-8px;
+}
+.information__body__address-input td>input{
+    display : block;
+    width: 525px;
+    height: 38px;
+    background-color: rgb(232, 231, 231);
+    border : none;
+    margin-top: -10px;
+}
+.information__body__address-input td>input::placeholder{
+    padding-left : 10px;
+    font-family: 'Inter1';
+    color :#C8C8D0;
+
+}
+.information__body__phone-input td>input{
+    display : block;
+    width: 525px;
+    height: 38px;
+    background-color: rgb(232, 231, 231);
+    border : none;
+    margin-top: -20px;
+}
+.information__body__phone-input td>input::placeholder{
+    padding-left : 10px;
+    font-family: 'Inter1';
+    color :#C8C8D0;
+}
+.information__body__phone-input td>input{
+    display : block;
+    width: 525px;
+    height: 38px;
+    background-color: rgb(232, 231, 231);
+    border : none;
+    margin-top: -10px;
+}
+.information__body__phone-input td>input::placeholder{
+    padding-left : 10px;
+    font-family: 'Inter1';
+    color :#C8C8D0;
+}
+.information__body__email-input td>input{
+    display : block;
+    width: 525px;
+    height: 38px;
+    background-color: rgb(232, 231, 231);
+    border : none;
+    margin-top: -10px;
+}
+.information__body__email-input td>input::placeholder{
+    padding-left : 10px;
+    font-family: 'Inter1';
+    color :#C8C8D0;
+}
+.information__body__birthday-input td>input{
+    display : block;
+    width: 525px;
+    height: 38px;
+    background-color: rgb(232, 231, 231);
+    border : none;
+    margin-top: -10px;
+}
+.information__body__birthday-input td>input::placeholder{
+    padding-left : 10px;
+    font-family: 'Inter1';
+    color :#C8C8D0;
+}
+.information__footer{
+    padding-top : 20px;
+}
+.information__footer button{
+    background-color: #B02B19;
+    color : white;
+    width: 150px;
+    height: 40px;
+    margin-left : 250px;
+    border-radius: 10px;
+    border : none;
+    cursor:pointer;
+    font-family: 'Inter1';
+}
+.information__body__sex td:hover{
+    color:#B02B19;
+    cursor: pointer;
+}
+.information__body__sex-male:hover span:first-child svg path{
+    fill: #B02B19;
+}
+.information__body__sex-female:hover span:first-child svg path{
+    fill: #B02B19;
+}

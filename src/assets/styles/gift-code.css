@@ -1,0 +1,153 @@
+.main-container{
+    left : 20% !important;
+}
+@font-face {
+    font-family: 'Inter-semibold';
+    src: url(../../assets/fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-light';
+    src: url(../../assets/fonts/Inter/static/Inter_18pt-Light.ttf);
+}
+@font-face {
+    font-family: 'Inter-regular';
+    src: url(../../assets/fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-medium';
+    src: url(../../assets/fonts/Inter/static/Inter_18pt-Medium.ttf);
+}
+
+.title{
+    font-family: 'Inter-semiblod';
+    font-style: bold;
+    color : black !important;
+}
+.title3{
+    font-family: 'Inter-light';
+    font-style: bold;
+    color : black !important;
+    font-weight: 100    ;
+}
+.title4{
+    font-family: 'Inter-regular';
+    font-style: bold;
+    color : black !important;
+    font-weight: 100;
+}
+.title5{
+    font-family: 'Inter-medium';
+    font-style: bold;
+    color : black !important;
+    font-weight: 100;
+}
+#content-container{
+    background-color: white !important;
+    width: 750px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    height: 100% !important; 
+    position: relative !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 0px !important;
+}
+#content-container::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    margin-right: 10px;
+}
+#content-container::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 20px;
+    border-top-right-radius: 100px;
+    border-bottom: 30px;
+
+}
+#content-container::-webkit-scrollbar-thumb{
+    background-color: #B02B19;
+    transition: background-color 0.3s ease;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+
+.gift-code__desc {
+    width: 700px;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap : 20px;
+
+}
+.gift-code__header{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+.gift-code__header h1{
+    padding-bottom:  5px;
+}
+.gift-code__header h3{
+    padding-bottom: 20px;
+}
+.gift-code__header input{
+    width: 545px;
+    height: 40px;
+    background-color: #e1e4e7;
+    border : none;
+}
+
+.gift-code__header input::placeholder{
+    padding-left: 10px;
+    font-family: 'Inter-regular';
+}
+.gift-code__header button{
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #B02B19;
+    color : white;
+    font-family: 'Inter-medium';
+    cursor: pointer;
+}
+.gift-code__desc svg path:hover{
+    cursor: pointer;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes shrink {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+} 
+.gift-code__desc-voucher1{
+    animation : appear 0.8s ease-out,shrink 0.8s ease-in ;
+    animation-timeline: view(),view();
+    animation-range: entry 0,exit 0px cover 100%;
+}
+.gift-code__desc-voucher1{
+    transition: all 0.3s ease-in-out;
+}
+.gift-code__desc-voucher1:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+
+}
