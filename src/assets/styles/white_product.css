@@ -1,60 +1,76 @@
 * {
     padding: 0;
-    margin: 0 ;
+    margin: 0;
 }
+
 @font-face {
     font-family: 'kanitm';
     src: url(../fonts/Kanit/Kanit-Medium.ttf);
 }
+
 @font-face {
     font-family: 'kanitr';
     src: url(../fonts/Kanit/Kanit-Regular.ttf);
 }
+
 @font-face {
     font-family: 'kanitexl';
     src: url(../fonts/Kanit/Kanit-ExtraLight.ttf);
 }
+
 @font-face {
     font-family: 'kanitl';
     src: url(../fonts/Kanit/Kanit-Light.ttf);
 }
+
 body {
     overflow-x: hidden;
     width: 100%;
 }
+
 .justify-content {
     display: flex !important;
     justify-content: center !important;
 }
+
 .align-items {
-    display: flex !important; 
+    display: flex !important;
     align-items: center !important;
 }
+
 .row-PC {
     margin-bottom: 150px;
 }
+
 .line-through {
     text-decoration: line-through;
     text-decoration-thickness: 1px;
     font-size: 20px;
     font-family: 'kanitexl';
 }
+
 .product-container {
     min-width: 1600px;
 }
+
 .product-row {
     margin-left: 80px;
 }
+
 .product-content {
     width: 1500px;
     margin: auto;
+    margin-top: 100px;
 }
+
 .img-PC {
     width: 645.6px;
 }
-.product-content .row{
+
+.product-content .row {
     width: 100%;
 }
+
 .title-PC {
     font-weight: 500;
     font-family: 'kanitm';
@@ -66,44 +82,55 @@ body {
     /* padding-bottom: 100px; */
     height: 60px;
 }
+
 .row-price {
     margin-bottom: 60px;
     /* height: 150px;s */
 }
+
 .row-btn {
     margin-bottom: 120px;
 }
-.img-stars img{
+
+.img-stars img {
     width: 28px;
     height: 28px;
 }
+
 .img-stars-number {
     margin-right: 15px;
     font-family: 'kanitr';
 }
+
 .product-rating-evaluate {
     font-family: 'kanitr';
 }
+
 .product-rating-sold {
     font-family: 'kanitr';
 }
+
 .product-content-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .span-gray {
     color: #7E8287;
 }
+
 .span-rating {
     margin-left: 10px;
-    font-family:'kanitr';
+    font-family: 'kanitr';
 }
+
 .product-price {
     color: #B02B19;
     font-family: 'kanitm';
     font-size: 30px;
 }
+
 .btn-buy {
     background-color: #B02B19;
     color: white;
@@ -121,52 +148,74 @@ body {
     border-radius: 10px;
     font-family: 'kanitm';
 }
+
 .product-sale {
     border: 1px solid #B02B19;
     background: rgba(255, 158, 158, 0.31);
     padding: 0px 5px;
     font-family: 'kanitl';
-}  
-.col-product-CPU-text {
+}
+
+.col-product-right-text {
+    display: flex;
+    height: 427px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-product-left-text {
     height: 427px;
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.product-CPU-text {
+
+.product-right-text {
+    font-family: 'kanitm';
+    text-align: justify;
+    font-size: 18px;
+    width: 75%;
+}
+
+.product-left-text {
     font-family: 'kanitm';
     text-align: justify;
     width: 75%;
     /* justify-self: end; */
     font-size: 18px;
 }
-.col-product-CPU-img img {
-    width: 427px;
+
+.col-product-left-img {
+    display: flex;
+    justify-content: end;
 }
-.col-product-MB-img img {
-    width: 480px;
-}
-.col-product-CPU-img {
+
+.col-product-right-img {
     display: flex;
     justify-content: center !important;
 }
-.row-product-CPU {
+
+/* .row-product-CPU {
     border-bottom: 4px dashed #000000;
     padding-bottom: 100px;
-}
+} */
 .row-hr {
     display: flex;
     justify-content: center;
+    margin: 50px 0px;
 }
+
 .col-hr {
     display: flex;
     align-items: end;
 }
+
 .product-hr-text {
     font-family: 'kanitm';
     font-size: 40px;
     margin-bottom: 0px;
 }
+
 .product-hr {
     color: #000000 !important;
     background-color: white !important;
@@ -175,4 +224,82 @@ body {
     border-bottom: 4px dashed #000000 !important;
     width: 60% !important;
     flex: 1;
+}
+
+.full-form-img-PC {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.scroll-reveal p {
+    display: inline;
+    color: rgba(51, 51, 51, 0.2);
+    background-clip: text;
+    background-image: linear-gradient(90deg, black, black);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view(y);
+}
+
+.scroll-reveal .product-hr-text.scroll1 {
+    animation-range-start: cover 80px;
+    animation-range-end: cover 320px;
+}
+
+.scroll-reveal.product-left-text.scroll2 p {
+    animation-range-start: cover 62px;
+    animation-range-end: cover 400px;
+}
+
+.scroll-reveal .product-hr-text.scroll3 {
+    animation-range-start: cover 70px;
+    animation-range-end: cover 320px;
+}
+
+.scroll-reveal.product-right-text.scroll4 p {
+    animation-range-start: cover 40px;
+    animation-range-end: cover 420px;
+}
+
+.scroll-reveal .product-hr-text.scroll5 {
+    animation-range-start: cover 65px;
+    animation-range-end: cover 320px;
+}
+
+.scroll-reveal.product-left-text.scroll6 p {
+    animation-range-start: cover 40px;
+    animation-range-end: cover 400px;
+}
+
+.scroll-reveal .product-hr-text.scroll7 {
+    animation-range-start: cover 90px;
+    animation-range-end: cover 330px;
+}
+
+.scroll-reveal.product-right-text.scroll8 p {
+    animation-range-start: cover 60px;
+    animation-range-end: cover 470px;
+}
+
+.scroll-reveal .product-hr-text.scroll9 {
+    animation-range-start: cover 75px;
+    animation-range-end: cover 310px;
+}
+
+.scroll-reveal.product-left-text.scroll10 p {
+    animation-range-start: cover 65px;
+    animation-range-end: cover 440px;
+}
+
+.scroll-reveal .product-hr-text.scroll11 {
+    animation-range-start: cover 100px;
+    animation-range-end: cover 310px;
+}
+
+@keyframes scroll-reveal {
+    to {
+        background-size: 100% 100%;
+    }
 }
