@@ -39,7 +39,7 @@ body {
 }
 
 .row-PC {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
 }
 
 .line-through {
@@ -138,6 +138,7 @@ body {
     height: 50px;
     border-radius: 10px;
     font-family: 'kanitm';
+    border: 1px solid #F99588;
 }
 
 .btn-more {
@@ -147,6 +148,7 @@ body {
     height: 50px;
     border-radius: 10px;
     font-family: 'kanitm';
+    border: 1px solid #B02B19;
 }
 
 .product-sale {
@@ -154,6 +156,8 @@ body {
     background: rgba(255, 158, 158, 0.31);
     padding: 0px 5px;
     font-family: 'kanitl';
+    color: #B02B19;
+    margin-top: 2px;
 }
 
 .col-product-right-text {
@@ -195,10 +199,6 @@ body {
     justify-content: center !important;
 }
 
-/* .row-product-CPU {
-    border-bottom: 4px dashed #000000;
-    padding-bottom: 100px;
-} */
 .row-hr {
     display: flex;
     justify-content: center;
@@ -245,16 +245,16 @@ body {
 
 .scroll-reveal .product-hr-text.scroll1 {
     animation-range-start: cover 80px;
-    animation-range-end: cover 320px;
+    animation-range-end: cover 300px;
 }
 
 .scroll-reveal.product-left-text.scroll2 p {
-    animation-range-start: cover 62px;
-    animation-range-end: cover 400px;
+    animation-range-start: cover 55px;
+    animation-range-end: cover 370px;
 }
 
 .scroll-reveal .product-hr-text.scroll3 {
-    animation-range-start: cover 70px;
+    animation-range-start: cover 45px;
     animation-range-end: cover 320px;
 }
 
@@ -270,35 +270,70 @@ body {
 
 .scroll-reveal.product-left-text.scroll6 p {
     animation-range-start: cover 40px;
-    animation-range-end: cover 400px;
+    animation-range-end: cover 350px;
 }
 
 .scroll-reveal .product-hr-text.scroll7 {
-    animation-range-start: cover 90px;
+    animation-range-start: cover 55px;
     animation-range-end: cover 330px;
 }
 
 .scroll-reveal.product-right-text.scroll8 p {
     animation-range-start: cover 60px;
-    animation-range-end: cover 470px;
+    animation-range-end: cover 440px;
 }
 
 .scroll-reveal .product-hr-text.scroll9 {
-    animation-range-start: cover 75px;
+    animation-range-start: cover 60px;
     animation-range-end: cover 310px;
 }
 
 .scroll-reveal.product-left-text.scroll10 p {
     animation-range-start: cover 65px;
-    animation-range-end: cover 440px;
+    animation-range-end: cover 370px;
 }
 
 .scroll-reveal .product-hr-text.scroll11 {
-    animation-range-start: cover 100px;
+    animation-range-start: cover 5px;
     animation-range-end: cover 310px;
 }
 
+.scroll-img-right {
+    animation: move-scroll-right linear forwards;
+    animation-timeline: view(y);
+    animation-range-start: 1x;
+    animation-range-end: 450px;
+}
+
+.scroll-img-left {
+    animation: move-scroll-left linear forwards;
+    animation-timeline: view(y);
+    animation-range-start: 1px;
+    animation-range-end: 450px;
+}
+
+@keyframes move-scroll-left {
+    from {
+        transform: translate(-700px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes move-scroll-right {
+    from {
+        transform: translate(700px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
 @keyframes scroll-reveal {
+
     to {
         background-size: 100% 100%;
     }
