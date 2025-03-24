@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../../assets/styles/giohang1.css">
     <link rel="stylesheet" href="../../assets/styles/tabForm.css">
     <link rel="stylesheet" href="../../assets/styles/sidebar.css">
+    <link rel="stylesheet" href="../../assets/styles/thanhtoantienmat_tabForm.css">
+    <link rel="stylesheet" href="../../assets/styles/thanhtoanvisa.css">
+    <link rel="stylesheet" href="../../assets/styles/thanhtoannapas.css">
     <script src="../../assets/styles/js/sidebar.js"></script>
 
 </head>
@@ -160,6 +163,8 @@
             </div>
         </div>
     </aside>
+
+
     <div class="giohang">
         <div class="gio_hang_container">
             <div id="list_sanpham">
@@ -371,7 +376,9 @@
                     <p id="tongtien_sanpham">Tổng tiền: 3.000.000đ</p>
                 </div>
             </div>
-            <div class="fullform">
+
+
+            <div class="fullform" id="formThongTinCaNhan">
                 <div class="page_transit">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#B02B19" />
@@ -385,32 +392,23 @@
                     </svg>
                 </div>
 
-                <div class="form_thongtin">
+                <div class="form_thongtin ">
                     <div id="form_thongtin_content">
-                        <!-- <div id="back_btn">
-                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <p style="color: white;">Trở lại trang trước</p>
-                        </div> -->
-                        <h2 id="thongtincanhan_title">Thông tin cá nhân </h2><!--FIX-->
-                        <form action="" id="form_input">
-                            <div class="form-group"><!--FIX-->
+                        <h2 id="thongtincanhan_title">Thông tin cá nhân </h2>
+                        <form action="" id="form_inputThongTinCaNhan">
+                            <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" required
                                     placeholder="Họ và tên">
                             </div>
-                            <div class="form-group"><!--FIX-->
+                            <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" required
                                     placeholder="Số điện thoại">
                             </div>
-                            <div class="form-group"><!--FIX-->
+                            <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" required
                                     placeholder="Số nhà / tòa nhà">
                             </div>
-                            <div class="form-group"><!--FIX-->
+                            <div class="form-group">
                                 <select name="" id="" class="form-select">
                                     <option value="Tân Thuận">Tân Thuận</option>
                                     <option value="Tân Thuận">Tân Thuận</option>
@@ -418,7 +416,7 @@
                                     <option value="Tân Thuận">Tân Thuận</option>
                                 </select>
                             </div>
-                            <div class="form-group"><!--FIX-->
+                            <div class="form-group">
                                 <select name="" id="" class="form-select">
                                     <option value="Tân Thuận">Quận 7</option>
                                     <option value="Tân Thuận">Tân Thuận</option>
@@ -426,7 +424,7 @@
                                     <option value="Tân Thuận">Tân Thuận</option>
                                 </select>
                             </div>
-                            <div class="form-group"><!--FIX-->
+                            <div class="form-group">
                                 <select name="" id="" class="form-select">
                                     <option value="Tân Thuận">TP.Hồ Chí Minh</option>
                                     <option value="Tân Thuận">Tân Thuận</option>
@@ -434,20 +432,301 @@
                                     <option value="Tân Thuận">Tân Thuận</option>
                                 </select>
                             </div>
-                            <div id="form_button"><!--FIX-->
+                            <div id="form_button">
                                 <input type="checkbox" id="xuatHoaDon_checkbox" name="agree" value="agree"
                                     class="form-check-input">
                                 <label for="xuatHoaDon_checkbox" id="xuatHoaDon_lbl">Yêu cầu xuất hóa đơn</label>
                             </div>
                         </form>
                     </div>
-                    <a href="../../pages/giohang/giohangpage2.html"><button type="button" class="btn btn-danger" id="tieptuc_btn" >Tiếp tục</button></a><!--FIX-->
+                    <button type="button" class="btn btn-danger" id="tieptuc_btnThongTinCaNhan"
+                        onclick="toggleHideFormCaNhan()">Tiếp tục</button>
+                </div>
+            </div>
+
+            <div class="fullform" id="formTienMat">
+                <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+        
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                </div>
+        
+                <div class="form_thongtin">
+                    <div id="form_thongtin_content">
+        
+                        <div id="back_btn"  onclick="toggleAppearFormCaNhan()">
+                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p style="color: white;">Trở lại trang trước</p>
+                        </div>
+        
+                        <div id="form_title">
+                            <h2 id="thongtincanhan_title">Thanh toán </h2>
+                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
+                        </div>
+        
+                        <div class="ATM_icons_list">
+                            <div class="ATM_icons_row">
+                                <div id="visa_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="mastercard_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="napas_log" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+                        </div>
+                            <div class="ATM_icons_row" >
+                                <div id="momo_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="zalo_pay_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="tienmat_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <form action="" id="form_input">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Họ tên">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="OTP xác minh">
+                            </div>
+                            <div class="form-group">
+                                <input type="button" name="" id="" class="btn btn-danger" value="Gửi mã ngay">
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="btn btn-danger" id="tieptuc_btn_tienmat" onclick="toggleHideTienMat()">Tiếp tục</button>
+                </div>
+            </div>
+
+            <div class="fullform" id="formVisa">
+                <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+        
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                </div>
+        
+                <div class="form_thongtin">
+                    <div id="form_thongtin_content">
+        
+                        <div id="back_btn">
+                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p style="color: white;">Trở lại trang trước</p>
+                        </div>
+        
+                        <div id="form_title">
+                            <h2 id="thongtincanhan_title">Thanh toán </h2>
+                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
+                        </div>
+        
+                        <div class="ATM_icons_list">
+                            <div class="ATM_icons_row">
+                                <div id="visa_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="mastercard_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="napas_log" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ATM_icons_row">
+                                <div id="momo_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="zalo_pay_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="tienmat_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+        
+                        
+                        <form action="" id="form_input">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Số thẻ">
+                            </div>
+                            <div class="form-group" id="nhh">
+        
+                                <div class="left_nhh">
+                                    <label for="" style="color: rgb(176, 43, 25);">Ngày hết hạn</label>
+                                    <div id="nhh_input">
+                                        <input type="text" id="month_input" required>
+                                        <label for="">/</label>
+                                        <input type="text" id="year_input" required>
+                                    </div>
+                                </div>
+        
+                                <div class="right_nhh">
+                                    <label for="" style="color: rgb(176, 43, 25);">CVV</label>
+                                    <div id="nhh_input">
+                                        <input type="text" id="CVV_input" required>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                   
+                </div>
+                <button type="button" class="btn btn-danger" id="tieptuc_btn">Tiếp tục</button>
+            </div>
+
+            <div class="fullform" id="formNapas">
+                <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+        
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                </div>
+        
+                <div class="form_thongtin">
+                    <div id="form_thongtin_content">
+        
+                        <div id="back_btn">
+                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p style="color: white;">Trở lại trang trước</p>
+                        </div>
+        
+                        <div id="form_title">
+                            <h2 id="thongtincanhan_title">Thanh toán </h2>
+                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
+                        </div>
+        
+                        <div class="ATM_icons_list">
+                            <div class="ATM_icons_row">
+                                <div id="visa_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="mastercard_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="napas_log" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+                        </div>
+                            <div class="ATM_icons_row" >
+                                <div id="momo_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="zalo_pay_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+        
+                                <div id="tienmat_logo" class="bank_logo">
+                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <form action="" id="form_input">
+                            <div class="form-group">
+                                <select class="form-control" id="" >
+                                    <option value="Ngân hàng">Ngân hàng</option>
+                                    <option value="Ngân hàng">Ngân hàng</option>
+                                    <option value="Ngân hàng">Ngân hàng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Số tài khoản">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Họ tên">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Chi nhánh">
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="btn btn-danger" id="tieptuc_btn_napas">Tiếp tục</button>
                 </div>
             </div>
         </div>
-    </div>
+        <script>
+            // function toggleHideFormCaNhan() {
+            //     const formThongTin = document.getElementById("formThongTinCaNhan");
+            //     formThongTin.classList.toggle("d-hide");
+            // }
 
-    <script src="../../assets/styles/js/background.js"></script>
+            // function toggleHideTienMat() {
+            //     const formThongTin = document.getElementById("formTienMat");
+            //     formThongTin.classList.toggle("d-hide");
+            // }
+
+            // function toggleHideVisa() {
+            //     const formThongTin = document.getElementById("formVisa");
+            //     formThongTin.classList.toggle("d-hide");
+            // }
+            // function toggleAppearFormCaNhan() {
+            //     const formThongTin = document.getElementById("formThongTinCaNhan");
+            //     toggleHideTienMat();
+            //     formThongTin.classList.remove("d-hide");
+            // }
+
+            // function toggleAppearTienMat() {
+            //     const formThongTin = document.getElementById("formTienMat");
+            //     formThongTin.classList.toggle.remove("d-hide");
+            // }
+        </script>
+        <script src="../../assets/styles/js/background.js"></script>
 </body>
 
 </html>
