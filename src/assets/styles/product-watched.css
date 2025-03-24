@@ -1,12 +1,16 @@
 @font-face {
-    font-family: 'SF';
-    src: url(../../assets/fonts/SF_Pro_Display/SF-Pro-Display/SF-Pro-Display-Medium.otf);
+    font-family: 'SF2';
+    src: url("../fonts/SF Pro Display/SF-Pro-Display/SF-Pro-Display-Semibold.otf");
 }
 .title-sf{
-    font-family: 'SF';
-    font-size: 16px !important;
-    font-weight: 300;
+    font-family: 'SF2';
+    font-size: 15px !important;
+    font-weight: 500;
 }
+.title{
+    font-family: 'Inter' !important;
+}
+
 .main-container{
     left : 20% !important;
     background-color: white !important;
@@ -18,6 +22,7 @@
     overflow-x: hidden !important;
     overflow-y: scroll !important;
     border-top-right-radius: 0px !important;
+    text-align: start !important;
     border-bottom-right-radius: 0px !important;
 }
 #content-container::-webkit-scrollbar{
@@ -58,16 +63,11 @@
 }
 .product{
     margin : 0px !important;
-    box-sizing: border-box !important;
     width: 230px !important;
 }
 .product-header .product-header-desc{
-    display : flex !important;
-    align-items: start !important;
-    align-content: flex-start !important;
-    margin-right : 20px !important;
-    width: 200px !important;
-    padding-right : 36px !important;
+    display : flex ;
+    width: 200px;  
 }
 .product-body-price1{
     width: 100px;
@@ -88,7 +88,6 @@
 }
 @keyframes appear {
     from {
-        opacity: 0;
         transform: scale(0.5);
     }
     to {

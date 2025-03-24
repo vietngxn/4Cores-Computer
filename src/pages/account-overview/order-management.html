@@ -142,8 +142,8 @@
                      </div>
                     </div>
                     <div class="product1__center">
-                        <p class ="title1">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
-                        <p class ="title1">Mã Đơn Hàng :HE19204KLI</p>
+                        <p class ="title7">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
+                        <p class ="title7">Mã Đơn Hàng :HE19204KLI</p>
                     </div>
                     <div class="product1__right">
                         <p>
@@ -167,8 +167,8 @@
                      </div>
                     </div>
                     <div class="product1__center">
-                        <p class ="title1">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
-                        <p class ="title1">Mã Đơn Hàng :HE19204KLI</p>
+                        <p class ="title7">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
+                        <p class ="title7">Mã Đơn Hàng :HE19204KLI</p>
                     </div>
                     <div class="product1__right">
                         <p>
@@ -191,8 +191,8 @@
                      </div>
                     </div>
                     <div class="product1__center">
-                        <p class ="title1">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
-                        <p class ="title1">Mã Đơn Hàng :HE19204KLI</p>
+                        <p class ="title7">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
+                        <p class ="title7">Mã Đơn Hàng :HE19204KLI</p>
                     </div>
                     <div class="product1__right">
                         <p>
@@ -215,8 +215,8 @@
                      </div>
                     </div>
                     <div class="product1__center">
-                        <p class="title1">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
-                        <p class="title1">Mã Đơn Hàng :HE19204KLI</p>
+                        <p class="title7">PC001 PC 4CC Intel i3-12000H PC01 PC 4CC Intel i3-12000H....</p>
+                        <p class="title7">Mã Đơn Hàng :HE19204KLI</p>
                     </div>
                     <div class="product1__right">
                         <p>
@@ -238,13 +238,15 @@
         </div>
     </div>
     <script>
-    document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", function() {
-        document.querySelectorAll(".nav-link").forEach(el => el.classList.remove("active"));
-        this.classList.add("active");
-        this.style.backgroundColor = "transparent";
+      document.querySelectorAll(".nav-item").forEach(item => {
+        item.addEventListener("click", function () {
+            // Xóa class active khỏi tất cả các tab
+            document.querySelectorAll(".nav-item").forEach(el => el.classList.remove("active"));
+            
+            // Thêm class active vào tab được chọn
+            this.classList.add("active");
+        });
     });
-});
 
     </script>
     <script src="../../assets/styles/js/background.js"></script>

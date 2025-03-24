@@ -10,9 +10,8 @@
     font-family: 'Inter2';
     src: url(../../assets/fonts/Inter/static/Inter_18pt-Bold.ttf);
 }
-.title1{
+.title7{
     font-family: 'Inter';
-    font-size : 5px;
 }
 .title3{
     font-family: 'Inter1';
@@ -30,7 +29,7 @@
     padding : 0px !important;
 }
 .main-container{
-    left : 20% !;
+    left : 20%   !important;
 }
 .order__header{
     background-color: #E4B5AF;
@@ -132,8 +131,9 @@
 }
 .product1__center p:first-child{
     display : flex;
-    font-size :14px;
+    padding-top  : 10px;
 }
+
 .product1__right {
     padding-left : 50px;
 }
@@ -141,9 +141,10 @@
     padding-top : 10px;
     font-size :10px;
     padding-left : 10px;
+    color : #9DA39A;
 }
 .product1__center p:first-child{
-    width: 270px;
+    width: 305px;
     text-align: start;
     margin-left : 10px;
 }
@@ -155,8 +156,12 @@
     margin-top : 30px;   
 }
 .product1__right p:first-child{
-    padding-top : 5px;
+    padding-top : 10px; 
 }
+.product1__right p:first-child span:last-child{
+    padding-bottom : 3px;
+}
+
 .product1__right p:first-child{
     display : flex;
     flex-direction: row;
@@ -192,8 +197,10 @@
     color : #B02B19 !important;
     background-color: transparent; 
     border: none !important;
-    border-bottom: 3px solid #B02B19!important;
-    
+    border-bottom: 3px solid #B02B19!important;   
+}
+.active{
+    border-bottom: 3px solid #B02B19 !important;
 }
 .nav-tabs .nav-link {
     border: none !important;
@@ -203,11 +210,14 @@ transparent style {
     background-color: #E4B5AF;
     color: #B02B19;
 }
+.nav-tabs li:last-child{
+    width: 150px !important;
+}
 .order__header ul>li:last-child a{
-    width: 150px;
+    width: 100%;
 }
 .product1__center p:first-child{
-    font-size : 12px !important;
+    font-size : 12.5px !important;
 }
 .order__body__desc::-webkit-scrollbar{
     width: 8px;

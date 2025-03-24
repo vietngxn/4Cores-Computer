@@ -6,9 +6,9 @@
     font-family:'Inter2' ;
     src: url(../../assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf);
 }
-.title1{
+.title-labe{
     font-family: 'Inter1';
-    font-weight: 100;   
+    font-weight: 500;   
     font-size : 13px;
 }
 .title3{
@@ -16,13 +16,13 @@
     font-weight: 100;   
     font-size : 10px;
 }
-.title2{
+.title-header{
     font-family: 'Inter2';
     font-weight: 500;   
     font-size : 30px;
 }
 #side-bar{
-    position: absolute;
+    position: fixed;
 } 
 .main-container{
     left : 20% !important;
@@ -42,6 +42,7 @@
     height: auto;
 }
 .information__header{
+    padding-top : 30px;
     height: 80px;
 }
 .information form{
@@ -75,9 +76,10 @@
     background-color: rgb(232, 231, 231);
     border : none;
     margin-top: -10px;
+    padding-left : 20px;
+    border-radius: 5px;
 }
 .information__body__name-input td>input::placeholder{    
-    padding-left :20px;
     font-family: 'Inter1';
     color :#C8C8D0;
 }
@@ -106,9 +108,11 @@
     background-color: rgb(232, 231, 231);
     border : none;
     margin-top: -10px;
+    padding-left : 20px;
+    border-radius: 5px;
 }
 .information__body__address-input td>input::placeholder{
-    padding-left : 10px;
+    
     font-family: 'Inter1';
     color :#C8C8D0;
 
@@ -120,9 +124,10 @@
     background-color: rgb(232, 231, 231);
     border : none;
     margin-top: -20px;
+    border-radius: 5px;
+    padding-left : 20px;
 }
 .information__body__phone-input td>input::placeholder{
-    padding-left : 10px;
     font-family: 'Inter1';
     color :#C8C8D0;
 }
@@ -133,9 +138,11 @@
     background-color: rgb(232, 231, 231);
     border : none;
     margin-top: -10px;
+    border-radius: 5px;
+    padding-left : 20px;
 }
 .information__body__phone-input td>input::placeholder{
-    padding-left : 10px;
+    
     font-family: 'Inter1';
     color :#C8C8D0;
 }
@@ -146,9 +153,12 @@
     background-color: rgb(232, 231, 231);
     border : none;
     margin-top: -10px;
+    padding-left : 20px;
+
+    border-radius: 5px;
 }
 .information__body__email-input td>input::placeholder{
-    padding-left : 10px;
+
     font-family: 'Inter1';
     color :#C8C8D0;
 }
@@ -159,9 +169,11 @@
     background-color: rgb(232, 231, 231);
     border : none;
     margin-top: -10px;
+    border-radius: 5px;
+    padding-left : 20px;
 }
 .information__body__birthday-input td>input::placeholder{
-    padding-left : 10px;
+    
     font-family: 'Inter1';
     color :#C8C8D0;
 }
@@ -179,13 +191,23 @@
     cursor:pointer;
     font-family: 'Inter1';
 }
-.information__body__sex td:hover{
-    color:#B02B19;
+.information__body__sex td:not(:first-child):hover {
+    color: #B02B19;
     cursor: pointer;
 }
-.information__body__sex-male:hover span:first-child svg path{
+
+.information__body__sex-male:hover span svg path{
     fill: #B02B19;
 }
-.information__body__sex-female:hover span:first-child svg path{
+.information__body__sex-female:hover span svg path{
     fill: #B02B19;
+}
+.information__body__sex-male input,
+.information__body__sex-female input{
+    display : none;
+} 
+.selected svg path,
+.selected .information__body__sex span{
+    fill: #B02B19;
+    color :#B02B19 ;
 }
