@@ -143,7 +143,7 @@ body {
 
 .btn-more {
     background-color: #F99588;
-    color: #B02B19;
+    color: white;
     width: 240px;
     height: 50px;
     border-radius: 10px;
@@ -224,6 +224,15 @@ body {
     border-bottom: 4px dashed #000000 !important;
     width: 60% !important;
     flex: 1;
+}
+
+.btn-buy:hover {
+    background-color: white;
+    color: #B02B19;
+}
+.btn-more:hover {
+    background-color: white;
+    color: #F99588;
 }
 
 .full-form-img-PC {
