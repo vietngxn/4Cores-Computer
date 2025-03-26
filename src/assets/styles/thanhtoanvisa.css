@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Display";
+}
+
+/* trasition bar */
+.page_transit {
+    background-color: rgb(35, 32, 27);
+    width: 260px;
+    height: 40px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+    position: absolute;
+    margin-top: 185px;
+    margin-left: -40px;
+}
+
+/* layout form */
+.fullform {
+    display: flex;
+    width: 500px;
+    height: 750px;
+
+}
+
+.form_thongtin {
+    width: 450px;
+    margin-left: 100px;
+    background-color: rgb(35, 32, 27);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+#form_thongtin_content {
+    margin-left: 40px;
+}
+
+/* form title */
+#form_title {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#thongtincanhan_title {
+    color: white;
+    margin-top: 20px;
+    color: rgb(176, 43, 25);
+    font-size: 22px;
+}
+
+#chonphuongthucthanhtoan_span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#back_btn {
+    display: flex;
+    margin-top: 30px;
+}
+
+#back_icon {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.back_btn_container {
+    text-decoration: none;
+}
+
+/* bank_icon */
+.ATM_icons_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ATM_icons_list .ATM_icons_row {
+    display: flex;
+    gap: 65px;
+}
+
+.bank_logo img {
+    width: 50px;
+}
+
+
+/* tieptuc btn */
+#tieptuc_btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 220px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    font-weight: bold;
+}
+
+
+/* form input */
+#form_input .form-group {
+    margin-bottom: 50px;
+
+}
+
+#form_input {
+    margin-top: 40px;
+}
+
+#form_input .form-control {
+    border: none;
+    border-bottom: 1px solid rgb(176, 43, 25);
+    width: 340px;
+    color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
+    font-size: 15px;
+}
+
+#form_input .form-control::placeholder {
+    color: rgb(176, 43, 25);
+}
+
+
+#nhh {
+    display: flex;
+    gap: 200px;
+}
+
+#month_input {
+    width: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(176, 43, 25);
+    color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
+    font-size: 15px;
+}
+
+#nhh_input label {
+    color: rgb(176, 43, 25);
+}
+
+#year_input {
+    width: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(176, 43, 25);
+    color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
+    font-size: 15px;
+}
+
+#CVV_input{
+    width: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(176, 43, 25);
+    color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
+    font-size: 15px;
+}
