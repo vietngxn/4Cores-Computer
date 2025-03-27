@@ -30,3 +30,17 @@ points: 17.00,
 maxDistance: 23.00,
 spacing: 16.00
 })
+
+const notifications = document.querySelectorAll('.noti');
+const closeButtons = document.querySelectorAll('.close');
+
+notifications.forEach(noti => {
+    setTimeout(() => {
+        noti.classList.add('hide');
+    }, 4000);
+});
+closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        this.closest('.noti').classList.add('hide');
+    });
+});

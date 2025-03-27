@@ -149,9 +149,15 @@
   }
   
   .back-to-home {
+    padding: 5px 10px;
+    border-radius: 20px;
     color: white;
     text-decoration: none;
     transform: translateX(-140px);
+    transition: all 0.2s ease-in;
+  }
+  .back-to-home:hover{
+    background-color: rgba(0, 0, 0, 0.2);
   }
   
   .links label {
@@ -168,4 +174,52 @@
     text-decoration: none;
     font-weight: bold;
   }
+  .noti-container{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+  }
+.noti{
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+    padding: 10px 20px;
+    background-color: #b02b19;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    display: flex;
+    opacity: 0.6;
+    position: relative;
+  }
+  .noti:hover{
+    opacity: 1;
+  }
+.noti-content{
+  text-align: left;
+  margin-top: 2%;
+}  
+
   
+.sub-noti{
+  font-size: 0.8em;
+  margin-top: 12px;
+  text-align: left;
+  padding-bottom: 8px;
+}
+.noti-icon{
+  margin-right: 10px;
+}
+.close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.noti-container .hide{
+  display: none;
+}
