@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Kanit-ExtraBold";
+    src: url(../fonts/Kanit/Kanit-ExtraBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.flash-sale{
+    height: 600px;
+}
+.flash-sale-content{
+    width: 1600px;
+    margin: auto;
+    padding: 20px 0px;
+}
+.flash-sale-title{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Kanit-ExtraBold";
+    color: white;
+}
+.flash-sale-timer-coolingdown{
+    display: flex;
+}
+.time-elem{
+    color: #B02B19;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 14px;
+    position: relative;
+}
+.time-elem p{
+    position: absolute;
+    font-size: 32px;
+    left: 12px;
+    top: 6px;
+    font-family: "Kanit-ExtraBold";
+}
+.time-spliter{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px 10px;
+    color: white;
+}
+.flash-sale-first-content{
+    display: flex;
+    justify-content: space-between;
+}
+.flash-sale-product-content{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
