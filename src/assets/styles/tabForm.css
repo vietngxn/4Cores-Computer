@@ -1,5 +1,8 @@
+.d-hide {
+    display: none !important; 
+}
 
-#page_transit{
+.page_transit {
     background-color: rgb(35, 32, 27);
     width: 260px;
     height: 40px;
@@ -18,95 +21,89 @@
     margin-left: -40px;
 }
 
-#fullform{
+.fullform {
     display: flex;
     width: 500px;
     height: 750px;
-    
+
 }
 
-#form_thongtin{
-    width: 390px;
+.form_thongtin {
+    width: 450px;
     margin-left: 100px;
     background-color: rgb(35, 32, 27);
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
 }
 
-#back_btn{
-    margin-top: 30px;
-}
-#form_thongtin_content{
+#form_thongtin_content {
     margin-left: 40px;
 }
 
-.form-group{
+#form_inputThongTinCaNhan .form-group {
     margin-bottom: 50px;
 }
 
-#form_input{
+#form_inputThongTinCaNhan {
     margin-top: 40px;
 }
 
-.form-control{
-    border: none;
-    border-bottom: 1px solid rgb(176, 43, 25);;
-    width: 340px;
-    color: rgb(176, 43, 25);
-    background-color: rgb(35, 32, 27);
-    font-size: 15px;
-}
-
-.form-control::placeholder{
-    color: rgb(176, 43, 25);
-}
-.form-select {
+#form_inputThongTinCaNhan .form-control {
     border: none;
     border-bottom: 1px solid rgb(176, 43, 25);
     width: 340px;
     color: rgb(176, 43, 25);
     background-color: rgb(35, 32, 27);
-    appearance: none; /* Ẩn giao diện mặc định của trình duyệt */
+    font-size: 15px;
+}
+
+#form_inputThongTinCaNhan .form-control::placeholder {
+    color: rgb(176, 43, 25);
+}
+#form_inputThongTinCaNhan .form-select {
+    border: none;
+    border-bottom: 1px solid rgb(176, 43, 25);
+    width: 340px;
+    color: rgb(176, 43, 25);
+    background-color: rgb(35, 32, 27);
+    appearance: none;
+    /* Ẩn giao diện mặc định của trình duyệt */
     padding: 8px;
     font-size: 15px;
 }
 
 /* Đổi màu nền và chữ khi mở dropdown */
-.form-select option {
+#form_inputThongTinCaNhan  .form-select option {
     background-color: rgb(176, 43, 25);
     color: rgb(255, 255, 255);
 }
 
-#xuatHoaDon_checkbox{
-    margin-right: 10px;   
+#form_inputThongTinCaNhan  #xuatHoaDon_checkbox {
+    margin-right: 10px;
 }
 
-#xuatHoaDon_lbl{
+#form_inputThongTinCaNhan  #xuatHoaDon_lbl {
     color: rgb(176, 43, 25);
+
 }
 
-#tieptuc_btn{
-   width: 100%;
-   height: 50px;
-   margin-top: 10px;
-   border-bottom-left-radius: 32px;
-   border-bottom-right-radius: 32px;
-   font-weight: bold;
-}
-#thongtincanhan_title{
+#thongtincanhan_title {
     color: white;
     margin-top: 20px;
     color: rgb(176, 43, 25);
     font-size: 22px;
 }
-#back_btn{
-    display: flex;
-   
+
+
+
+#tieptuc_btnThongTinCaNhan  {
+    width: 100%;
+    height: 50px;
+    margin-top: 85px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    font-weight: bold;
 }
 
-#back_icon{
-    margin-top: 5px;
-    margin-right: 10px;
-}
 
 

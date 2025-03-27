@@ -134,7 +134,7 @@
                     </svg>                    
                 <input type="text" placeholder="Bạn có thể tìm kiếm theo tên,ID đơn hàng,Trạng thái">
             </div>
-            <div class="order__body__desc">
+            <div class="order__body__desc scroll-box" >
                 <div class="order__body__desc__product1">
                     <div class="product1__left">
                      <div class="order__body__desc__product1__left">
@@ -234,6 +234,8 @@
 
             </div>
         </div>
+        <img id="scrollImg" src="https://img.icons8.com/scribby/50/star.png" alt="scroll icon">
+        <p class></p>
     </div>
         </div>
     </div>
@@ -248,6 +250,29 @@
         });
     });
 
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollBox = document.querySelector('.order__body__desc');
+    const scrollImg = document.getElementById('scrollImg');
+
+    if (scrollBox && scrollImg) {
+        const trackHeight = scrollBox.clientHeight; // Chiều cao hiển thị của div
+        const contentHeight = scrollBox.scrollHeight; // Chiều cao thực tế (gồm cả phần bị ẩn)
+
+        const maxScroll = contentHeight - trackHeight; // Phần cuộn tối đa
+        const maxImgMove = trackHeight - scrollImg.clientHeight; // Khoảng di chuyển tối đa của hình ảnh
+
+        scrollBox.addEventListener('scroll', () => {
+            let scrollTop = scrollBox.scrollTop;
+
+            // Tính vị trí mới của hình ảnh theo tỷ lệ cuộn
+            let imgTop = (scrollTop / maxScroll) * maxImgMove;
+
+            // Giới hạn phạm vi để không bị trượt quá
+            scrollImg.style.top = `${Math.min(imgTop, maxImgMove)}px`;
+        });
+    }
+});
     </script>
     <script src="../../assets/styles/js/background.js"></script>
 </body>
