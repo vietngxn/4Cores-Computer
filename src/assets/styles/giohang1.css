@@ -40,15 +40,19 @@
     align-items: center;
     gap: 20px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 0px rgb(186, 183, 183);
+    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170) !important;
     border-radius: 10px;
     width: 750px;
     margin-left: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .thongtin_sanpham:hover {
     background-color: rgb(239, 232, 232);
+    box-shadow: 0px 0px 50px 0px rgb(186, 183, 183);
 }
+
+
 
 #list_sanpham {
     width: 800px;
@@ -66,7 +70,37 @@
     /* Thanh cuộn ngang */
     overflow-y: auto;
     /* Thanh cuộn dọc */
+
+    /* Tạo hiệu ứng cuộn mượt */
+    scroll-behavior: smooth;
 }
+
+
+/* Tùy chỉnh thanh cuộn (Chỉ áp dụng cho Chrome, Edge, Safari) */
+.list_sanpham_body::-webkit-scrollbar {
+    width: 8px;
+    /* Độ rộng thanh cuộn dọc */
+    height: 8px;
+    /* Độ cao thanh cuộn ngang */
+}
+
+/* Màu nền của thanh cuộn */
+.list_sanpham_body::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+/* Phần trượt của thanh cuộn */
+.list_sanpham_body::-webkit-scrollbar-thumb {
+    background: rgb(176, 43, 25);
+    border-radius: 10px;
+}
+
+/* Khi di chuột vào thanh cuộn */
+.list_sanpham_body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 .cong_tru_btn {
     margin-bottom: 11px;

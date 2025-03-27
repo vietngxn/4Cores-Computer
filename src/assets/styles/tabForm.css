@@ -1,5 +1,5 @@
 .d-hide {
-    display: none !important; 
+    display: none !important;
 }
 
 .page_transit {
@@ -60,6 +60,7 @@
 #form_inputThongTinCaNhan .form-control::placeholder {
     color: rgb(176, 43, 25);
 }
+
 #form_inputThongTinCaNhan .form-select {
     border: none;
     border-bottom: 1px solid rgb(176, 43, 25);
@@ -73,16 +74,16 @@
 }
 
 /* Đổi màu nền và chữ khi mở dropdown */
-#form_inputThongTinCaNhan  .form-select option {
+#form_inputThongTinCaNhan .form-select option {
     background-color: rgb(176, 43, 25);
     color: rgb(255, 255, 255);
 }
 
-#form_inputThongTinCaNhan  #xuatHoaDon_checkbox {
+#form_inputThongTinCaNhan #xuatHoaDon_checkbox {
     margin-right: 10px;
 }
 
-#form_inputThongTinCaNhan  #xuatHoaDon_lbl {
+#form_inputThongTinCaNhan #xuatHoaDon_lbl {
     color: rgb(176, 43, 25);
 
 }
@@ -96,14 +97,83 @@
 
 
 
-#tieptuc_btnThongTinCaNhan  {
+#tieptuc_btnThongTinCaNhan {
     width: 100%;
     height: 50px;
-    margin-top: 85px;
+    margin-top: 75px;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
     font-weight: bold;
 }
 
 
+
+#visa_logo img {
+    width: 70px;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+    object-fit: cover;
+}
+
+#visa_logo img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    filter: brightness(200%);
+}
+
+#mastercard_logo img {
+    width: 70px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+}
+
+#mastercard_logo img:hover  {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    filter: brightness(200%);
+}
+
+
+#napas_log img {
+    width: 70px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+}
+
+#napas_log img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    filter: brightness(200%);
+}
+
+
+#momo_logo img {
+    width: 70px;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+    
+}
+
+#momo_logo img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    filter: brightness(200%);
+
+}
+
+#zalo_pay_logo img {
+    width: 70px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+}
+
+#zalo_pay_logo img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    filter: brightness(200%);
+}
+
+#tienmat_logo img {
+    object-fit: cover;
+    width: 80px;
+    filter: brightness(50%);
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+}
+#tienmat_logo img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    filter: brightness(100%);
+}
 

@@ -7,12 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/styles/boostrap/bootstrap.min.css">
     <script src="../../assets/styles/boostrap/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../../assets/styles/thanhtoanvisa.css">
-    <link rel="stylesheet" href="../../assets/styles/tabForm.css">
+    <link rel="stylesheet" href="../../assets/styles/thanhtoantienmat.css">
 </head>
 
 <body>
-    <div class="fullform" id="formVisa">
+    <div class="fullform" id="formTienMat">
         <div class="page_transit">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="6" cy="6" r="6" fill="#B02B19" />
@@ -56,8 +55,8 @@
                         <div id="napas_log" class="bank_logo">
                             <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
                         </div>
-                    </div>
-                    <div class="ATM_icons_row">
+                </div>
+                    <div class="ATM_icons_row" >
                         <div id="momo_logo" class="bank_logo">
                             <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
                         </div>
@@ -71,31 +70,13 @@
                         </div>
                     </div>
                 </div>
-                <form action="" id="form_input">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" required placeholder="Số thẻ">
-                    </div>
-                    <div class="form-group" id="nhh">
 
-                        <div class="left_nhh">
-                            <label for="" style="color: rgb(176, 43, 25);">Ngày hết hạn</label>
-                            <div id="nhh_input">
-                                <input type="text" id="month_input" required>
-                                <label for="">/</label>
-                                <input type="text" id="year_input" required>
-                            </div>
-                        </div>
-
-                        <div class="right_nhh">
-                            <label for="" style="color: rgb(176, 43, 25);">CVV</label>
-                            <div id="nhh_input">
-                                <input type="text" id="CVV_input" required>
-                            </div>
-                        </div>
-                </form>
+              <div class="thanhtoantienmat_notice">
+                <p>Bạn sẽ thanh toán khi nhận hàng</p>
+              </div>
             </div>
+            <button type="button" class="btn btn-danger" id="tieptuc_btn_tienmat">Tiếp tục</button>
         </div>
-        <button type="button" class="btn btn-danger" id="tieptuc_btn_visa">Tiếp tục</button>
     </div>
 </body>
 

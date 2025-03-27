@@ -1,13 +1,9 @@
-*{
-    margin : 0 ; 
-    padding : 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "SF Pro Display";
 }
-
-
-
-
 
 
 /* form title */
@@ -18,16 +14,17 @@
     gap: 30px;
 }
 
-#thongtincanhan_title{
+#thongtincanhan_title {
     color: white;
     margin-top: 20px;
     color: rgb(176, 43, 25);
     font-size: 22px;
 }
 
-#chonphuongthucthanhtoan_span{
+#chonphuongthucthanhtoan_span {
     color: rgba(255, 255, 255, 0.5);
 }
+
 #back_btn {
     display: flex;
     margin-top: 30px;
@@ -55,16 +52,16 @@
     gap: 65px;
 }
 
-.bank_logo img{
+.bank_logo img {
     width: 50px;
 }
 
 
 /* tieptuc btn */
-#tieptuc_btn_napas  {
+#tieptuc_btn_tienmat {
     width: 100%;
     height: 50px;
-    /* margin-top: 55px; */
+    margin-top: 255px;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
     font-weight: bold;
@@ -72,27 +69,10 @@
 
 
 /* form input */
-#form_input .form-group {
-    margin-bottom: 50px;
-}
-
-#form_input {
-    margin-top: 40px;
-}
-
-#form_input .form-control {
-    border: none;
-    border-bottom: 1px solid rgb(176, 43, 25);
-    width: 340px;
+.thanhtoantienmat_notice p{
     color: rgb(176, 43, 25);
-    background-color: rgb(35, 32, 27);
-    font-size: 15px;
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
 }
-
-#form_input .form-control::placeholder {
-    color: rgb(176, 43, 25);
-}
-
-
-
-

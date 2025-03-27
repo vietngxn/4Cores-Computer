@@ -10,12 +10,16 @@
     <script src="../../assets/styles/boostrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
     <link rel="stylesheet" href="../../assets/styles/giohang1.css">
-    <link rel="stylesheet" href="../../assets/styles/tabForm.css">
     <link rel="stylesheet" href="../../assets/styles/sidebar.css">
-    <link rel="stylesheet" href="../../assets/styles/thanhtoantienmat_tabForm.css">
+
+    <link rel="stylesheet" href="../../assets/styles/tabForm.css">
+    <link rel="stylesheet" href="../../assets/styles/thanhtoanMasterCard_tabForm.css">
     <link rel="stylesheet" href="../../assets/styles/thanhtoanvisa.css">
     <link rel="stylesheet" href="../../assets/styles/thanhtoannapas.css">
+    <link rel="stylesheet" href="../../assets/styles/thanhtoantienmat.css">
+    <link rel="stylesheet" href="../../assets/styles/xacnhanthongtinForm.css">
     <script src="../../assets/styles/js/sidebar.js"></script>
 
 </head>
@@ -377,8 +381,7 @@
                 </div>
             </div>
 
-
-            <div class="fullform" id="formThongTinCaNhan">
+            <div class="fullform " id="formThongTinCaNhan">
                 <div class="page_transit">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#B02B19" />
@@ -440,77 +443,80 @@
                         </form>
                     </div>
                     <button type="button" class="btn btn-danger" id="tieptuc_btnThongTinCaNhan"
-                        onclick="toggleHideFormCaNhan()">Tiếp tục</button>
+                        onclick="dHide('#formThongTinCaNhan');dAppear('#formTienMat')">Tiếp
+                        tục</button>
                 </div>
             </div>
 
-            <div class="fullform" id="formTienMat">
+            <div class="fullform d-hide" id="formMasterCard">
                 <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#B02B19" />
                     </svg>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#7E8287" />
                     </svg>
-        
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
                 </div>
-        
+
                 <div class="form_thongtin">
                     <div id="form_thongtin_content">
-        
-                        <div id="back_btn"  onclick="toggleAppearFormCaNhan()">
+
+                        <div id="back_btn" onclick="gobackPersonalPage('formMasterCard')">
                             <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                <path
+                                    d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
                                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <p style="color: white;">Trở lại trang trước</p>
                         </div>
-        
+
                         <div id="form_title">
                             <h2 id="thongtincanhan_title">Thanh toán </h2>
                             <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
                         </div>
-        
+
                         <div class="ATM_icons_list">
                             <div class="ATM_icons_row">
-                                <div id="visa_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                <div id="visa_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/icons8-visa-26.png" alt="">
                                 </div>
-        
-                                <div id="mastercard_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="mastercard_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Mastercard-logo.svg 5.png" alt="">
                                 </div>
-        
-                                <div id="napas_log" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="napas_log" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Logo-Napas 1.png" alt="">
                                 </div>
-                        </div>
-                            <div class="ATM_icons_row" >
-                                <div id="momo_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                            </div>
+                            <div class="ATM_icons_row">
+                                <div id="momo_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/MoMo Logo 1.png" alt="">
                                 </div>
-        
-                                <div id="zalo_pay_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="zalo_pay_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/05-zalopay-300x300 1.png" alt="">
                                 </div>
-        
-                                <div id="tienmat_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="tienmat_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/pngtree-green-dollar-money-cartoon-png-image_13295191 1.png"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
-        
+
                         <form action="" id="form_input">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" required
                                     placeholder="Số điện thoại">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Họ tên">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Họ tên">
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" required
@@ -521,163 +527,75 @@
                             </div>
                         </form>
                     </div>
-                    <button type="button" class="btn btn-danger" id="tieptuc_btn_tienmat" onclick="toggleHideTienMat()">Tiếp tục</button>
+                    <button type="button" class="btn btn-danger" id="tieptuc_btn_mastercard"
+                        onclick="dHide('#formMasterCard');dAppear('#formXacNhanThongTin')">Tiếp tục</button>
                 </div>
             </div>
 
-            <div class="fullform" id="formVisa">
+            <div class="fullform d-hide" id="formNapas">
                 <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#B02B19" />
                     </svg>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="6" fill="#7E8287" />
                     </svg>
-        
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
                 </div>
-        
-                <div class="form_thongtin">
-                    <div id="form_thongtin_content">
-        
-                        <div id="back_btn">
-                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <p style="color: white;">Trở lại trang trước</p>
-                        </div>
-        
-                        <div id="form_title">
-                            <h2 id="thongtincanhan_title">Thanh toán </h2>
-                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
-                        </div>
-        
-                        <div class="ATM_icons_list">
-                            <div class="ATM_icons_row">
-                                <div id="visa_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="mastercard_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="napas_log" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                            </div>
-                            <div class="ATM_icons_row">
-                                <div id="momo_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="zalo_pay_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="tienmat_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-        
-                        
-                        <form action="" id="form_input">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Số thẻ">
-                            </div>
-                            <div class="form-group" id="nhh">
-        
-                                <div class="left_nhh">
-                                    <label for="" style="color: rgb(176, 43, 25);">Ngày hết hạn</label>
-                                    <div id="nhh_input">
-                                        <input type="text" id="month_input" required>
-                                        <label for="">/</label>
-                                        <input type="text" id="year_input" required>
-                                    </div>
-                                </div>
-        
-                                <div class="right_nhh">
-                                    <label for="" style="color: rgb(176, 43, 25);">CVV</label>
-                                    <div id="nhh_input">
-                                        <input type="text" id="CVV_input" required>
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-                   
-                </div>
-                <button type="button" class="btn btn-danger" id="tieptuc_btn">Tiếp tục</button>
-            </div>
 
-            <div class="fullform" id="formNapas">
-                <div class="page_transit">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
-                    </svg>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
-        
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
-                </div>
-        
                 <div class="form_thongtin">
                     <div id="form_thongtin_content">
-        
-                        <div id="back_btn">
+
+                        <div id="back_btn" onclick="gobackPersonalPage('formNapas')">
                             <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                <path
+                                    d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
                                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <p style="color: white;">Trở lại trang trước</p>
                         </div>
-        
+
                         <div id="form_title">
                             <h2 id="thongtincanhan_title">Thanh toán </h2>
                             <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
                         </div>
-        
+
                         <div class="ATM_icons_list">
                             <div class="ATM_icons_row">
-                                <div id="visa_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                                <div id="visa_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/icons8-visa-26.png" alt="">
                                 </div>
-        
-                                <div id="mastercard_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="mastercard_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Mastercard-logo.svg 5.png" alt="">
                                 </div>
-        
-                                <div id="napas_log" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="napas_log" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Logo-Napas 1.png" alt="">
                                 </div>
-                        </div>
-                            <div class="ATM_icons_row" >
-                                <div id="momo_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+                            </div>
+                            <div class="ATM_icons_row">
+                                <div id="momo_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/MoMo Logo 1.png" alt="">
                                 </div>
-        
-                                <div id="zalo_pay_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="zalo_pay_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/05-zalopay-300x300 1.png" alt="">
                                 </div>
-        
-                                <div id="tienmat_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
+
+                                <div id="tienmat_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/pngtree-green-dollar-money-cartoon-png-image_13295191 1.png"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
-        
+
                         <form action="" id="form_input">
                             <div class="form-group">
-                                <select class="form-control" id="" >
+                                <select class="form-control" id="">
                                     <option value="Ngân hàng">Ngân hàng</option>
                                     <option value="Ngân hàng">Ngân hàng</option>
                                     <option value="Ngân hàng">Ngân hàng</option>
@@ -688,7 +606,8 @@
                                     placeholder="Số tài khoản">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Họ tên">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Họ tên">
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" required
@@ -696,37 +615,381 @@
                             </div>
                         </form>
                     </div>
-                    <button type="button" class="btn btn-danger" id="tieptuc_btn_napas">Tiếp tục</button>
+                    <button type="button" class="btn btn-danger" id="tieptuc_btn_napas"
+                        onclick="dHide('#formNapas');dAppear('#formXacNhanThongTin')">Tiếp tục</button>
                 </div>
             </div>
+
+            <div class="fullform d-hide" id="formTienMat">
+                <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                </div>
+
+                <div class="form_thongtin">
+                    <div id="form_thongtin_content">
+
+                        <div id="back_btn" onclick="gobackPersonalPage('formTienMat')">
+                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p style="color: white;">Trở lại trang trước</p>
+                        </div>
+
+                        <div id="form_title">
+                            <h2 id="thongtincanhan_title">Thanh toán </h2>
+                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
+                        </div>
+
+
+                        <div class="ATM_icons_list">
+                            <div class="ATM_icons_row">
+                                <div id="visa_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/icons8-visa-26.png" alt="">
+                                </div>
+
+                                <div id="mastercard_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Mastercard-logo.svg 5.png" alt="">
+                                </div>
+
+                                <div id="napas_log" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Logo-Napas 1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ATM_icons_row">
+                                <div id="momo_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/MoMo Logo 1.png" alt="">
+                                </div>
+
+                                <div id="zalo_pay_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/05-zalopay-300x300 1.png" alt="">
+                                </div>
+
+                                <div id="tienmat_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/pngtree-green-dollar-money-cartoon-png-image_13295191 1.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thanhtoantienmat_notice">
+                            <p>Bạn sẽ thanh toán khi nhận hàng</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger" id="tieptuc_btn_tienmat"
+                        onclick="dHide('#formTienMat');dAppear('#formXacNhanThongTin')">Tiếp tục</button>
+                </div>
+            </div>
+
+            <div class="fullform d-hide" id="formXacNhanThongTin">
+                <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+                    </svg>
+                </div>
+                <div class="form_thongtin">
+                    <div id="form_thongtin_content">
+
+                        <div id="back_btn" onclick="gobackPersonalPage('formXacNhanThongTin')">
+                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p style="color: white;">Trở lại trang trước</p>
+                        </div>
+
+                        <div id="form_title">
+                            <h2 id="thongtincanhan_title">Xác nhận thông tin</h2>
+                        </div>
+
+                        <div class="thongtin_output">
+                            <table class="table table-hover" id="output_table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="">Họ và tên:</label>
+                                        </td>
+                                        <td>
+                                            <p>Lê Văn A</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Số điện thoại:</label>
+                                        </td>
+                                        <td>
+                                            <p>0912335599</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Số nhà / tòa nhà:</label>
+                                        </td>
+                                        <td>
+                                            <p>Số 12 đường Huỳnh Tấn Phát</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Phường / xã:</label>
+                                        </td>
+                                        <td>
+                                            <p>Phường Phú Thuận</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Quận / huyện:</label>
+                                        </td>
+                                        <td>
+                                            <p>Quận 7</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Hình thức thanh toán:</label>
+                                        </td>
+                                        <td>
+                                            <p>Thẻ napas</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Số tài khoản:</label>
+                                        </td>
+                                        <td>
+                                            <p>09565847895</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Họ và tên thẻ:</label>
+                                        </td>
+                                        <td>
+                                            <p>LE VAN A</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Chi nhánh:</label>
+                                        </td>
+                                        <td>
+                                            <p>Quận 7</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger" id="xacnhan_btn">Xác nhận</button>
+                </div>
+            </div>
+
+            <div class="fullform d-hide" id="formVisa">
+                <div class="page_transit">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
+                    </svg>
+                </div>
+
+                <div class="form_thongtin">
+                    <div id="form_thongtin_content">
+
+                        <div id="back_btn" onclick="gobackPersonalPage('formVisa')">
+                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p style="color: white;">Trở lại trang trước</p>
+                        </div>
+
+                        <div id="form_title">
+                            <h2 id="thongtincanhan_title">Thanh toán </h2>
+                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
+                        </div>
+
+                        <div class="ATM_icons_list">
+                            <div class="ATM_icons_row">
+                                <div id="visa_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/icons8-visa-26.png" alt="">
+                                </div>
+
+                                <div id="mastercard_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Mastercard-logo.svg 5.png" alt="">
+                                </div>
+
+                                <div id="napas_log" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/Logo-Napas 1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ATM_icons_row">
+                                <div id="momo_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/MoMo Logo 1.png" alt="">
+                                </div>
+
+                                <div id="zalo_pay_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/05-zalopay-300x300 1.png" alt="">
+                                </div>
+
+                                <div id="tienmat_logo" class="bank_logo" onclick="checkHideAppear(this)">
+                                    <img src="../../assets/images/banking_logo/pngtree-green-dollar-money-cartoon-png-image_13295191 1.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <form action="" id="form_input">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Số thẻ">
+                            </div>
+                            <div class="form-group" id="nhh">
+
+                                <div class="left_nhh">
+                                    <label for="" style="color: rgb(176, 43, 25);">Ngày hết hạn</label>
+                                    <div id="nhh_input">
+                                        <input type="text" id="month_input" required>
+                                        <label for="">/</label>
+                                        <input type="text" id="year_input" required>
+                                    </div>
+                                </div>
+
+                                <div class="right_nhh">
+                                    <label for="" style="color: rgb(176, 43, 25);">CVV</label>
+                                    <div id="nhh_input">
+                                        <input type="text" id="CVV_input" required>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger" id="tieptuc_btn_visa"
+                    onclick="dHide('#formVisa');dAppear('#formXacNhanThongTin')">Tiếp tục</button>
+            </div>
         </div>
-        <script>
-            // function toggleHideFormCaNhan() {
-            //     const formThongTin = document.getElementById("formThongTinCaNhan");
-            //     formThongTin.classList.toggle("d-hide");
-            // }
+    </div>
 
-            // function toggleHideTienMat() {
-            //     const formThongTin = document.getElementById("formTienMat");
-            //     formThongTin.classList.toggle("d-hide");
-            // }
 
-            // function toggleHideVisa() {
-            //     const formThongTin = document.getElementById("formVisa");
-            //     formThongTin.classList.toggle("d-hide");
-            // }
-            // function toggleAppearFormCaNhan() {
-            //     const formThongTin = document.getElementById("formThongTinCaNhan");
-            //     toggleHideTienMat();
-            //     formThongTin.classList.remove("d-hide");
-            // }
 
-            // function toggleAppearTienMat() {
-            //     const formThongTin = document.getElementById("formTienMat");
-            //     formThongTin.classList.toggle.remove("d-hide");
-            // }
-        </script>
-        <script src="../../assets/styles/js/background.js"></script>
+    <script>
+        function dHide(selectorOrElement) {
+            let element;
+
+            if (typeof selectorOrElement === "string") {
+                element = document.querySelector(selectorOrElement);
+            } else {
+                element = selectorOrElement;
+            }
+
+            if (!element) {
+                console.error("Không tìm thấy phần tử:", selectorOrElement);
+                return;
+            }
+
+            element.classList.add("d-hide"); // Thêm class để ẩn phần tử
+        }
+
+        function dAppear(selectorOrElement) {
+            let element;
+
+            // Kiểm tra nếu tham số là chuỗi, thì tìm phần tử
+            if (typeof selectorOrElement === "string") {
+                element = document.querySelector(selectorOrElement);
+            } else {
+                element = selectorOrElement;
+            }
+
+            if (!element) {
+                console.error("Không tìm thấy phần tử:", selectorOrElement);
+                return;
+            }
+
+            console.log("Hiển thị phần tử:", element);
+            element.classList.remove("d-hide"); // Bỏ class ẩn để hiển thị phần tử
+        }
+
+
+        function gobackPersonalPage(selector) {
+            const element = document.getElementById(selector);
+            dHide(element);
+            dAppear("#formThongTinCaNhan");
+        }
+
+
+        function checkHideAppear(element) {
+            console.log("Element clicked:", element.id); // Kiểm tra ID của phần tử được click
+
+            if (!element.id) {
+                console.error("Phần tử không có ID!");
+                return;
+            }
+
+            // Ẩn tất cả các form thanh toán trước khi hiện form mới
+            dHide("#formNapas");
+            dHide("#formMasterCard");
+            dHide("#formTienMat");
+            dHide("#formVisa");
+
+            // Lấy form tương ứng dựa trên ID của phần tử được click
+            let formId = "";
+            switch (element.id) {
+                case "visa_logo":
+                    formId = "#formVisa";
+                    break;
+                case "mastercard_logo":
+                    formId = "#formMasterCard";
+                    break;
+                // case "momo_logo":
+                //     formId = "#formMomo";
+                //     break;
+                // case "zalo_pay_logo":
+                //     formId = "#formZaloPay";
+                //     break;
+                case "tienmat_logo":
+                    formId = "#formTienMat";
+                    break;
+                case "napas_log":
+                    formId = "#formNapas";
+                    break;
+                default:
+                    console.error("Không tìm thấy form phù hợp!");
+                    return;
+            }
+
+            console.log("Hiển thị form:", formId);
+            dAppear(formId);
+        }
+
+
+    </script>
+    <script src="../../assets/styles/js/background.js"></script>
 </body>
 
 </html>

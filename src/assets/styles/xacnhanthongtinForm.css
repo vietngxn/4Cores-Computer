@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Display";
+}
+
+
+
+/* form title */
+#form_title {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#thongtincanhan_title {
+    color: white;
+    margin-top: 20px;
+    color: rgb(176, 43, 25);
+    font-size: 22px;
+}
+
+#back_btn {
+    display: flex;
+    margin-top: 30px;
+}
+
+#back_icon {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.back_btn_container {
+    text-decoration: none;
+}
+
+
+/* xac nhan btn */
+#xacnhan_btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 155px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    font-weight: bold;
+}
+
+
+/* form output */
+.thongtin_output #output_table{
+    color: rgb(176, 43, 25);
+    font-size: 20px;
+}
+
+.thongtin_output #output_table tbody tr:hover{
+    color: rgb(176, 43, 25);
+    background-color: white;
+}

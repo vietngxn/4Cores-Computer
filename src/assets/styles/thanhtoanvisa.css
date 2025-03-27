@@ -5,45 +5,6 @@
     font-family: "SF Pro Display";
 }
 
-/* trasition bar */
-.page_transit {
-    background-color: rgb(35, 32, 27);
-    width: 260px;
-    height: 40px;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    transform: rotate(90deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 0;
-    position: absolute;
-    margin-top: 185px;
-    margin-left: -40px;
-}
-
-/* layout form */
-.fullform {
-    display: flex;
-    width: 500px;
-    height: 750px;
-
-}
-
-.form_thongtin {
-    width: 450px;
-    margin-left: 100px;
-    background-color: rgb(35, 32, 27);
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
-}
-
-#form_thongtin_content {
-    margin-left: 40px;
-}
 
 /* form title */
 #form_title {
@@ -97,15 +58,14 @@
 
 
 /* tieptuc btn */
-#tieptuc_btn {
+#tieptuc_btn_visa {
     width: 100%;
     height: 50px;
-    margin-top: 220px;
+    margin-top: 165px;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
     font-weight: bold;
 }
-
 
 /* form input */
 #form_input .form-group {
@@ -158,7 +118,7 @@
     font-size: 15px;
 }
 
-#CVV_input{
+#CVV_input {
     width: 40px;
     border: none;
     border-bottom: 1px solid rgb(176, 43, 25);
@@ -166,3 +126,4 @@
     background-color: rgb(35, 32, 27);
     font-size: 15px;
 }
+
