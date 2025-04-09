@@ -26,6 +26,7 @@
 body {
     overflow-x: hidden;
     width: 100%;
+    background-color: #23201B;
 }
 
 .justify-content {
@@ -64,7 +65,7 @@ body {
 }
 
 .img-PC {
-    width: 645.6px;
+    width: 600px;
 }
 
 .product-content .row {
@@ -75,12 +76,14 @@ body {
     font-weight: 500;
     font-family: 'kanitm';
     font-size: 28px;
+    color: #FFFFFF;
 }
 
 .row-rating {
     text-align: center;
     /* padding-bottom: 100px; */
     height: 60px;
+    color: #FFFFFF;
 }
 
 .row-price {
@@ -210,8 +213,10 @@ body {
     background: rgba(255, 158, 158, 0.31);
     padding: 0px 5px;
     font-family: 'kanitl';
-    color: #B02B19;
+    color: #FFFFFF;
     margin-top: 2px;
+    background: rgba(255, 255, 255, 0.31);
+    border: 1px solid #FFFFFF;
 }
 
 .col-product-right-text {
@@ -297,15 +302,25 @@ body {
     position: relative;
 }
 
+/* .full-form-img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url('../images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/pc_gvn_-_4060__case_corsair_-_black__-_4_b6d46faa21874bf5ad796232c40d05f8_grande.webp');
+    background-size: cover;
+    left: 32%;
+} */
+
 .full-form-img {
     position: absolute;
     width: 70%;
     height: 70%;
-    background-image: url('../images/products/PC10  PC GVN Intel i5-12400F VGA RTX 4060/pc_gvn_viper_i3060_gen_13_-_1_339a46ba9fa1464886dc8ba8af495d1f_grande.webp');
+    background-image: url('../images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/pc_gvn_-_4060__case_corsair_-_black__-_4_b6d46faa21874bf5ad796232c40d05f8_grande.webp');
     background-size: cover;
     /* background-position: center; */
     left: 32%;
 }
+
 
 .full-left {
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
@@ -343,9 +358,9 @@ body {
 
 .scroll-reveal p {
     display: inline;
-    color: rgba(51, 51, 51, 0.2);
+    color: rgba(255, 255, 255, 0.2);
     background-clip: text;
-    background-image: linear-gradient(90deg, black, black);
+    background-image: linear-gradient(90deg, #FFFFFF, #FFFFFF);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     animation: scroll-reveal linear forwards;
