@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/slidebar.css">
+</head>
+<body>
+    <div class="slide-bar" id="slide-bar">
+        <div class="slide-bar-header">
+            <div class="slide-bar-header-img">
+            <img src="../assets/images/logo/logo noname.png" class="img1" alt="">
+            
+            <img  class = "img2" src="../assets/images/logo/logo.png" alt="">
+        </div>
+            <button type="button" onclick="sad()">
+                <img src="../assets/images/icon/chevron-right.svg" alt="">
+            </button>
+        </div>
+        <div class="slide-bar-body">
+            <ul class = "ul1">
+                <li><a href="">
+                    <span><img src="../assets/images/icon/view-grid-add.svg" alt=""></span>
+                    <span class = "hidden-text title">Trang Chủ</span>
+                </a ></li>
+                <li><a href="">
+                    <span><img src="../assets/images/icon/inbox.svg" alt=""></span>
+                    <span class = "hidden-text title">Danh Mục Sản Phẩm</span>
+                </a></li>
+                <li><a href="">
+                    <span><img src="../assets/images/icon/eye.svg" alt=""></span>
+                    <span class = "hidden-text title">Sản Phẩm Đã Xem</span>
+                </a></li>
+                <li><a href="">
+                    <span><img src="../assets/images/icon/truck.svg" alt=""></span>
+                    <span class = "hidden-text title">Quản Lí Đơn Hàng</span>
+                </a></li>
+                <li><a href="">
+                    <span><img src="../assets/images/icon/gift.svg" alt=""></span>
+                    <span class = "hidden-text title">Mã Quà Tặng</span>
+                </a></li>
+            </ul>
+            <hr>
+            <ul class = "ul2">
+                <li><a href="">
+                    <span><img src="../assets/images/icon/bell.svg" alt=""></span>
+                    <span class = "hidden-text title">Thông Báo</span>
+                </a></li>
+                <li><a href="">
+                    <span><img src="../assets/images/icon/cog.svg" alt=""></span>
+                    <span class = "hidden-text title">Cài Đặt</span>
+                </a></li>
+                <li><a href="">
+                    <span><img src="../assets/images/icon/information-circle.svg" alt=""></span>
+                    <span class = "hidden-text title">Hỗ Trợ</span>
+                </a></li>
+            </ul>            
+        </div>
+        <hr class="hr1">
+        <div class="slide-bar-footer">
+            <ul>
+                <li>    
+                    <a href="">
+                        <img src="../assets/images/icon/user-circle.svg" alt="">
+                        <div class="slide-bar-footer-content">
+                            <p class = "title1 hidden-text p1">Welcome Back👋</p>
+                            <p class ="title2 hidden-text p2">Tiến Đạt</p>
+                            <img class= "hidden-text" src="../assets/images/icon/chevron-right.svg" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    function sad() {
+    const slideBar = document.getElementById('slide-bar');
+    slideBar.classList.toggle('expanded');
+
+    const hiddenElements = document.querySelectorAll('.hidden-text');
+    hiddenElements.forEach(el => {
+        if (slideBar.classList.contains('expanded')) {
+            setTimeout(() => {
+                el.style.display = 'inline';
+                el.style.opacity = '1';
+            }, 300);
+        } else {
+            el.style.display = 'none';
+            el.style.opacity = '0';
+        }
+    });
+}
+    </script>
+</body>
+</html>

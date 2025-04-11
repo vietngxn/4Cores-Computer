@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'SF2';
+    src: url("../fonts/SF Pro Display/SF-Pro-Display/SF-Pro-Display-Semibold.otf");
+}
+.title-sf{
+    font-family: 'SF2';
+    font-size: 15px !important;
+    font-weight: 500;
+}
+.title{
+    font-family: 'Inter' !important;
+}
+
+.main-container{
+    left : 20% !important;
+    background-color: white !important;
+    border-radius: 30px !important;
+}
+#content-container{
+    width: 1150px !important;
+    background-color: white !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    border-top-right-radius: 0px !important;
+    text-align: start !important;
+    border-bottom-right-radius: 0px !important;
+}
+#content-container::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    margin-right: 10px;
+}
+#content-container::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 20px;
+    border-top-right-radius: 100px;
+    border-bottom: 30px;
+}
+#content-container::-webkit-scrollbar-thumb{
+    background-color: #B02B19;
+    transition: background-color 0.3s ease;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+.product-watched__header{
+    display : flex;
+    justify-content: start;
+}
+.product-watched__header h1{
+    margin-bottom: 30px;
+}
+
+.product-watched__desc{
+    padding-top : 20px !important;
+    display : flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap : 30px !important;
+}
+
+/* .product {
+    animation: 
+        appear linear both,  
+        shrink linear both;
+        
+    
+    animation-timeline: 
+        view(),  
+        view(); 
+    
+    
+    animation-range: 
+        entry 50px cover 50%,  
+        exit  -50px  cover 100%;  
+} */
