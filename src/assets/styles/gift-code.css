@@ -100,54 +100,94 @@
     height: 40px;
     background-color: #e1e4e7;
     border : none;
-    padding-left  : 20px;
+    padding-left: 20px;
+    border-radius: 10px;
 }
 
 .gift-code__header input::placeholder{
     font-family: 'Inter-regular';
+}
+.gift-code__header input:focus{
+    outline: none;
+    border: 1px solid #B02B19;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 .gift-code__header button{
     margin-left: 10px;
     width: 80px;
     height: 40px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #B02B19;
     background-color: #B02B19;
     color : white;
     font-family: 'Inter-medium';
     cursor: pointer;
-}
-.gift-code__desc svg path:hover{
-    cursor: pointer;
-}
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes shrink {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(0.5);
-    }
-} 
-.gift-code__desc-voucher1{
-    animation : appear 0.8s ease-out,shrink 0.8s ease-in ;
-    animation-timeline: view(),view();
-    animation-range: entry 0,exit 0px cover 100%;
-}
-.gift-code__desc-voucher1{
     transition: all 0.3s ease-in-out;
 }
-.gift-code__desc-voucher1:hover{
-    transform: translateY(-5px);
-    cursor: pointer;
+.gift-code__header button:hover{
+    background-color: #ffffff;
+    border: #B02B19 1px solid;
+    color: #B02B19;
+}
+ 
 
+.gift-code-item{
+    position: relative;
+}
+.gift-code-info{
+    position: absolute;
+    top: 0.7rem;
+    left: 5.5rem;
+    text-align: left;
+}
+.gift-code-title{
+    font-family: 'Inter-semibold';
+    font-size: 17px;
+    color: #B02B19;;
+}
+.gift-code-subtitle{
+    font-family: 'Inter-regular';
+    font-size: 11px;
+    margin-top: 8px;
+}
+.gift-code-requirement{
+    font-family: 'Inter-regular';
+    font-size: 10px;
+    color: #B02B19;
+    text-decoration: underline;
+    margin-top: 8px;
+}
+.gift-code-time svg{
+    position: absolute;
+    top: 1.5px;
+    left: 0px;
+}
+.gift-code-time{
+    font-family: 'Inter-regular';
+    font-size: 10px;
+    color: #7E8287;
+    margin-top: 8px;
+    position: relative;
+    padding-left: 13px;
+}
+.gift-code-use-btn{
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+}
+.gift-code-use-btn button{
+    width: 45px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #B02B19;
+    color : #B02B19;
+    font-family: 'Inter-medium';
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 11px;
+}
+.gift-code-use-btn button:hover{
+    background-color: #B02B19;
+    color: white;
 }

@@ -6,9 +6,9 @@
     font-family:'Inter2' ;
     src: url(../../assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf);
 }
-.title-labe{
+.title-label{
     font-family: 'Inter1';
-    font-weight: 500;   
+    font-weight: 100;   
     font-size : 13px;
 }
 .title3{
@@ -190,6 +190,12 @@
     border : none;
     cursor:pointer;
     font-family: 'Inter1';
+    transition: all 0.1s ease-in-out;
+}
+.information__footer button:hover{
+    background-color: #ffffff;
+    border: #B02B19 1px solid;
+    color: #B02B19;
 }
 .information__body__sex td:not(:first-child):hover {
     color: #B02B19;

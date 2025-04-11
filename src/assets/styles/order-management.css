@@ -16,6 +16,7 @@
 .title3{
     font-family: 'Inter1';
     font-size : 200;
+
 }
 .title4{
     font-family: 'Inter2';
@@ -66,16 +67,20 @@
 }
 .order__body__header{
     position: relative;
+    padding-bottom: 10px;
 }
 .order__body__header input{
     width: 700px;
     height: 45px;
     margin-top : 30px;
     background-color: #e1e4e7;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: none;
     border : none;
 }
-.order__body__header input::placeholder{
-    padding-left : 30px;
+.order__body__header input:focus{
+    outline: none;
 }
 .order__body__header svg{
     position: absolute;
@@ -201,14 +206,13 @@
 }
 .active{
     border-bottom: 3px solid #B02B19 !important;
+    color: #B02B19;
+}
+.active a{
+    color: #B02B19!important;
 }
 .nav-tabs .nav-link {
     border: none !important;
-}
-transparent style {
-    border-bottom-color:3px solid #B02B19;
-    background-color: #E4B5AF;
-    color: #B02B19;
 }
 .nav-tabs li:last-child{
     width: 150px !important;
@@ -219,57 +223,30 @@ transparent style {
 .product1__center p:first-child{
     font-size : 12.5px !important;
 }
-.order__body__desc::-webkit-scrollbar{
-    width: 8px;
-    border-radius: 30px;
-    
+#content-container::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    margin-right: 10px;
 }
-.order__body__desc::-webkit-scrollbar-track{
-    background-color: orange;
-    border-radius: 30px;
-    margin-bottom: 140px;
+#content-container::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 20px;
+    border-top-right-radius: 100px;
+    border-bottom: 30px;
 }
-.order__body__desc::-webkit-scrollbar-thumb{
-    border-radius: 30px;
-}
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes shrink {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(0.5);
-    }
-} 
-.order__body__desc__product1{
-    animation : appear 0.8s ease-out,shrink 0.8s ease-in ;
-    animation-timeline : view(),view();
-    animation-range : entry 0 cover 20%,exit 0px cover 100%;
+#content-container::-webkit-scrollbar-thumb{
+    background-color: #B02B19!important;
+    transition: background-color 0.3s ease;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
 }
 .order__body__desc__product1{
     transition: all 0.3s ease-in-out;
 }
-.order__body__desc__product1:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
-}
 .order__body__desc{
     display : relative;
-}
-#scrollImg{
-    padding-top : 110px;
-    position: absolute;
-    right : 38px;
-    top : 0;
-    transition: top  ease-in-out; 
-    width: 60px;
 }

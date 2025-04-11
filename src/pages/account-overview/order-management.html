@@ -234,45 +234,16 @@
 
             </div>
         </div>
-        <img id="scrollImg" src="https://img.icons8.com/scribby/50/star.png" alt="scroll icon">
-        <p class></p>
     </div>
         </div>
     </div>
     <script>
       document.querySelectorAll(".nav-item").forEach(item => {
         item.addEventListener("click", function () {
-            // Xóa class active khỏi tất cả các tab
             document.querySelectorAll(".nav-item").forEach(el => el.classList.remove("active"));
-            
-            // Thêm class active vào tab được chọn
             this.classList.add("active");
         });
     });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const scrollBox = document.querySelector('.order__body__desc');
-    const scrollImg = document.getElementById('scrollImg');
-
-    if (scrollBox && scrollImg) {
-        const trackHeight = scrollBox.clientHeight; // Chiều cao hiển thị của div
-        const contentHeight = scrollBox.scrollHeight; // Chiều cao thực tế (gồm cả phần bị ẩn)
-
-        const maxScroll = contentHeight - trackHeight; // Phần cuộn tối đa
-        const maxImgMove = trackHeight - scrollImg.clientHeight; // Khoảng di chuyển tối đa của hình ảnh
-
-        scrollBox.addEventListener('scroll', () => {
-            let scrollTop = scrollBox.scrollTop;
-
-            // Tính vị trí mới của hình ảnh theo tỷ lệ cuộn
-            let imgTop = (scrollTop / maxScroll) * maxImgMove;
-
-            // Giới hạn phạm vi để không bị trượt quá
-            scrollImg.style.top = `${Math.min(imgTop, maxImgMove)}px`;
-        });
-    }
-});
     </script>
     <script src="../../assets/styles/js/background.js"></script>
 </body>
