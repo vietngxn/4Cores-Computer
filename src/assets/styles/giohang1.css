@@ -61,11 +61,8 @@
     margin-left: 20px;
     width: 800px;
     max-height: 500px;
-    /* Giới hạn chiều cao để có thanh cuộn dọc */
     overflow-x: auto;
-    /* Thanh cuộn ngang */
     overflow-y: auto;
-    /* Thanh cuộn dọc */
 }
 
 .cong_tru_btn {
