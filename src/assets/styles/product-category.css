@@ -2,6 +2,10 @@
     font-family: "Kanit-ExtraBold";
     src: url(../fonts/Kanit/Kanit-ExtraBold.ttf);
 }
+@font-face {
+    font-family: "Kanit";
+    src: url(../fonts/Kanit/Kanit-Medium.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -54,3 +58,207 @@
     margin-top: 20px;
     justify-content: space-around;
 }
+.main-container{
+    width: 1600px;
+    margin: auto;
+    padding: 20px 0px;
+}
+.filter {
+    width: 300px;
+    padding: 20px!important;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    height: 100%;
+  }
+  
+  .filter-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-family: Kanit-ExtraBold;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: Kanit;;
+  }
+  
+  .price-range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .price-input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .price-input::placeholder {
+    color: #aaa;
+  }
+  
+  .apply-price-btn {
+    padding: 5px 10px;
+    background-color: #e3351d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    font-family: Kanit;
+  }
+  
+  .apply-price-btn:hover {
+    background-color: #b02b19;
+  }
+  
+  .rating-filter {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .star-rating {
+    display: inline-block;
+    font-size: 30px;
+    direction: ltr;
+    cursor: pointer;
+  }
+  
+  .star {
+    color: #ddd;
+    transition: color 0.2s;
+  }
+  
+  .star-rating .star.hover,
+  .star-rating .star.selected {
+    color: #f5c518;
+  }
+  
+  .rating-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  .brand-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+  .brand-filter label {
+    font-size: 14px;
+    color: #666;
+    margin: auto;
+  }
+  
+  .brand-filter input {
+    margin-right: 8px;
+  }
+  
+  .reset-btn {
+    font-family: Kanit;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  .icon-cb:checked + .brand-icon {
+    filter: grayscale(0%); 
+    opacity: 1; 
+  }
+  .icon-cb { display: none; }
+  .brand-icon:hover {
+    filter: grayscale(0%); 
+    opacity: 0.9;
+  }
+  .reset-btn:hover {
+    background-color: #e0e0e0;
+  }
+  .brand-icon{
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    filter: grayscale(100%); 
+  opacity: 0.9;
+  cursor: pointer;
+  }
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .price-range {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .price-input {
+    width: 100px; 
+    padding: 8px 12px;
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  .price-input:focus {
+    outline: none; 
+    border-color: #e3351d;
+    box-shadow: 0 0 5px rgba(227, 53, 29, 0.3); 
+  }
+  
+  .price-input::placeholder {
+    color: #aaa; 
+    font-style: italic;
+  }
+  
+  .price-input::-webkit-inner-spin-button,
+  .price-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .price-input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .price-range span {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+  }
+  .product-box{
+    height: 100% !important;
+  }
