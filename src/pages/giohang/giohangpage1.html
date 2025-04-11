@@ -10,24 +10,21 @@
     <script src="../../assets/styles/boostrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-    <link rel="stylesheet" href="../../assets/styles/giohang1.css">
     <link rel="stylesheet" href="../../assets/styles/tabForm.css">
     <link rel="stylesheet" href="../../assets/styles/sidebar.css">
-    <link rel="stylesheet" href="../../assets/styles/thanhtoantienmat_tabForm.css">
-    <link rel="stylesheet" href="../../assets/styles/thanhtoanvisa.css">
-    <link rel="stylesheet" href="../../assets/styles/thanhtoannapas.css">
     <script src="../../assets/styles/js/sidebar.js"></script>
+    <link rel="stylesheet" href="../../assets/styles/giohang1.css">
 
 </head>
 
-<body>
+<body class="">
     <div id="background">
         <div id="ball1" class="ball"></div>
         <div id="ball2" class="ball"></div>
         <div id="ball3" class="ball"></div>
         <div id="ball4" class="ball"></div>
     </div>
-    <aside>
+    <aside class="toAddBlur">
         <div id="sidebar_width">
             <div class="side-bar" id="side-bar">
                 <div class="top-sidebar">
@@ -165,10 +162,10 @@
     </aside>
 
 
-    <div class="giohang">
+    <div class="giohang" id="giohang">
         <div class="gio_hang_container">
             <div id="list_sanpham">
-                <table class="table table-hover table-borderless"> <!--FIX-->
+                <table class="table table-hover table-borderless" style= "max-height: 650px; min-height: 650px;"> <!--FIX-->
                     <thead>
                         <tr>
                             <th id="giohang_title">Giỏ hàng</th><!--FIX-->
@@ -182,7 +179,7 @@
                                 <div>
                                     <p class="ten_sanpham">PC01 PC 4CC Intel i3-12000H PC01 PC 4CC Intel
                                         i3-12000H...........</p>
-                                    <small>mã đơn hàng: #13h113h1</small> <!--FIX-->
+                                    <small class="madh">Mã đơn hàng: HE19204KL</small> <!--FIX-->
                                 </div>
                                 <p class="soluong_sanpham">1</p>
                                 <div class="cong_tru_btn">
@@ -214,518 +211,557 @@
                                 </svg>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="thongtin_sanpham">
-                                <img src="../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/pc_case_xigmatek_-_22_e4c822262b3d4946a6f427d02adebf8b_grande.webp"
-                                    alt="" class="img_sanpham">
-                                <div>
-                                    <p class="ten_sanpham">PC01 PC 4CC Intel i3-12000H PC01 PC 4CC Intel
-                                        i3-12000H...........</p>
-                                    <small>mã đơn hàng: #13h113h1</small> <!--FIX-->
-                                </div>
-                                <p class="soluong_sanpham">1</p>
-                                <div class="cong_tru_btn">
-                                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11.5" cy="11.5" r="11.5" fill="#B02B19" />
-                                        <path
-                                            d="M10.4427 15.3V12.62H7.64273V10.52H10.4427V7.78H12.5627V10.52H15.3627V12.62H12.5627V15.3H10.4427Z"
-                                            fill="white" />
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="12" fill="#B02B19" />
-                                        <path d="M8.14039 11.62V9.52H15.8604V11.62H8.14039Z" fill="white" />
-                                    </svg>
-                                </div>
-                                <p class="gia_sanpham">1.000.000đ</p>
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="30" height="30" fill="url(#pattern0_254_2227)" />
-                                    <defs>
-                                        <pattern id="pattern0_254_2227" patternContentUnits="objectBoundingBox"
-                                            width="1" height="1">
-                                            <use xlink:href="#image0_254_2227" transform="scale(0.00166667)" />
-                                        </pattern>
-                                        <image id="image0_254_2227" width="600" height="600" preserveAspectRatio="none"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="thongtin_sanpham">
-                                <img src="../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/pc_case_xigmatek_-_22_e4c822262b3d4946a6f427d02adebf8b_grande.webp"
-                                    alt="" class="img_sanpham">
-                                <div>
-                                    <p class="ten_sanpham">PC01 PC 4CC Intel i3-12000H PC01 PC 4CC Intel
-                                        i3-12000H...........</p>
-                                    <small>mã đơn hàng: #13h113h1</small> <!--FIX-->
-                                </div>
-                                <p class="soluong_sanpham">1</p>
-                                <div class="cong_tru_btn">
-                                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11.5" cy="11.5" r="11.5" fill="#B02B19" />
-                                        <path
-                                            d="M10.4427 15.3V12.62H7.64273V10.52H10.4427V7.78H12.5627V10.52H15.3627V12.62H12.5627V15.3H10.4427Z"
-                                            fill="white" />
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="12" fill="#B02B19" />
-                                        <path d="M8.14039 11.62V9.52H15.8604V11.62H8.14039Z" fill="white" />
-                                    </svg>
-                                </div>
-                                <p class="gia_sanpham">1.000.000đ</p>
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="30" height="30" fill="url(#pattern0_254_2227)" />
-                                    <defs>
-                                        <pattern id="pattern0_254_2227" patternContentUnits="objectBoundingBox"
-                                            width="1" height="1">
-                                            <use xlink:href="#image0_254_2227" transform="scale(0.00166667)" />
-                                        </pattern>
-                                        <image id="image0_254_2227" width="600" height="600" preserveAspectRatio="none"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="thongtin_sanpham">
-                                <img src="../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/pc_case_xigmatek_-_22_e4c822262b3d4946a6f427d02adebf8b_grande.webp"
-                                    alt="" class="img_sanpham">
-                                <div>
-                                    <p class="ten_sanpham">PC01 PC 4CC Intel i3-12000H PC01 PC 4CC Intel
-                                        i3-12000H...........</p>
-                                    <small>mã đơn hàng: #13h113h1</small> <!--FIX-->
-                                </div>
-                                <p class="soluong_sanpham">1</p>
-                                <div class="cong_tru_btn">
-                                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11.5" cy="11.5" r="11.5" fill="#B02B19" />
-                                        <path
-                                            d="M10.4427 15.3V12.62H7.64273V10.52H10.4427V7.78H12.5627V10.52H15.3627V12.62H12.5627V15.3H10.4427Z"
-                                            fill="white" />
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="12" fill="#B02B19" />
-                                        <path d="M8.14039 11.62V9.52H15.8604V11.62H8.14039Z" fill="white" />
-                                    </svg>
-                                </div>
-                                <p class="gia_sanpham">1.000.000đ</p>
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="30" height="30" fill="url(#pattern0_254_2227)" />
-                                    <defs>
-                                        <pattern id="pattern0_254_2227" patternContentUnits="objectBoundingBox"
-                                            width="1" height="1">
-                                            <use xlink:href="#image0_254_2227" transform="scale(0.00166667)" />
-                                        </pattern>
-                                        <image id="image0_254_2227" width="600" height="600" preserveAspectRatio="none"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAUmklEQVR4nO3YMY5j1xFAUUYGtUZpHw7t0PtxIGh1YwwwCg3Jhpr/VtU5QOfk/+9V3ebrBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHzIz6/X6+1pA/Ah7x+7B9b65+v1+vZ6vX57vV4/Pf1hAFjvb6/X698/ds+/nv4w8JVx9fufyALgU3H1+5/IYnVciSwAPh1XIosTcSWyAPh0XIksTsSVyALg03ElsjgRVyILgE/HlcjiRFyJLAA+HVciixNxJbIA+HRciSxOxJXIAuDTcSWyOBFXIguAT8eVyOJEXIksAD4dVyKLE3ElsgD4dFyJLE7ElcgC4NNxJbI4EVciC4BPx5XI4kRciSyA256IK5HFibgSWQA3PRlXIouP+OXhA/7736+v1+vtnQOs9/4x878F/r7vQFj7X4RfsgBuqO0c/9hz6sD/5H0DrFPbNeKKkwdfZAHsUdsx4orTF0BkAcxX2y3iikfULoLIApirtlPEFY+qXQiRBTBPbZeIKxJqF0NkAcxR2yHiipTaBRFZAH213SGuSKpdFJEF0FXbGeKKtNqFEVkAPbVdIa4YoXZxRBZAR21HiCtGqV0gkQXwvNpuEFeMVLtIIgvAThBXrCCyAKjtAr9csULtYvklC+DuDhBXrFK7YCIL4N7sF1esVLtoIgvgzswXV6xWu3AiC2D/rBdXnFC7eCILYO+MF1ecUruAIgtg32wXV5xUu4giC2DPTBdXnFa7kCILYP4sF1cQvJgiC2DuDBdXEL6gIgtg3uwWVzDgooosgDkzW1zBoAsrsgD6s1pcwcCLK7IAujNaXMHgCyyyAHqzWVzBgosssoDLajNZXMGiCy2ygItqs1hcwcKLLbKAS2ozWFzB4gsusoALarNXXMGBiy6ygM1qM1dcwaELL7KAjWqzVlzBwYsvsoBNajNWXMHhASCygA1qs1VcwQNqg0BkAZPVZqq4ggfVBoLIAiaqzVJxBQG1wSCygElqM1RcQUhtQIgsYILa7BRXEFQbFCILKKvNTHEFYbWBIbKAotqsFFcwQG1wiCygpDYjxRUMUhsgIgsoqM1GcQUD1QaJyALMRHEFK4gsgN4s9MsVLFAbLH7JAi7PQHEFi9QGjMgCLs4+cQUL1QaNyAIuzTxxBYvVBo7IAi7MOnEFB9QGj8gCNs84cQWH1AaQyAI2zjZxBQfVBpHIAjbNNHEFh9UGksgCNswycQXkBpPIAibPMHEFZAeUyAImzi5xBeQHlcgCJs0scQWMGVgiC5gwq8QVMG5wiSygPKPEFTB2gIksoDibxBUwfpCJLLitNpPEFbBmoIksuKk2i8QVsG6wiSy4pTaDxBWwdsCJLLihNnvEFbB+0Iks2K02c8QVcGbgiSzYqTZrxBVwbvCJLNilNmPEFXB2AIos2KE2W8QV8Lo+CEUWzFabKeIKeExtIIosmKk2S8QV8LjaYBRZMEtthogrIKM2IEUWzFCbHeIKyKkNSpEFbbWZIa6ArNrAFFnQVJsV4grIqw1OkQUttRkhroAxagNUZEFDbTaIK2Cc2iAVWWAmiCtgBZEFFGeBX66A8WqD1S9ZcHsGiCtgjdqAFVlw8+6LK2Cd2qAVWXDrzosrYK3awBVZcOOuiytgvdrgFVmw+46LK+CM2gAWWbDzbosr4JzaIBZZsOtOiyvgrNpAFlmw4y6LK+C82mAWWTD7DosrgOiAFlkw8+6KK4D4oBZZMOvOiiuAIQNbZMGMuyquAIYNbpEF7TsqrgCGDnCRBc27Ka4Ahg9ykcV1tTsprgCWDHSRxVW1uyiuAJYNdpHFNbU7KK4Alg54kcUVtbsnrgCWD3qRxXa1OyeuAI4MfJHFVrW7Jq4Ajg1+kcU2tTsmrgCOLgCRxRa1uyWuAI4vApHFdLU7Ja4AHlJbCCKLqWp3SVwBPKy2GEQW09TukLgCiKgtCJHFFLW7I64AYmqLQmRRV7sz4gogqrYwRBZVtbsirgDiaotDZFFTuyPiCmCI2gIRWVTU7oa4AhimtkhEFk+r3QlxBTBUbaGILNwFcQWwgsjiutod8MsVwBK1BeOXLK6efXEFsExt0Ygsrp15cQWwVG3hiCyunHVxBbBcbfGILLafcXEFcERtAYkstp5tcQVwTG0RiSy2nWlxBXBUbSGJLLacZXEFcFxtMYkspp9hcQVAckGJLKaeXXEFQHpRiSymnVlxBcCIhSWymHJWxRUAoxaXyKJ+RsUVACMXmMiiejbFFQCjF5nIonYmxRUAKxaayLqrdhbFFQCrFpvIuqd2BsUVACsXnMi6o3b2xBUAqxedyNqvdubEFQAnFp7I2qt21sQVAKcWn8jap3bGxBUAJxegyNqjdrbEFQCnF6HImq92psQVAI+oLUSRNVftLIkrAB5VW4wia57aGRJXACTUFqTImqN2dsQVACm1RSmy+mpnRlwBkFRbmCKrq3ZWxBUAabXFKbJ6amdEXAEwQm2BiqyO2tkQVwCMUlukIut5tTMhrgAYqbZQRZazIK4AWEFkUTsDfrkCYIXagvVL1t13L64AWKW2aEXWvXcurgBYqbZwRdaddy2uAFittnhF1v53LK4AOKG2gEXW3ncrrgA4pbaIRda+dyquADiptpBF1p53Ka4AOK22mEXW/HcorgAguKBF1tx3J64AILyoRdYfq70zcQUAAxa2yJrzrsQVAAxa3CKr/47EFQAMXOAiq/tuxBUADF7kIqv3TsQVACxY6Jcjq/YuxBUALFrsFyOr9g7EFQAsXPCXIqv27MUVACxe9Bciq/bMxRUAHFj4myOr9qzFFQAcWvwbI6v2jMUVABwMgE2RVXu24goADofAhsiqPVNxBQAPqAXB5MiqPUtxBQAPqoXBxMiqPUNxBQABtUCYFFm1ZyeuACCkFgoTIqv2zMQVAATVgqEcWbVnJa4AIKwWDsXIqj0jcQUAA9QCohRZtWcjrgBgkFpIFCKr9kzEFQAMVAuKJyOr9izEFQAMVguLJyKr9gzEFQAscDmyat9dXAHAIhcjq/adxRUALHQpsmrfVVwBwGIXIqv2HcUVABywObJq301cAcAhGyOr9p3EFQActCmyat9FXAHAYRsiq/YdxBUAMDqyap9dXAEAoyOr9pnFFQAwOrJqn1VcAQCjI6v2GcUVAPCHypFV+2ziCgD404qRVftM4goA+J99D4hfAzHz7cfnKH0WcQUA/N9KvxoV/vxyBQD8JUSWuAIAvsD1yPLLFQDwJa5GlrgCAL7UtcgSVwDAR1yJLHEFAHzU9sgSVwDAI7ZGlrgCAB61LbLEFQCQsCWyxBUAkDI9ssQVAJA0NbLEFQCQNi2yxBUAMMKUyBJXAMAo9cgSVwDASNXIElcAwGi1yBJXAMB4xcD66emHAgCwJa5EFgAwWjWuRBYAMFI9rkQWADDKlLgSWQDACNPiSmQBAGlT40pkAQBJ0+NKZAEAKVviSmQBAAnb4kpkAQCP2hpXIgsAeMT2uBJZAMBHXYkrkQUAfMS1uBJZAMCXuhpXIgsA+BLX40pkAQB/KXElsgCAv9D79Xr9Gvjl6NuPz1H6LN+fDQDA2F+ufvsRNLXP9JMzBQD8WbWQeYc/m8gCAP5QLWDeAz6jyAIA/qtauLwHfVaRBQDkg+U98DOLLAAgGyrvwZ9dZAEAuUB5L/gOIgsADquFyXvRdxFZAHBQLUjeC7+TyAKAQ2oh8l783UQWABxQC5D3ge8osgBgsVp4vA99V5EFAAvVguN98DuLLABY5GJcVb+7yAKABS7HVfUZiCwAGKwWFk/EVfVZiCwAGKgWFE/GVfWZiCwAGKQWEoW4qj4bkQUAA9QCohRX1WcksgAgrBYOxbiqPiuRBQBBtWAox1X1mYksAAiphcKEuKo+O5EFAAG1QJgUV9VnKLIA4EG1MJgYV9VnKbIA4AG1IJgcV9VnKrIA4HAIbIir6rMVWQBwMAA2xVX1GYssADi0+DfGVfVZiywAOLDwN8dV9ZmLLABYvOgvxFX12YssAFi44C/FVfUdiCwAWLTYL8ZV9V2ILABYsNAvx1X1nYgsABi8yMVV992ILAAYuMDFVf8diSwAGLS4xdWcdyWyAGDAwhZX896ZyAKA8KIWV3PfncgCgOCCFlfz36HIAuC02mIWV3vepcgC4KTaQhZX+96pyALglNoiFld7363IAuCE2gIWV/vfscgCYLXa4hVXd961yAJgpdrCFVf33rnIAmCV2qIVV3ffvcgCYIXaghVXzoDIAmA0cUX1LIgsAEaqLVS/XD2vdiZEFgCj1BapuOqonQ2RBcAItQUqrnpqZ0RkAZBWW5ziqqt2VkQWAEm1hSmu+mpnRmQBkFJblOJqjtrZEVkAJNQWpLiap3aGRBYAj6otRnE1V+0siSwAHlFbiOJqvtqZElkAnF6E4mqP2tkSWQCcXIDiap/aGRNZAJxafOJqr9pZE1kAnFh44mq/2pkTWQCsXnTi6o7a2RNZAKxccOLqntoZFFkArFps4uqu2lkUWQCsWGjiitqZFFkAjF5k4orq2RRZAIxcYOKK+hkVWQCMWlziiilnVWQBMGJhiSumnVmRBUB6UYkrpp5dkQVAckGJK6afYZEFcFxtMYkrtpxlkQVwVG0hiSu2nWmRBXBMbRGJK7aebZEFcERtAYkrtp9xkQWwXG3xiCuunHWRBbBUbeGIK66deZEFsExt0Ygrrp59kQWwRG3BiCuu3wGRBTBcbbGIK9wFkQUwmriC9p3wSxbAMLVF4pcrKmp3Q2QBDFFbIOKKmtodEVkAcbXFIa6oqt0VkQUQVVsY4oq62p0RWQAxtUUhrpiidndEFkBEbUGIK6ap3SGRBfCw2mIQV0xVu0siC+AhtYUgrpiudqdEFsDxRSCu2KJ2t0QWwNEFIK7YpnbHRBbAscEvrtiqdtdEFsCRgS+u2K5250QWwPJBL664onb3RBbA0gEvrrimdgdFFsCywS6uuKp2F0UWwJKBLq64rnYnRRbA8EEurqB5N0UWwNABLq6gfUdFFsCwwS2uYMZdFVkAQwa2uIJZd1ZkAcQHtbiCmXdXZAFEB7S4gtl3WGQB59UGs7iCHXdZZAFn1QayuIJdd1pkAefUBrG4gp13W2QBZ9QGsLiC3XdcZAHr1QavuIIbd11kAWvVBq64glt3XmQB69QGrbiCm3dfZAFr1AasuILbM0BkAePVBqu4ArNAZAGjiSugPBP8kgWMUxukfrmChtpsEFnAGLUBKq6gpTYjRBaQVxuc4gqaarNCZAFZtYEprqCtNjNEFpBTG5TiCmaozQ6RBWTUBqS4gllqM0RkAY+rDUZxBTPVZonIAh5TG4jiCmarzRSRBbyuD0JxBTvUZovIAs4OQHEFu9RmjMgCzg0+cQU71WaNyALODDxxBbvVZo7IAtYPOnEFN9Rmj8gC1g44cQW31GaQyALWDTZxBTfVZpHIAtYMNHEFt9VmksgCxg8ycQUUZ5PIAsYOMHEFlGeUyALGDS5xBUyYVSILGDOwxBUwaWaJLCA/qMQVMHF2iSwgO6DEFTB5hoksIDeYxBWwYZaJLDisNpDEFbBppoksOKg2iMQVsHG2iSw4pDaAxBWwecaJLDigNnjEFXBh1oksWKw2cMQVcGnmiSxYqDZoxBVwcfaJLFikNmDEFXB5BoosWKA2WMQVYBaKLBhNXAF0Z6JfsmCg2iDxyxVQUJuNIgsGqQ0QcQWU1GakyIIBaoNDXAFFtVkpsiCsNjDEFVBWm5kiC4Jqg0JcARPUZqfIgpDagBBXwCS1GSqyIKA2GMQVMFFtlooseFBtIIgrYLLaTBVZ8IDaIBBXwAa12Sqy4PAAEFfAJrUZK7Lg4MUXV8BGtVkrsuDQhRdXwGa1mSuy4MBFF1fABbXZK7Jg8QUXV8AltRkssmDhxRZXwEW1WSyyYNGFFlfAZbWZLLJgwUUWVwC92SyyYPAFFlcA3RktsmDgxRVXAP1ZLbJg0IUVVwBzZrbIggEXVVwBzJvdIgvCF1RcAcyd4SILghdTXAHMn+Uii9NqF1JcAeyZ6SKLk2oXUVwB7JvtIotTahdQXAHsnfEiixNqF09cAeyf9SKL1WoXTlwB3Jn5IouVahdNXAHcm/0ii1VqF0xcAdzdASKLFWoXS1wB2AUii9HEFQDVnSCyGKl2kfxyBfC82m4QWYxSu0DiCqCjtiNEFiPULo64Auip7QqRRVrtwogrgK7azhBZJNUuirgC6KvtDpFFSu2CiCuAOWo7RGSRULsY4gpgntouEVk8qnYhxBXAXLWdIrJ4RO0iiCuA+Wq7RWRx+gKIK4A9ajtGZHHy4IsrgH1qu0ZkcerAiyuAvWo7R2TxZX4JHPLvf7+KK4AT3j9m/rfA3/cdCF/m74H/IvxyBXBH4Zesfzz9ELjhqcgSVwA3PRlZ4orVkSWuAG57IrLEFasjS1wB8OnIElesjixxBcCnI0tcsTqyxBUAn44sccXqyBJXAHw6ssQVqyNLXAHw6cgSV6yOLHEFwKcjS1yxOrLEFQCfjixxxerIElcAfDqyxBWrI0tcAfDpyBJXrI4scQXApyNLXLE6ssQVAJ+OLHHF6sgSVwB8OrLEFasjS1wB8OnIEles9vPr9Xo//SEAOOP9Y/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAry/3HxkJpIdzxbFdAAAAAElFTkSuQmCC" />
-                                    </defs>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="thongtin_sanpham">
-                                <img src="../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/pc_case_xigmatek_-_22_e4c822262b3d4946a6f427d02adebf8b_grande.webp"
-                                    alt="" class="img_sanpham">
-                                <div>
-                                    <p class="ten_sanpham">PC01 PC 4CC Intel i3-12000H PC01 PC 4CC Intel
-                                        i3-12000H...........</p>
-                                    <small>mã đơn hàng: #13h113h1</small> <!--FIX-->
-                                </div>
-                                <p class="soluong_sanpham">1</p>
-                                <div class="cong_tru_btn">
-                                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11.5" cy="11.5" r="11.5" fill="#B02B19" />
-                                        <path
-                                            d="M10.4427 15.3V12.62H7.64273V10.52H10.4427V7.78H12.5627V10.52H15.3627V12.62H12.5627V15.3H10.4427Z"
-                                            fill="white" />
-                                    </svg>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="12" fill="#B02B19" />
-                                        <path d="M8.14039 11.62V9.52H15.8604V11.62H8.14039Z" fill="white" />
-                                    </svg>
-                                </div>
-                                <p class="gia_sanpham">1.000.000đ</p>
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="30" height="30" fill="url(#pattern0_254_2227)" />
-                                    <defs>
-                                        <pattern id="pattern0_254_2227" patternContentUnits="objectBoundingBox"
-                                            width="1" height="1">
-                                            <use xlink:href="#image0_254_2227" transform="scale(0.00166667)" />
-                                        </pattern>
-                                        <image id="image0_254_2227" width="600" height="600" preserveAspectRatio="none"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </td>
-                        </tr>
+
+                        
+                        
                     </tbody>
                 </table>
                 <div id="tongtien">
                     <p id="tongtien_sanpham">Tổng tiền: 3.000.000đ</p>
                 </div>
             </div>
-
-
-            <div class="fullform" id="formThongTinCaNhan">
-                <div class="page_transit">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
-                    </svg>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
-
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
+            <div class="infomation-form personal-info-form">
+                <div class="partern">
+                    <img class="partern-img" src="../../assets/images/patern/Group 101.png" alt="">
                 </div>
-
-                <div class="form_thongtin ">
-                    <div id="form_thongtin_content">
-                        <h2 id="thongtincanhan_title">Thông tin cá nhân </h2>
-                        <form action="" id="form_inputThongTinCaNhan">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="Họ và tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="Số điện thoại">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="Số nhà / tòa nhà">
-                            </div>
-                            <div class="form-group">
-                                <select name="" id="" class="form-select">
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="" id="" class="form-select">
-                                    <option value="Tân Thuận">Quận 7</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="" id="" class="form-select">
-                                    <option value="Tân Thuận">TP.Hồ Chí Minh</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                    <option value="Tân Thuận">Tân Thuận</option>
-                                </select>
-                            </div>
-                            <div id="form_button">
-                                <input type="checkbox" id="xuatHoaDon_checkbox" name="agree" value="agree"
-                                    class="form-check-input">
-                                <label for="xuatHoaDon_checkbox" id="xuatHoaDon_lbl">Yêu cầu xuất hóa đơn</label>
-                            </div>
-                        </form>
+                <div class="info-form-title">
+                    <h3>Thông tin cá nhân</h3>
+                </div>
+                <div class="info-input">
+                    <input type="text" placeholder="Họ và tên" class="input-info">
+                    <input type="text" placeholder="Số điện thoại" class="input-info">
+                    <input type="text" placeholder="Số nhà / tòa nhà" class="input-info">
+                    <select name="phuongxa" id="phuongxaInput">
+                        <option value="">Phường / Xã</option>
+                        <option value="phuong1">Phường 1</option>
+                        <option value="phuong2">Phường 2</option>
+                        <option value="phuong3">Phường 3</option>
+                        <option value="phuong4">Phường 4</option>
+                        <option value="phuong5">Phường 5</option>
+                        <option value="phuong6">Phường 6</option>
+                        <option value="phuong7">Phường 7</option>
+                        <option value="phuong8">Phường 8</option>
+                        <option value="phuong9">Phường 9</option>
+                        <option value="phuong10">Phường 10</option>
+                        <option value="phuong11">Phường 11</option>
+                        <option value="phuong12">Phường 12</option>
+                        <option value="phuong13">Phường 13</option>
+                        <option value="phuong14">Phường 14</option>
+                        <option value="phuong15">Phường 15</option>
+                        <option value="phuong16">Phường 16</option>
+                        <option value="phuong17">Phường 17</option>
+                    </select>
+                    <select name="quanhuyen" id="quanhuyenInput">
+                        <option value="">Quận / Huyện</option>
+                        <option value="quan1">Quận 1</option>
+                        <option value="quan2">Quận 2</option>
+                        <option value="quan3">Quận 3</option>
+                        <option value="quan4">Quận 4</option>
+                        <option value="quan5">Quận 5</option>
+                        <option value="quan6">Quận 6</option>
+                        <option value="quan7">Quận 7</option>
+                        <option value="quan8">Quận 8</option>
+                        <option value="quan9">Quận 9</option>
+                        <option value="quan10">Quận 10</option>
+                        <option value="quan11">Quận 11</option>
+                        <option value="quan12">Quận 12</option>
+                        <option value="binhchanh">Huyện Bình Chánh</option>
+                        <option value="binhthanh">Quận Bình Thạnh</option>
+                        <option value="hocmon">Huyện Hóc Môn</option>
+                        <option value="cuchi">Huyện Củ Chi</option>
+                        <option value="govap">Quận Gò Vấp</option>
+                        <option value="phunhuan">Quận Phú Nhuận</option>
+                        <option value="thuduc">Thành phố Thủ Đức</option>
+                        <option value="nhabe">Huyện Nhà Bè</option>
+                        <option value="binhtan">Quận Bình Tân</option>
+                        <option value="tanbinh">Quận Tân Bình</option>
+                        <option value="canGio">Huyện Cần Giờ</option>
+                    </select>
+                    <select name="thanhPhoTinh" id="tpTinh">
+                        <option value="">Thành phố / Tỉnh</option>
+                        <option value="hcm">Thành phố Hồ Chí Minh</option>
+                        <option value="hn">Hà Nội</option>
+                        <option value="dn">Đà Nẵng</option>
+                        <option value="ct">Cần Thơ</option>
+                        <option value="dn">Đồng Nai</option>
+                        <option value="bd">Bình Dương</option>
+                        <option value="vt">Vũng Tàu</option>
+                        <option value="kh">Khánh Hòa</option>
+                    </select>
+                    
+                    <div class="hoa-don">
+                        <input type="checkbox" id="hoadon" name="hoadon" value="hoadon">
+                        <label for="hoadon">Yêu cầu xuất hóa đơn</label>
                     </div>
-                    <button type="button" class="btn btn-danger" id="tieptuc_btnThongTinCaNhan"
-                        onclick="toggleHideFormCaNhan()">Tiếp tục</button>
                 </div>
+                <button class="next-btn" id="personalNextBtn">Tiếp tục</button>
             </div>
 
-            <div class="fullform" id="formTienMat">
-                <div class="page_transit">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
-                    </svg>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
-        
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
+
+            <div class="infomation-form hide payment-form">
+                <div class="partern" style="top: 40px;">
+                    <img class="partern-img" src="../../assets/images/patern/Group 102.png" alt="">
                 </div>
-        
-                <div class="form_thongtin">
-                    <div id="form_thongtin_content">
-        
-                        <div id="back_btn"  onclick="toggleAppearFormCaNhan()">
-                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <div class="to-back">
+                    <p>
+                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.41667 9.29159L1.625 5.49992M1.625 5.49992L5.41667 1.70825M1.625 5.49992H11.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p style="color: white;">Trở lại trang trước</p>
-                        </div>
-        
-                        <div id="form_title">
-                            <h2 id="thongtincanhan_title">Thanh toán </h2>
-                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
-                        </div>
-        
-                        <div class="ATM_icons_list">
-                            <div class="ATM_icons_row">
-                                <div id="visa_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="mastercard_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="napas_log" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                        </div>
-                            <div class="ATM_icons_row" >
-                                <div id="momo_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="zalo_pay_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="tienmat_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-        
-                        <form action="" id="form_input">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="Số điện thoại">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Họ tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="OTP xác minh">
-                            </div>
-                            <div class="form-group">
-                                <input type="button" name="" id="" class="btn btn-danger" value="Gửi mã ngay">
-                            </div>
-                        </form>
-                    </div>
-                    <button type="button" class="btn btn-danger" id="tieptuc_btn_tienmat" onclick="toggleHideTienMat()">Tiếp tục</button>
+                        Quay lại                       
+                    </p>
                 </div>
+                <div class="info-form-title">
+                    <h3>Thanh toán</h3>
+                </div>
+                <div class="cash-selection">
+                    <p class="cash-selection-title">Vui lòng chọn hình thức thanh toán</p>
+                </div>
+                <div class="cash-selection-list row">
+                    <div class="cash-choice col-4">
+                        <input type="radio" id="visa" name="choice" value="visa" class="radio-input-cash">
+                        <label for="visa"> <img class="visa-img imgchung" src="../../assets/images/icon/Visa_Inc._logo.svg.png" alt=""></label>
+                    </div>
+                    <div class="cash-choice col-4">
+                        <input type="radio" id="mastercard" name="choice" value="mastercard" class="radio-input-cash">
+                        <label for="mastercard"> <img class="mastercard-img imgchung" src="../../assets/images/icon/Mastercard-logo.svg.png" alt=""></label>
+                    </div>
+                    <div class="cash-choice col-4">
+                        <input type="radio" id="napas" name="choice" value="napas" class="radio-input-cash">
+                        <label for="napas"> <img style="margin-left: -10px;" class="napas-img imgchung" src="../../assets/images/icon/Logo-Napas.webp" alt=""></label>
+                    </div>
+                    <div class="cash-choice col-4">
+                        <input type="radio" id="momo" name="choice" value="momo" class="radio-input-cash">
+                        <label for="momo"> <img class="momo-img imgchung" src="../../assets/images/icon/MoMo Logo.webp" alt=""></label>
+                    </div>
+                    <div class="cash-choice col-4">
+                        <input type="radio" id="zlpay" name="choice" value="zlpay" class="radio-input-cash">
+                        <label for="zlpay"> <img class="zlpay-img imgchung" src="../../assets/images/icon/05-zalopay-300x300.png" alt=""></label>
+                    </div>
+                    <div class="cash-choice col-4">
+                        <input type="radio" id="tm" name="choice" value="tm" class="radio-input-cash">
+                        <label for="tm"> <img class="tm-img imgchung" src="../../assets/images/icon/pngtree-green-dollar-money-cartoon-png-image_13295191.png" alt=""></label>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="visa-choosen hide choiced">
+                    <input type="text" placeholder="Số thẻ" class="input-info">
+                    <div class="group d-flex">
+                        <div class="exp-date">
+                            <input type="text" placeholder="MM"  class="input-info exp-day expiry-date-mm">
+                            <span>/</span>
+                            <input type="text" placeholder="YY"  class="input-info exp-day expiry-date-yy">
+                            
+                        </div>
+                        <input class="cvv" type="text" placeholder="CVV" class="input-info">
+                    </div>
+
+                </div>
+                <div class="mastercard-choosen hide choiced">
+                    <input type="text" placeholder="Số thẻ" class="input-info">
+                    <div class="group d-flex">
+                        <div class="exp-date">
+                            <input type="text" placeholder="MM"  class="input-info exp-day expiry-date-mm">
+                            <span>/</span>
+                            <input type="text" placeholder="YY"  class="input-info exp-day expiry-date-yy">
+                            
+                        </div>
+                        <input class="cvv" type="text" placeholder="CVV" class="input-info">
+                    </div>
+
+                </div>
+
+                <div class="napas-choosen choiced hide">
+                    <select name="bank">
+                        <option value="">Chọn ngân hàng</option>
+                            <option value="vietcombank">Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)</option>
+                            <option value="vietinbank">Ngân hàng TMCP Công Thương Việt Nam (VietinBank)</option>
+                            <option value="bidv">Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV)</option>
+                            <option value="agribank">Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam (Agribank)</option>
+                            <option value="techcombank">Ngân hàng TMCP Kỹ Thương Việt Nam (Techcombank)</option>
+                            <option value="acb">Ngân hàng TMCP Á Châu (ACB)</option>
+                            <option value="sacombank">Ngân hàng TMCP Sài Gòn Thương Tín (Sacombank)</option>
+                            <option value="vpbank">Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)</option>
+                            <option value="hdbank">Ngân hàng TMCP Phát triển TP.HCM (HDBank)</option>
+                            <option value="eximbank">Ngân hàng TMCP Xuất Nhập khẩu Việt Nam (Eximbank)</option>
+                            <option value="vib">Ngân hàng TMCP Quốc tế Việt Nam (VIB)</option>
+                            <option value="shb">Ngân hàng TMCP Sài Gòn – Hà Nội (SHB)</option>
+                            <option value="tpbank">Ngân hàng TMCP Tiên Phong (TPBank)</option>
+                            <option value="ocb">Ngân hàng TMCP Phương Đông (OCB)</option>
+                            <option value="lienvietpostbank">Ngân hàng TMCP Liên Việt (LienVietPostBank)</option>
+                            <option value="bacabank">Ngân hàng TMCP Bắc Á (Bac A Bank)</option>
+                            <option value="pvcombank">Ngân hàng TMCP Đại chúng Việt Nam (PVcomBank)</option>
+                            <option value="saigonbank">Ngân hàng TMCP Sài Gòn Công Thương (Saigonbank)</option>
+                            <option value="sbv">Ngân hàng Nhà nước Việt Nam (SBV)</option>
+                            <option value="donga">Ngân hàng TMCP Đông Á (DongA Bank)</option>
+                            <option value="seabank">Ngân hàng TMCP Đông Nam Á (SeABank)</option>
+                            <option value="vietabank">Ngân hàng TMCP Việt Á (VietABank)</option>
+                            <option value="pgbank">Ngân hàng TMCP Xăng dầu Petrolimex (PG Bank)</option>
+                            <option value="msb">Ngân hàng TMCP Hàng Hải Việt Nam (MSB)</option>
+                            <option value="namabank">Ngân hàng TMCP Nam Á (Nam A Bank)</option>
+                            <option value="kienlongbank">Ngân hàng TMCP Kiên Long (Kienlongbank)</option>
+                            <option value="abbank">Ngân hàng TMCP An Bình (ABBank)</option>
+                            <option value="vietbank">Ngân hàng TMCP Việt Nam Thương Tín (VietBank)</option>
+                            <option value="baovietbank">Ngân hàng TMCP Bảo Việt (BaoViet Bank)</option>
+                    </select>
+                    <input type="text" placeholder="Số tài khoản" class="input-info">
+                    <input type="text" placeholder="Họ và tên chủ tài khoản" class="input-info">
+                    <input type="text" placeholder="Chi nhánh" class="input-info">
+                    
+
+
+                </div>
+                <div class="momo-choosen choiced hide">
+                    <div class="qr-cash">
+                        <img class="qr-momo" src="../../assets/images/cashing/momoqr.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="zalo-choosen choiced hide">
+                    <div class="qr-cash">
+                        <img class="qr-zalo" src="../../assets/images/cashing/zlpayqr.jpg" alt="">
+                    </div>
+                </div>
+                <div class="tienmat choiced hide">
+                    <p style="text-align: center;">Bạn sẽ thanh toán khi nhận hàng</p>
+                </div>
+                <button class="next-btn" id="paymentNextBtn">Tiếp tục</button>
             </div>
 
-            <div class="fullform" id="formVisa">
-                <div class="page_transit">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
-                    </svg>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
-        
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
+
+
+
+            <div class="infomation-form confirmation-form hide">
+                <div class="partern" style="top: 30px;">
+                    <img class="partern-img" src="../../assets/images/patern/Group 103.png" alt="">
                 </div>
-        
-                <div class="form_thongtin">
-                    <div id="form_thongtin_content">
-        
-                        <div id="back_btn">
-                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <div class="to-back">
+                    <p>
+                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.41667 9.29159L1.625 5.49992M1.625 5.49992L5.41667 1.70825M1.625 5.49992H11.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p style="color: white;">Trở lại trang trước</p>
-                        </div>
-        
-                        <div id="form_title">
-                            <h2 id="thongtincanhan_title">Thanh toán </h2>
-                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
-                        </div>
-        
-                        <div class="ATM_icons_list">
-                            <div class="ATM_icons_row">
-                                <div id="visa_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="mastercard_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="napas_log" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                            </div>
-                            <div class="ATM_icons_row">
-                                <div id="momo_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="zalo_pay_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="tienmat_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-        
-                        
-                        <form action="" id="form_input">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Số thẻ">
-                            </div>
-                            <div class="form-group" id="nhh">
-        
-                                <div class="left_nhh">
-                                    <label for="" style="color: rgb(176, 43, 25);">Ngày hết hạn</label>
-                                    <div id="nhh_input">
-                                        <input type="text" id="month_input" required>
-                                        <label for="">/</label>
-                                        <input type="text" id="year_input" required>
-                                    </div>
-                                </div>
-        
-                                <div class="right_nhh">
-                                    <label for="" style="color: rgb(176, 43, 25);">CVV</label>
-                                    <div id="nhh_input">
-                                        <input type="text" id="CVV_input" required>
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-                   
+                        Quay lại                       
+                    </p>
                 </div>
-                <button type="button" class="btn btn-danger" id="tieptuc_btn">Tiếp tục</button>
+                <div class="info-form-title">
+                    <h3>Xác nhận thông tin</h3>
+                </div>
+                <div class="infomation-detail d-flex">
+                    <div class="left-box">
+                        <p>Họ và tên:</p>
+                        <p>Số điện thoại:</p>
+                        <p>Số nhà / tòa nhà</p>
+                        <p>Phường xã:</p>
+                        <p>Quận / Huyện:</p>
+                        <p>Tỉnh / Thành phố:</p>
+
+
+                    </div>
+                    
+                    <div class="right-box">
+                        <p>Nguyễn Văn A</p>
+                        <p>0987654321</p>
+                        <p>123 Hai Bà Trưng</p>
+                        <p>Phường 5</p>
+                        <p>Quận 1</p>
+                        <p>Thành phố Hà Nội</p>
+                    </div>
+                </div>
+                <button class="next-btn" id="confirmationNextBtn" onclick="showSuccessNotification()">Xác nhận</button>
             </div>
 
-            <div class="fullform" id="formNapas">
-                <div class="page_transit">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#B02B19" />
+
+
+            
+        </div>
+
+
+        </div>
+        <div class="success-noti hide">
+            <div class="success-noti-content">
+                <button class="btn-close"></button>
+                <svg width="184" height="183" viewBox="0 0 184 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="92" cy="91.5" rx="92" ry="91.5" fill="#B02B19"/>
+                    <path d="M59.917 96.125L78.2503 114.625L124.084 68.375" stroke="#C8C8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
-        
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#7E8287" />
-                    </svg>
+                    
+                <div class="success-noti-title">
+                    <h3>Đặt hàng thành công</h3>
                 </div>
-        
-                <div class="form_thongtin">
-                    <div id="form_thongtin_content">
-        
-                        <div id="back_btn">
-                            <svg id="back_icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.41667 10.2916L1.625 6.49992M1.625 6.49992L5.41667 2.70825M1.625 6.49992H11.375"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <p style="color: white;">Trở lại trang trước</p>
-                        </div>
-        
-                        <div id="form_title">
-                            <h2 id="thongtincanhan_title">Thanh toán </h2>
-                            <span id="chonphuongthucthanhtoan_span">Chọn phương thức thanh toán</span>
-                        </div>
-        
-                        <div class="ATM_icons_list">
-                            <div class="ATM_icons_row">
-                                <div id="visa_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="mastercard_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="napas_log" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                        </div>
-                            <div class="ATM_icons_row" >
-                                <div id="momo_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="zalo_pay_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-        
-                                <div id="tienmat_logo" class="bank_logo">
-                                    <img src="../../assets/images/icon/05-zalopay-300x300.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-        
-                        <form action="" id="form_input">
-                            <div class="form-group">
-                                <select class="form-control" id="" >
-                                    <option value="Ngân hàng">Ngân hàng</option>
-                                    <option value="Ngân hàng">Ngân hàng</option>
-                                    <option value="Ngân hàng">Ngân hàng</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="Số tài khoản">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Họ tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" required
-                                    placeholder="Chi nhánh">
-                            </div>
-                        </form>
-                    </div>
-                    <button type="button" class="btn btn-danger" id="tieptuc_btn_napas">Tiếp tục</button>
+                <div class="success-noti-text">
+                    <p>Mã đơn hàng: #123412</p>
                 </div>
+
             </div>
         </div>
+
+            
         <script>
-            // function toggleHideFormCaNhan() {
-            //     const formThongTin = document.getElementById("formThongTinCaNhan");
-            //     formThongTin.classList.toggle("d-hide");
-            // }
+            document.addEventListener('DOMContentLoaded', () => {
+    const personalForm = document.querySelector('.personal-info-form');
+    const paymentForm = document.querySelector('.payment-form');
+    const confirmationForm = document.querySelector('.confirmation-form');
+    const paymentBackBtn = paymentForm.querySelector('.to-back p');
+    const confirmationBackBtn = confirmationForm.querySelector('.to-back p');
+    const personalNextBtn = document.querySelector('#personalNextBtn');
+    const paymentNextBtn = document.querySelector('#paymentNextBtn');
+    const confirmationNextBtn = document.querySelector('#confirmationNextBtn');
+    const radioInputs = document.querySelectorAll('.radio-input-cash');
+    const paymentSections = document.querySelectorAll('.choiced');
+    const hideAllForms = () => {
+        personalForm.classList.add('hide');
+        paymentForm.classList.add('hide');
+        confirmationForm.classList.add('hide');
+    };
+    const hideAllPaymentSections = () => {
+        paymentSections.forEach(section => {
+            section.classList.add('hide');
+        });
+    };
+    const resetImageFilters = () => {
+        document.querySelectorAll('.imgchung').forEach(img => {
+            img.style.filter = 'grayscale(100%) brightness(100%)';
+        });
+    };
+    const setNextBtnInvalid = (btn) => {
+        btn.classList.remove('next-btn');
+        btn.classList.add('next-btn-disable');
+    };
+    const setNextBtnValid = (btn) => {
+        btn.classList.remove('next-btn-disable');
+        btn.classList.add('next-btn');
+    };
 
-            // function toggleHideTienMat() {
-            //     const formThongTin = document.getElementById("formTienMat");
-            //     formThongTin.classList.toggle("d-hide");
-            // }
+    // Kiểm tra form info
+    const validatePersonalInputs = () => {
+        const name = personalForm.querySelector('input[placeholder="Họ và tên"]').value;
+        const phone = personalForm.querySelector('input[placeholder="Số điện thoại"]').value;
+        const address = personalForm.querySelector('input[placeholder="Số nhà / tòa nhà"]').value;
+        const ward = personalForm.querySelector('#phuongxaInput').value;
+        const district = personalForm.querySelector('#quanhuyenInput').value;
+        const city = personalForm.querySelector('#tpTinh').value;
 
-            // function toggleHideVisa() {
-            //     const formThongTin = document.getElementById("formVisa");
-            //     formThongTin.classList.toggle("d-hide");
-            // }
-            // function toggleAppearFormCaNhan() {
-            //     const formThongTin = document.getElementById("formThongTinCaNhan");
-            //     toggleHideTienMat();
-            //     formThongTin.classList.remove("d-hide");
-            // }
+        // Kiểm tra: tên chỉ chứa chữ cái và dấu cách, điện thoại 10 chữ số, các trường không rỗng
+        const nameRegex = /^[a-zA-Z\s]{2,}$/;
+        const phoneRegex = /^\d{10}$/;
+        const addressValid = address.trim() !== '';
+        const wardValid = ward !== '';
+        const districtValid = district !== '';
+        const cityValid = city !== '';
 
-            // function toggleAppearTienMat() {
-            //     const formThongTin = document.getElementById("formTienMat");
-            //     formThongTin.classList.toggle.remove("d-hide");
-            // }
+        return (
+            nameRegex.test(name) &&
+            phoneRegex.test(phone) &&
+            addressValid &&
+            wardValid &&
+            districtValid &&
+            cityValid
+        );
+    };
+
+    // validate cho Visa/Mastercard
+    const validateCardInputs = (section) => {
+        const cardNumber = section.querySelector('input[placeholder="Số thẻ"]').value;
+        const expiryMM = section.querySelector('.expiry-date-mm').value;
+        const expiryYY = section.querySelector('.expiry-date-yy').value;
+        const cvv = section.querySelector('.cvv').value;
+        //16 chu so
+        const cardNumberRegex = /^\d{16}$/;
+        //2 chu so theo tháng
+        const mmRegex = /^(0[1-9]|1[0-2])$/;
+        //2 chu so theo nam
+        const currentYear = new Date().getFullYear() % 100;
+        const yyRegex = new RegExp(`^(${currentYear}|${currentYear + 1}|${currentYear + 2}|${currentYear + 3}|${currentYear + 4}|${currentYear + 5})$`);
+        //3 chu so
+        const cvvRegex = /^\d{3}$/;
+
+        return (
+            cardNumberRegex.test(cardNumber) &&
+            mmRegex.test(expiryMM) &&
+            yyRegex.test(expiryYY) &&
+            cvvRegex.test(cvv)
+        );
+    };
+
+    // validate cho Napas
+    const validateNapasInputs = (section) => {
+        const bank = section.querySelector('select[name="bank"]').value;
+        const accountNumber = section.querySelector('input[placeholder="Số tài khoản"]').value;
+        const accountName = section.querySelector('input[placeholder="Họ và tên chủ tài khoản"]').value;
+        const branch = section.querySelector('input[placeholder="Chi nhánh"]').value;
+
+        const bankValid = bank !== '';
+        //6 chu so trở lên
+        const accountNumberRegex = /^\d{6,}$/;
+        //2 chu cai tro len
+        const accountNameRegex = /^[a-zA-Z\s]{2,}$/;
+        //khong duoc de trong
+        const branchValid = branch.trim() !== '';
+
+        return (
+            bankValid &&
+            accountNumberRegex.test(accountNumber) &&
+            accountNameRegex.test(accountName) &&
+            branchValid
+        );
+    };
+    const validatePaymentForm = (sectionClass) => {
+        const section = document.querySelector(`.${sectionClass}`);
+        if (!section || section.classList.contains('hide')) {
+            setNextBtnInvalid(paymentNextBtn);
+            return false;
+        }
+
+        let isValid = false;
+        if (sectionClass === 'visa-choosen' || sectionClass === 'mastercard-choosen') {
+            isValid = validateCardInputs(section);
+        } else if (sectionClass === 'napas-choosen') {
+            isValid = validateNapasInputs(section);
+        } else {
+            isValid = true;
+        }
+
+        if (isValid) {
+            setNextBtnValid(paymentNextBtn);
+        } else {
+            setNextBtnInvalid(paymentNextBtn);
+        }
+        return isValid;
+    };
+    hideAllForms();
+    personalForm.classList.remove('hide');
+    setNextBtnInvalid(personalNextBtn);
+
+    // quay lai
+    paymentBackBtn.addEventListener('click', () => {
+        hideAllForms();
+        personalForm.classList.remove('hide');
+        setNextBtnInvalid(personalNextBtn);
+        radioInputs.forEach(input => input.checked = false);
+        hideAllPaymentSections();
+        resetImageFilters();
+    });
+
+    // quay lai
+    confirmationBackBtn.addEventListener('click', () => {
+        hideAllForms();
+        paymentForm.classList.remove('hide');
+        const activeSection = document.querySelector('.choiced:not(.hide)');
+        const sectionClass = activeSection ? activeSection.classList[0] : '';
+        validatePaymentForm(sectionClass);
+    });
+
+    personalNextBtn.addEventListener('click', () => {
+        if (!validatePersonalInputs()) {
+            setNextBtnInvalid(personalNextBtn);
+            return;
+        }
+        setNextBtnValid(personalNextBtn);
+        hideAllForms();
+        paymentForm.classList.remove('hide');
+        setNextBtnInvalid(paymentNextBtn);
+    });
+    const personalInputs = personalForm.querySelectorAll('input, select');
+    personalInputs.forEach(input => {
+        input.addEventListener('input', () => {
+            if (validatePersonalInputs()) {
+                setNextBtnValid(personalNextBtn);
+            } else {
+                setNextBtnInvalid(personalNextBtn);
+            }
+        });
+    });
+    paymentNextBtn.addEventListener('click', () => {
+        const activeSection = document.querySelector('.choiced:not(.hide)');
+        const sectionClass = activeSection ? activeSection.classList[0] : '';
+        if (!validatePaymentForm(sectionClass)) {
+            return;
+        }
+        hideAllForms();
+        confirmationForm.classList.remove('hide');
+        setNextBtnValid(confirmationNextBtn);
+    });
+    confirmationNextBtn.addEventListener('click', () => {
+        showSuccessNotification();
+        hideAllForms();
+        personalForm.classList.remove('hide');
+        setNextBtnInvalid(personalNextBtn);
+        radioInputs.forEach(input => input.checked = false);
+        hideAllPaymentSections();
+        resetImageFilters();
+    });
+    radioInputs.forEach(input => {
+        input.addEventListener('change', () => {
+            hideAllPaymentSections();
+            resetImageFilters();
+            if (input.checked) {
+                let sectionClass;
+                switch (input.value) {
+                    case 'visa':
+                        sectionClass = 'visa-choosen';
+                        break;
+                    case 'mastercard':
+                        sectionClass = 'mastercard-choosen';
+                        break;
+                    case 'napas':
+                        sectionClass = 'napas-choosen';
+                        break;
+                    case 'momo':
+                        sectionClass = 'momo-choosen';
+                        break;
+                    case 'zlpay':
+                        sectionClass = 'zalo-choosen';
+                        break;
+                    case 'tm':
+                        sectionClass = 'tienmat';
+                        break;
+                    default:
+                        return;
+                }
+                const selectedSection = document.querySelector(`.${sectionClass}`);
+                if (selectedSection) {
+                    selectedSection.classList.remove('hide');
+                }
+                const label = input.nextElementSibling;
+                const img = label.querySelector('.imgchung');
+                if (img) {
+                    img.style.filter = 'none';
+                }
+                validatePaymentForm(sectionClass);
+            }
+        });
+    });
+    const inputSections = document.querySelectorAll('.visa-choosen, .mastercard-choosen, .napas-choosen');
+    inputSections.forEach(section => {
+        const inputs = section.querySelectorAll('input, select');
+        inputs.forEach(input => {
+            input.addEventListener('input', () => {
+                validatePaymentForm(section.classList.contains('visa-choosen') ? 'visa-choosen' :
+                                   section.classList.contains('mastercard-choosen') ? 'mastercard-choosen' :
+                                   'napas-choosen');
+            });
+        });
+    });
+});
+
+
+    function showSuccessNotification() {
+        const addblur = document.querySelector('.toAddBlur');
+        const toAddBlur = document.getElementById("giohang")
+        const successNoti = document.querySelector('.success-noti');
+        addblur.classList.add('blur-background');
+        toAddBlur.classList.add('blur-background');
+        successNoti.classList.remove('hide');
+        setTimeout(() => {
+            successNoti.classList.add('hide');
+            toAddBlur.classList.remove('blur-background');
+            addblur.classList.remove('blur-background');
+        }, 4000); 
+    }
         </script>
+
+        
         <script src="../../assets/styles/js/background.js"></script>
 </body>
 
