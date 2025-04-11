@@ -1,0 +1,466 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'kanitm';
+    src: url(../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'kanitr';
+    src: url(../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'kanitexl';
+    src: url(../fonts/Kanit/Kanit-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'kanitl';
+    src: url(../fonts/Kanit/Kanit-Light.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #23201B;
+}
+
+.justify-content {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.align-items {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.row-PC {
+    margin-bottom: 130px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    font-size: 20px;
+    font-family: 'kanitexl';
+}
+
+.product-container {
+    min-width: 1600px;
+}
+
+.product-row {
+    margin-left: 80px;
+}
+
+.product-content {
+    width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.img-PC {
+    width: 600px;
+}
+
+.product-content .row {
+    width: 100%;
+}
+
+.title-PC {
+    font-weight: 500;
+    font-family: 'kanitm';
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.row-rating {
+    text-align: center;
+    /* padding-bottom: 100px; */
+    height: 60px;
+    color: #FFFFFF;
+}
+
+.row-price {
+    margin-bottom: 60px;
+    /* height: 150px;s */
+}
+
+.row-btn {
+    margin-bottom: 120px;
+}
+
+.img-stars img {
+    width: 28px;
+    height: 28px;
+}
+
+.img-stars-number {
+    margin-right: 15px;
+    font-family: 'kanitr';
+}
+
+.product-rating-evaluate {
+    font-family: 'kanitr';
+}
+
+.product-rating-sold {
+    font-family: 'kanitr';
+}
+
+.product-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.span-gray {
+    color: #7E8287;
+}
+
+.span-rating {
+    margin-left: 10px;
+    font-family: 'kanitr';
+}
+
+.product-price {
+    color: #B02B19;
+    font-family: 'kanitm';
+    font-size: 30px;
+}
+
+.btn-buy {
+    background-color: #B02B19;
+    color: white;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'kanitm';
+    border: 1px solid #B02B19;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-buy span {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #B02B19, transparent);
+    top: 0;
+    left: -100%;
+    transform: skewX(-45deg);
+}
+
+.btn-buy:hover span {
+    left: 100%;
+    transition: 1s;
+}
+
+/* .btn-buy:hover span {
+    animation: light-btn 1.5s infinite;
+}
+
+@keyframes light-btn {
+    0% {
+        left: -100%;
+    }
+    33.33% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+} */
+
+
+.btn-more {
+    background-color: #F99588;
+    color: white;
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'kanitm';
+    border: 1px solid #F99588;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-more span {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #F99588, transparent);
+    top: 0;
+    left: -100%;
+    transform: skewX(-45deg);
+}
+
+.btn-more:hover span {
+    left: 100%;
+    transition: 1s;   
+}
+
+.product-sale {
+    border: 1px solid #B02B19;
+    background: rgba(255, 158, 158, 0.31);
+    padding: 0px 5px;
+    font-family: 'kanitl';
+    color: #FFFFFF;
+    margin-top: 2px;
+    background: rgba(255, 255, 255, 0.31);
+    border: 1px solid #FFFFFF;
+}
+
+.col-product-right-text {
+    display: flex;
+    height: 427px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-product-left-text {
+    height: 427px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.product-right-text {
+    font-family: 'kanitm';
+    text-align: justify;
+    font-size: 18px;
+    width: 75%;
+}
+
+.product-left-text {
+    font-family: 'kanitm';
+    text-align: justify;
+    width: 75%;
+    /* justify-self: end; */
+    font-size: 18px;
+}
+
+.col-product-left-img {
+    display: flex;
+    justify-content: end;
+}
+
+.col-product-right-img {
+    display: flex;
+    justify-content: center !important;
+}
+
+.row-hr {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.col-hr {
+    display: flex;
+    align-items: end;
+}
+
+.product-hr-text {
+    font-family: 'kanitm';
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.product-hr {
+    color: #000000 !important;
+    background-color: white !important;
+    opacity: 1 !important;
+    border: none !important;
+    border-bottom: 4px dashed #000000 !important;
+    width: 60% !important;
+    flex: 1;
+}
+
+.btn-buy:hover {
+    background-color: white;
+    color: #B02B19;
+}
+
+.btn-more:hover {
+    background-color: white;
+    color: #F99588;
+}
+
+.full-form-img-PC {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+/* .full-form-img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url('../images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/pc_gvn_-_4060__case_corsair_-_black__-_4_b6d46faa21874bf5ad796232c40d05f8_grande.webp');
+    background-size: cover;
+    left: 32%;
+} */
+
+.full-form-img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url('../images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/pc_gvn_-_4060__case_corsair_-_black__-_4_b6d46faa21874bf5ad796232c40d05f8_grande.webp');
+    background-size: cover;
+    /* background-position: center; */
+    left: 32%;
+}
+
+
+.full-left {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    animation: move-full-left linear forwards;
+    animation-timeline: view(y);
+    animation-range-start: 1px;
+    animation-range-end: 450px;
+}
+
+.full-right {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    animation: move-full-right linear forwards;
+    animation-timeline: view(y);
+    animation-range-start: 1px;
+    animation-range-end: 450px;
+}
+
+@keyframes move-full-left {
+    from {
+        transform: translate(-900px, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes move-full-right {
+    from {
+        transform: translate(900px, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.scroll-reveal p {
+    display: inline;
+    color: rgba(255, 255, 255, 0.2);
+    background-clip: text;
+    background-image: linear-gradient(90deg, #FFFFFF, #FFFFFF);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view(y);
+}
+
+.scroll-reveal .product-hr-text.scroll1 {
+    animation-range-start: cover 80px;
+    animation-range-end: cover 300px;
+}
+
+.scroll-reveal.product-left-text.scroll2 p {
+    animation-range-start: cover 55px;
+    animation-range-end: cover 370px;
+}
+
+.scroll-reveal .product-hr-text.scroll3 {
+    animation-range-start: cover 45px;
+    animation-range-end: cover 320px;
+}
+
+.scroll-reveal.product-right-text.scroll4 p {
+    animation-range-start: cover 40px;
+    animation-range-end: cover 420px;
+}
+
+.scroll-reveal .product-hr-text.scroll5 {
+    animation-range-start: cover 65px;
+    animation-range-end: cover 320px;
+}
+
+.scroll-reveal.product-left-text.scroll6 p {
+    animation-range-start: cover 40px;
+    animation-range-end: cover 350px;
+}
+
+.scroll-reveal .product-hr-text.scroll7 {
+    animation-range-start: cover 55px;
+    animation-range-end: cover 330px;
+}
+
+.scroll-reveal.product-right-text.scroll8 p {
+    animation-range-start: cover 60px;
+    animation-range-end: cover 440px;
+}
+
+.scroll-reveal .product-hr-text.scroll9 {
+    animation-range-start: cover 60px;
+    animation-range-end: cover 310px;
+}
+
+.scroll-reveal.product-left-text.scroll10 p {
+    animation-range-start: cover 65px;
+    animation-range-end: cover 370px;
+}
+
+.scroll-reveal .product-hr-text.scroll11 {
+    animation-range-start: cover 5px;
+    animation-range-end: cover 310px;
+}
+
+.scroll-img-right {
+    animation: move-scroll-right linear forwards;
+    animation-timeline: view(y);
+    animation-range-start: 1x;
+    animation-range-end: 450px;
+}
+
+.scroll-img-left {
+    animation: move-scroll-left linear forwards;
+    animation-timeline: view(y);
+    animation-range-start: 1px;
+    animation-range-end: 450px;
+}
+
+@keyframes move-scroll-left {
+    from {
+        transform: translate(-700px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes move-scroll-right {
+    from {
+        transform: translate(700px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes scroll-reveal {
+
+    to {
+        background-size: 100% 100%;
+    }
+}
