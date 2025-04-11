@@ -15,11 +15,13 @@
 }
 .title3{
     font-family: 'Inter1';
-    font-size : 200;
+    font-size : 10px!important;
+
 
 }
 .title4{
     font-family: 'Inter2';
+    font-size: 20px!important;
 }
 #side-bar{
     position: fixed;
