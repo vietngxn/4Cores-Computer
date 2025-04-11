@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
     font-family: "Inter";
     src: url(../fonts/Inter/static/Inter_28pt-Regular.ttf);
   }
@@ -170,7 +169,6 @@
     font-weight: bold;
   }
   
-=======
   font-family: "Inter";
   src: url(../fonts/Inter/static/Inter_28pt-Regular.ttf);
 }
@@ -349,4 +347,3 @@ input[type="submit"]:active {
   text-decoration: none;
   font-weight: bold;
 }
->>>>>>> 73863171598f7e6b4b088e42b9c0fc92822fbdaa
