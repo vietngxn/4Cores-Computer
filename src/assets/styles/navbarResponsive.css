@@ -1,0 +1,31 @@
+@media(width <= 1282px) {
+*{
+    font-size: 12px;
+}
+.navbar-brand{
+    width: 150px!important;
+    height:60px!important;
+    filter: brightness(400%)!important;
+}
+.navbar-brand img{
+    width: 100%!important;
+    height: 100%!important;
+    
+}
+.navbar_content{
+    display: flex!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+    height: 100%!important;
+    list-style: none!important;    
+    margin-top: -5px!important;
+  } 
+  .contentnav{
+    width: 75%!important;
+  }
+}
+@media(width <= 767px){
+.navbar_container{
+    display: none!important;
+}
+}

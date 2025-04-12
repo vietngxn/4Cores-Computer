@@ -4,11 +4,12 @@
     font-family: "SF Pro Display";
 }
 
+
 .navbar_container{
-    width: 100%;
-    background-color: rgb(255, 255, 255);
+    width: 100vw;;
 }
-.navbar_container nav{ 
+
+.navbar_container nav{
     max-width: 1800px;
     height: 70px;
     margin: auto;
@@ -20,15 +21,11 @@
 }
 
 #navbar-link {
-    color: rgb(35, 32,27);
+    color: black;
     font-family: "SF Pro Display";
     margin-left: 10px ;
-    font-weight: bold;
 }
 
-/* #navbar-link:hover{
-    color: #E2C044;
-} */
 
 /* Ẩn mũi tên mặc định */
 .dropdown-toggle::after {
@@ -38,7 +35,7 @@
 
 
 #dangnhap_btn {
-    background-color: rgb(176, 43,25);
+    background-color: #B02B19;
     margin-left: 10px ;
     padding-left: 20px;
     padding-right: 20px;
@@ -46,7 +43,7 @@
     padding-bottom: 5px;
     border-radius: 8px;
     border: none;
-    color: rgb(255, 255, 255);
+    color: white;
     margin-right: 30px;
     font-family: "SF Pro Display";
     font-weight: bold;
@@ -54,11 +51,26 @@
 }
 
 #dangnhap_btn:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(176, 43,25);
+    background-color: white;
+    color: #B02B19;
     font-family: "SF Pro Display";
 }
-
-#collapsibleNavbar {
-    background-color: rgb(255, 255, 255);
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;    
+    margin-top: -5px;
+}
+.navbar-brand{
+    margin-top: -10px;
+}
+.ddmn{
+    margin-top: 10px!important;
+    font-family: "SF Pro Display";
+    background-color: #B02B19!important;
+}
+.ddmn li a{
+    padding: 8px 16px!important;
 }
