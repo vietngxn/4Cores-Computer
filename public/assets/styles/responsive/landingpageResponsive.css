@@ -1,0 +1,271 @@
+/* Tablet: width <= 1000px */
+@media (width <= 1000px) {
+    /* First Part */
+    .container_fisrt-part {
+        height: 700px;
+    }
+
+    .container_first-part_content h1 {
+        font-size: 50px;
+        margin-top: 120px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .button-group button {
+        margin: 10px 0;
+        width: 180px;
+        font-size: 14px;
+    }
+
+    .video-container {
+        height: 70%;
+        bottom: 350px;
+    }
+
+    /* About Part */
+    .container_about-part {
+        height: 900px;
+        margin-top: -350px;
+    }
+
+    .container_about-part_content {
+        width: 90%;
+    }
+
+    .container_about-part_content h1 {
+        font-size: 40px;
+    }
+
+    .container_about-part_content p {
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 80px;
+    }
+
+    .img img {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .sub-paragraph {
+        font-size: 18px;
+    }
+
+    /* Aim Part */
+    .container_aim-part {
+        height: 900px;
+    }
+
+    .container_aim-part h1 {
+        font-size: 40px;
+    }
+
+    .list {
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+
+    .list li {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .list svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-white {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    /* Commit Part */
+    .container_commit-part {
+        height: 1200px;
+    }
+
+    .container_commit-part_content h1 {
+        font-size: 40px;
+    }
+
+    .container_commit-part_content p {
+        font-size: 24px;
+    }
+
+    .img-showcase {
+        height: 500px;
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-showcase .img-container {
+        width: 40%;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .img-showcase .img-container:hover {
+        width: 42%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .img-showcase .cont-2,
+    .img-showcase .cont-4 {
+        margin-top: 10px;
+    }
+}
+
+/* Mobile: width <= 767px */
+@media (width <= 767px) {
+    /* First Part */
+    .container_fisrt-part {
+        height: 500px;
+    }
+
+    .container_first-part_content h1 {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+
+    .button-group {
+        margin-top: 20px;
+    }
+    .aboutus {
+        display: block;
+    }
+    .button-group button {
+        width: 150px;
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .video-container {
+        height: 60%;
+        bottom: 250px;
+    }
+
+    /* About Part */
+    .container_about-part {
+        height: 1000px;
+        margin-top: -250px;
+    }
+
+    .container_about-part_content {
+        width: 95%;
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container_about-part_content h1 {
+        font-size: 30px;
+    }
+
+    .container_about-part_content p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 60px;
+        width: 100%!important;
+        text-align: center;
+    }
+
+    .img {
+        text-align: center;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .img img {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .sub-paragraph {
+        font-size: 16px;
+    }
+
+    /* Aim Part */
+    .container_aim-part {
+        height: 1000px;
+    }
+
+    .container_aim-part h1 {
+        font-size: 30px;
+    }
+
+    .list {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    .list li {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .list svg {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .logo-white {
+        width: 150px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* Commit Part */
+    .container_commit-part {
+        height: 1800px;
+    }
+
+    .container_commit-part_content h1 {
+        font-size: 30px;
+    }
+
+    .container_commit-part_content p {
+        font-size: 20px;
+    }
+
+    .img-showcase {
+        height: auto;
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-showcase .img-container {
+        width: 80%;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .img-showcase .img-container:hover {
+        width: 82%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .img-showcase .cont-2,
+    .img-showcase .cont-4 {
+        margin-top: 10px;
+    }
+
+    .partern {
+        top: -100px;
+        height: 120px;
+        background-size: cover;
+    }
+}
