@@ -1,0 +1,268 @@
+/* Tablet: width <= 1000px */
+@media (width <= 1000px) {
+    .main-container {
+        width: 100%;
+        max-width: 100vw;
+        transform: translateX(0); 
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    #content-container {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        min-height: 600px;
+        margin: 15px auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .notification-section {
+        padding: 20px;
+        margin: 10px 0;
+        height: calc(100% - 40px);
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .notification-title {
+        font-size: 20px;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+        border-bottom-width: 1.5px;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .notification-list {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .notification-card {
+        padding: 15px;
+        margin-bottom: 15px;
+        border-left-width: 3px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        word-break: break-word; 
+    }
+
+    .notification-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .notification-header h3 {
+        font-size: 16px;
+        flex: 1;
+    }
+
+    .notification-date {
+        font-size: 12px;
+        margin-top: 0;
+        white-space: nowrap;
+    }
+
+    .notification-card p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
+
+    .notification-close {
+        font-size: 14px;
+        top: 8px;
+        right: 8px;
+        padding: 5px;
+    }
+
+    .notification-section::-webkit-scrollbar {
+        width: 5px;
+    }
+    .side-bar {
+        width: 220px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        transition: width 0.3s ease;
+    }
+
+    .side-bar-header {
+        padding: 10px;
+    }
+
+    .side-bar-header-img .img1,
+    .side-bar-header-img .img2 {
+        width: 90%;
+        max-width: 150px;
+    }
+
+    .side-bar-body {
+        padding: 10px;
+    }
+
+    .side-bar-body .title {
+        font-size: 14px;
+    }
+
+    .side-bar-footer {
+        padding: 10px;
+    }
+
+    .side-bar-footer-content .p1 {
+        font-size: 13px;
+    }
+
+    .side-bar-footer-content .p2 {
+        font-size: 12px;
+    }
+
+    .side-bar button img {
+        width: 20px;
+    }
+    .ball {
+        transform: scale(0.8);
+    }
+}
+@media (width <= 767px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    #background,
+    .ball,
+    .side-bar {
+        display: none;
+    }
+    .main-container {
+        width: 700%;
+        max-width: 100vw;
+        transform: translateX(4px);
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    #content-container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 100vh;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+    }
+    .notification-section {
+        padding: 15px;
+        margin: 0;
+        height: auto;
+        min-height: calc(100vh - 20px);
+        overflow-y: visible;
+        box-sizing: border-box;
+    }
+
+    .notification-title {
+        font-size: 18px;
+        padding-bottom: 6px;
+        margin: 10px 0 15px;
+        border-bottom-width: 1px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .notification-list {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .notification-card {
+        padding: 12px;
+        margin-bottom: 12px;
+        border-left-width: 2px;
+        border-radius: 4px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        transform: translateY(10px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        word-break: break-word; 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .notification-card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .notification-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .notification-header h3 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .notification-date {
+        font-size: 11px;
+        color: #888;
+        margin: 0;
+    }
+
+    .notification-card p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin: 0;
+        flex: 1;
+    }
+
+    .notification-close {
+        font-size: 12px;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 4px;
+        background: none;
+        border: none;
+        color: #888;
+        cursor: pointer;
+    }
+
+    .notification-close:hover {
+        color: #e3351d;
+    }
+    .notification-section::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .notification-section::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .notification-section::-webkit-scrollbar-thumb {
+        background: #e3351d;
+        border-radius: 2px;
+    }
+
+    .notification-section::-webkit-scrollbar-thumb:hover {
+        background: #b02b19;
+    }
+}
