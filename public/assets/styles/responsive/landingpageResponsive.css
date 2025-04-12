@@ -1,6 +1,5 @@
 /* Tablet: width <= 1000px */
 @media (width <= 1000px) {
-    /* First Part */
     .container_fisrt-part {
         height: 700px;
     }
@@ -26,8 +25,6 @@
         height: 70%;
         bottom: 350px;
     }
-
-    /* About Part */
     .container_about-part {
         height: 900px;
         margin-top: -350px;
@@ -57,8 +54,6 @@
     .sub-paragraph {
         font-size: 18px;
     }
-
-    /* Aim Part */
     .container_aim-part {
         height: 900px;
     }
@@ -86,8 +81,6 @@
         width: 200px;
         margin-top: 20px;
     }
-
-    /* Commit Part */
     .container_commit-part {
         height: 1200px;
     }
@@ -127,7 +120,6 @@
 
 /* Mobile: width <= 767px */
 @media (width <= 767px) {
-    /* First Part */
     .container_fisrt-part {
         height: 500px;
     }
@@ -154,7 +146,6 @@
         bottom: 250px;
     }
 
-    /* About Part */
     .container_about-part {
         height: 1000px;
         margin-top: -250px;
@@ -195,7 +186,6 @@
         font-size: 16px;
     }
 
-    /* Aim Part */
     .container_aim-part {
         height: 1000px;
     }
@@ -225,8 +215,6 @@
         margin: 20px auto;
         display: block;
     }
-
-    /* Commit Part */
     .container_commit-part {
         height: 1800px;
     }

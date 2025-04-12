@@ -1,0 +1,412 @@
+/* Tablet: width <= 1000px */
+@media (width <= 1000px) {
+    .main-container {
+        transform: translateX(-100px); 
+        width: 100%;
+    }
+
+    #content-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .faq-container {
+        flex-direction: column;
+        padding-top: 20px;
+        height: auto;
+        min-height: 600px;
+    }
+
+    .faq-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        border-radius: 8px 8px 0 0;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .faq-sidebar-title {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .faq-content {
+        padding: 20px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .faq-answer h3 {
+        font-size: 18px;
+        padding-left: 25px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+        padding-left: 25px;
+    }
+
+    .faq-answer ul li {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    .members-section {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .members-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .members-list {
+        gap: 15px;
+    }
+
+    .member-card {
+        width: 250px;
+    }
+
+    .member-image {
+        height: 180px;
+    }
+
+    .member-name {
+        font-size: 16px;
+    }
+
+    .member-class,
+    .member-role {
+        font-size: 13px;
+    }
+    .intro-section {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .intro-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .intro-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .intro-links p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile: width <= 767px */
+@media (width <= 767px) {
+    #background {
+        display: none;
+    }
+
+    .side-bar {
+        display: none;
+    }
+    .main-container {
+        transform: translateX(0); 
+        width: 100vw; 
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+
+    #content-container {
+        width: 100%;
+        max-width: 100vw; 
+        height: auto;
+        padding: 10px;
+        background-color: #f9f9f9;
+        box-sizing: border-box; 
+    }
+    .faq-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100vw;
+        padding: 10px;
+        height: auto;
+        min-height: auto;
+        background-color: transparent;
+        margin: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .faq-sidebar {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #eee;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .faq-sidebar-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        padding: 10px 0;
+        margin: 0 0 10px 0;
+        border-bottom: 2px solid #e3351d;
+        text-align: center;
+        width: 100%;
+    }
+
+    .faq-questions {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        padding: 12px 10px;
+        margin: 5px 0;
+        background-color: #f8f8f8;
+        border-radius: 6px;
+        color: #444;
+        font-weight: 500;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+        transition: background-color 0.2s;
+    }
+
+    .faq-question:hover {
+        background-color: #f0f0f0;
+    }
+
+    .faq-question.active {
+        background-color: #e3351d;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .faq-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .faq-answer {
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #eee;
+        margin-top: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+    }
+
+    .faq-answer h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 10px 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .faq-answer p {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.7;
+        margin: 0 0 10px 0;
+        padding: 0;
+        text-align: justify;
+        width: 100%;
+        word-break: break-word; 
+    }
+
+    .faq-answer ul {
+        padding-left: 15px;
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .faq-answer ul li {
+        font-size: 13px;
+        padding-left: 10px;
+        margin-bottom: 8px;
+        position: relative;
+        width: 100%;
+    }
+
+    .faq-answer ul li::before {
+        content: "•";
+        color: #e3351d;
+        position: absolute;
+        left: 0;
+        font-size: 18px;
+    }
+
+    .faq-answer a {
+        font-size: 13px;
+        word-break: break-all; 
+    }
+    .members-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .members-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 15px 0;
+        padding-bottom: 8px;
+        text-align: center;
+        border-bottom: 2px solid #e3351d;
+        width: 100%;
+    }
+
+    .members-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .member-card {
+        width: 100%;
+        max-width: 300px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .member-image {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+    }
+
+    .member-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .member-info {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .member-name {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+    }
+
+    .member-class,
+    .member-role {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0 0 5px 0;
+    }
+    .intro-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .intro-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 15px 0;
+        padding-bottom: 8px;
+        text-align: center;
+        border-bottom: 2px solid #e3351d;
+        width: 100%;
+    }
+
+    .intro-content {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro-content p {
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0 0 10px 0;
+        text-align: justify;
+        word-break: break-word;
+    }
+
+    .intro-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .intro-links p {
+        font-size: 12px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .intro-links a {
+        font-size: 12px;
+        word-break: break-all;
+    }
+
+    .faq-content::-webkit-scrollbar,
+    .faq-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+    html,
+    body {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
