@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+@font-face {
+    font-family: 'inter';
+    src: url(../fonts/Inter/static/Inter_28pt-Regular.ttf);
+}
+@font-face {
+    font-family: "inter-medium";
+    src: url(../fonts/Inter/static/Inter_28pt-Medium.ttf);
+}
+.btbar-container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7.2rem;
+    z-index: 1000;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+    background-color: white;
+    padding-top: 1.3rem;
+}
+.btbar-patern{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    z-index: -1;;
+}
+.btbar-patern img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    object-fit:contain;
+}
+
+.main-itembar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btbar-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.btbar-item a{
+    text-decoration: none;
+    color: #9DA39A;
+}
+.btbar-item-text{
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #9DA39A;
+    font-family: "inter-medium", sans-serif;
+}
+.circle{
+
+}
+.circle-icon {
+    background-color: #B02B19;
+    width: 55px;
+    height: 55px;
+    transform: translateY(-62%);
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle-icon svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.subbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 2rem;
+    position: absolute;
+    border-radius: 30px;
+    top: -90px;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease-in-out;
+    z-index: 10; 
+    opacity: 0; 
+}
+.hide-close {
+    background-color: transparent;
+    border: 2px solid #B02B19;
+    transform: translateY(-62%) rotate(90deg); 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.hide-close img {
+    opacity: 0; 
+    transform: scale(0); 
+    filter: brightness(0.5) contrast(0.5);
+}
+.hide-close svg {
+    opacity: 1; 
+    transform: rotate(0deg);
+}
+.hide {
+    transform: translateY(500px); 
+    opacity: 0; 
+}
+.subbar-container:not(.hide) {
+    transform: translateY(0);
+    opacity: 1; 
+}
+.circle-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    filter: contrast(1.2) brightness(1.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+}
