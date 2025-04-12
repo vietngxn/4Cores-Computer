@@ -6,7 +6,8 @@
 
 
 .navbar_container{
-    width: 100vw;;
+    width: 100vw;
+    background-color: white;
 }
 
 .navbar_container nav{

@@ -10,10 +10,52 @@
   <link rel="stylesheet" href="../../assets/styles/boostrap/bootstrap.min.css">
   <link rel="stylesheet" href="../../assets/styles/product.css">
   <link rel="stylesheet" href="../../assets/styles/responsive/danhmucspResponsive.css">
+  <link rel="stylesheet" href="../../assets/styles/navbar_white.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <link rel="stylesheet" href="../../assets/styles/navbarResponsive.css">
+  <script src="../../assets/styles/boostrap/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
   <!-- navbar -->
+  <div class="navbar_container">
+    <nav class="navbar">
+        <div id="navbar_content" class="container-fluid">
+            
+            <a class="navbar-brand" href="../../../public/index.html">
+                <img src="../../assets/images/logo/logo.png" alt="" id="navbar_logo">
+            </a>
+            
+            <div id="" class="contentnav">
+                <ul class="navbar-content d-flex">
+                    <li class="nav-item"><a class="nav-link" href="../../../public/index.html" id="navbar-link">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/product-category/product-category.html" id="navbar-link">Danh mục sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../account-overview/product-watched.html" id="navbar-link">Sản phẩm đã xem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../account-overview/order-management.html" id="navbar-link">Quản lý đơn hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../giohang/giohangpage1.html" id="navbar-link">Giỏ hàng</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbar-link" data-bs-toggle="dropdown">Xem thêm <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-dark ddmn" aria-labelledby="navbar-link">
+                            <li><a class="dropdown-item" href="../thongBao/thongBao.html" >Thông báo</a></li>
+                            <li><a class="dropdown-item" href="../account-overview/gift-code.html" >Mã quà tặng</a></li>
+                            <li><a class="dropdown-item" href="../chiNhanh/chiNhanh.html" >Chi nhánh</a></li>
+                            <li><a class="dropdown-item" href="../hoTro/hoTro.html" >Hỗ trợ</a></li>
+                            <li><a class="dropdown-item" href="#" >Site map</a></li>
+
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="../trangDangKiDangNhap/loginRegisterPage.html"><input type="button" class="btn" id="dangnhap_btn" value="Đăng nhập"></a> </li>
+                </ul>
+            </div>
+        
+        </div>
+    </nav>
+</div>
+
   <div class="flash-sale header finisher-header">
     <div class="flash-sale-content">
       <div class="flash-sale-first-content">
@@ -296,276 +338,6 @@
             </span>
           </button>
         </div>
-                <!-- sp -->
-                <div class="product col-2" style="background-color: white;">
-                  <div class="product-header">
-                    <img
-                      src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-                      alt="">
-                    <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-                  </div>
-                  <div class="product-body">
-                    <span class="product-body-price1 title1">10.000.000đ</span>
-                    <div class="product-body-title">
-                      <span class="title1 product-body-price2">8.950.000đ</span>
-                      <span class="product-body-discount title1">-20%</span>
-                    </div>
-                  </div>
-                  <div class="product-footer">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                        </p>
-                      </div>
-                      <div class="col-6" style="padding-top: 10px; ">
-                        <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-                    </span>
-                  </button>
-                </div>
-                        <!-- sp -->
-        <div class="product col-2" style="background-color: white;">
-          <div class="product-header">
-            <img
-              src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-              alt="">
-            <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-          </div>
-          <div class="product-body">
-            <span class="product-body-price1 title1">10.000.000đ</span>
-            <div class="product-body-title">
-              <span class="title1 product-body-price2">8.950.000đ</span>
-              <span class="product-body-discount title1">-20%</span>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="row">
-              <div class="col-6">
-                <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                </p>
-              </div>
-              <div class="col-6" style="padding-top: 10px; ">
-                <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-              </div>
-            </div>
-          </div>
-          <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-            </span>
-          </button>
-        </div>
-                <!-- sp -->
-                <div class="product col-2" style="background-color: white;">
-                  <div class="product-header">
-                    <img
-                      src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-                      alt="">
-                    <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-                  </div>
-                  <div class="product-body">
-                    <span class="product-body-price1 title1">10.000.000đ</span>
-                    <div class="product-body-title">
-                      <span class="title1 product-body-price2">8.950.000đ</span>
-                      <span class="product-body-discount title1">-20%</span>
-                    </div>
-                  </div>
-                  <div class="product-footer">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                        </p>
-                      </div>
-                      <div class="col-6" style="padding-top: 10px; ">
-                        <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-                    </span>
-                  </button>
-                </div>
-                        <!-- sp -->
-        <div class="product col-2" style="background-color: white;">
-          <div class="product-header">
-            <img
-              src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-              alt="">
-            <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-          </div>
-          <div class="product-body">
-            <span class="product-body-price1 title1">10.000.000đ</span>
-            <div class="product-body-title">
-              <span class="title1 product-body-price2">8.950.000đ</span>
-              <span class="product-body-discount title1">-20%</span>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="row">
-              <div class="col-6">
-                <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                </p>
-              </div>
-              <div class="col-6" style="padding-top: 10px; ">
-                <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-              </div>
-            </div>
-          </div>
-          <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-            </span>
-          </button>
-        </div>
-                <!-- sp -->
-                <div class="product col-2" style="background-color: white;">
-                  <div class="product-header">
-                    <img
-                      src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-                      alt="">
-                    <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-                  </div>
-                  <div class="product-body">
-                    <span class="product-body-price1 title1">10.000.000đ</span>
-                    <div class="product-body-title">
-                      <span class="title1 product-body-price2">8.950.000đ</span>
-                      <span class="product-body-discount title1">-20%</span>
-                    </div>
-                  </div>
-                  <div class="product-footer">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                        </p>
-                      </div>
-                      <div class="col-6" style="padding-top: 10px; ">
-                        <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-                    </span>
-                  </button>
-                </div>
-                        <!-- sp -->
-        <div class="product col-2" style="background-color: white;">
-          <div class="product-header">
-            <img
-              src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-              alt="">
-            <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-          </div>
-          <div class="product-body">
-            <span class="product-body-price1 title1">10.000.000đ</span>
-            <div class="product-body-title">
-              <span class="title1 product-body-price2">8.950.000đ</span>
-              <span class="product-body-discount title1">-20%</span>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="row">
-              <div class="col-6">
-                <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                </p>
-              </div>
-              <div class="col-6" style="padding-top: 10px; ">
-                <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-              </div>
-            </div>
-          </div>
-          <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-            </span>
-          </button>
-        </div>
-                <!-- sp -->
-                <div class="product col-2" style="background-color: white;">
-                  <div class="product-header">
-                    <img
-                      src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-                      alt="">
-                    <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-                  </div>
-                  <div class="product-body">
-                    <span class="product-body-price1 title1">10.000.000đ</span>
-                    <div class="product-body-title">
-                      <span class="title1 product-body-price2">8.950.000đ</span>
-                      <span class="product-body-discount title1">-20%</span>
-                    </div>
-                  </div>
-                  <div class="product-footer">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                        </p>
-                      </div>
-                      <div class="col-6" style="padding-top: 10px; ">
-                        <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-                    </span>
-                  </button>
-                </div>
-                        <!-- sp -->
-        <div class="product col-2" style="background-color: white;">
-          <div class="product-header">
-            <img
-              src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-              alt="">
-            <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-          </div>
-          <div class="product-body">
-            <span class="product-body-price1 title1">10.000.000đ</span>
-            <div class="product-body-title">
-              <span class="title1 product-body-price2">8.950.000đ</span>
-              <span class="product-body-discount title1">-20%</span>
-            </div>
-          </div>
-          <div class="product-footer">
-            <div class="row">
-              <div class="col-6">
-                <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                </p>
-              </div>
-              <div class="col-6" style="padding-top: 10px; ">
-                <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-              </div>
-            </div>
-          </div>
-          <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-            </span>
-          </button>
-        </div>
-                <!-- sp -->
-                <div class="product col-2" style="background-color: white;">
-                  <div class="product-header">
-                    <img
-                      src="../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp"
-                      alt="">
-                    <p class="title">PC02 PC GVN Intel i3-12100F VGA RTX 3050</p>
-                  </div>
-                  <div class="product-body">
-                    <span class="product-body-price1 title1">10.000.000đ</span>
-                    <div class="product-body-title">
-                      <span class="title1 product-body-price2">8.950.000đ</span>
-                      <span class="product-body-discount title1">-20%</span>
-                    </div>
-                  </div>
-                  <div class="product-footer">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="product-footer-title title1">3.5<img src="../../assets/images/icon/Mod_Add-On_1-35-512.webp" alt="">
-                        </p>
-                      </div>
-                      <div class="col-6" style="padding-top: 10px; ">
-                        <span class="product-foter-danhgia title2">(20 đánh giá)</span>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="end-btn"><span class="title2">Thêm Vào Giỏ Hàng
-                    </span>
-                  </button>
-                </div>
         
 
             
