@@ -1,0 +1,131 @@
+@media(width <= 1282px) {
+    #background,
+    #side-bar {
+        display: none;
+    }
+
+    .main-container {
+        right: 0 !important;
+        left: 5% !important;
+        width: 800px;
+        height: auto;
+    }
+
+    #content-container {
+        border: 1px solid black;
+        width: 800px !important;
+        padding-left: 30px;
+    }
+
+    .order-magagement {
+        width: 100%;
+    }
+
+    .order__header {
+        width: 800px;
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .nav-item {
+        padding-bottom: 10px;
+        width: 110px !important;
+    }
+    .nav-link{
+        margin-bottom: 10px;
+    }
+    .order__body {
+        padding: 20px;
+    }
+    .order__body__desc__product1 {
+        display : flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 85%;
+    }
+    .order__body__desc__product1{
+        margin-left: 10px;
+    }
+}
+
+@media(width <= 767px){
+    #background,
+    #side-bar {
+        display: none;
+    }
+
+    .main-container {
+        right: 0;
+        left: 5%;
+        width: 600px;
+        height: auto;
+    }
+
+    #content-container {
+        border: 1px solid black;
+        width: 600px !important;
+        padding-left: 20px;
+    }
+
+    .order-magagement {
+        width: 600px;
+    }
+
+    .order__header {
+        width: 600px;
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-tabs .nav-link{
+        font-size: 10px !important;
+    }
+    .order__body {
+        padding: 15px;
+    }
+
+    .order__body__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .order__body__desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order__body__desc__product1 {
+        display : flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 550px;
+        margin-left: 10px;
+    }
+    .order__body__desc__product1__left img{
+        width: 80px;
+        padding-top : 20px;
+        height: auto;
+    }
+    .order__body__desc__product1__left{
+        width: 100px;
+    }
+    .title7{
+        font-size : 10px;
+    }
+    .product1__center p:first-child{
+        width: 210px;
+        height: 50px;
+    }
+    .product1__center{
+        width: 210px;
+    }
+    
+}

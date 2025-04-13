@@ -1,0 +1,41 @@
+@media(width <= 1282px) {
+    #background{
+        display : none;
+    }
+    #side-bar{
+        display : none;
+    }
+    .main-container{
+        width: 500px;    
+        right: 0 !important;
+        left: 5% !important;
+        width: 700px;
+        height: 600px;
+    }
+    #content-container{
+        border: 1px solid black;
+        
+        padding-left: 30px;
+    }
+  } 
+  @media(width <= 767px){
+    #background{
+        display : none;
+    }
+    #side-bar{
+        display : none;
+    }
+    .main-container{        
+        width: 500px;    
+        right: 0 ;
+        left: 5% ;
+        width: 600px;
+        height: 500px;
+        
+    }
+    #content-container{
+        width: 600px !important;
+        border: 1px solid black;
+        position: relative;
+    }
+} 
