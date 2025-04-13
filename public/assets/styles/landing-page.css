@@ -114,6 +114,9 @@ header{
 .container_about-part_content span{
     color: #B02B19;
 }
+li svg{
+    margin-top: 1px;
+}
 .img{}
 .img img{
     width: 400px;
