@@ -1,0 +1,46 @@
+/* Tablet: width <= 1000px */
+@media (width <= 1000px) {
+    
+}
+
+/* Mobile: width <= 767px */
+@media (width <= 767px) {
+    #background{
+        display: none!important;
+    }
+    .side-bar{
+        display: none!important;
+    }
+    .main-container{
+        width: 100% !important;
+        margin: auto auto !important;
+        left : 0 !important;
+        margin-left: 0vw!important;
+    }
+    #content-container{
+        width: 100% !important;
+        left : 0 !important;
+        font-size: 11px!important;
+    }
+    .gift-code-main-content{}
+    .gift-code__header__content{
+        width: 100vw !important;
+        left : 0 !important;
+        font-size: 11px!important;
+    }
+    .gift-code__header__content td input{
+        width: 50vw !important;
+        left : 0 !important;
+        font-size: 11px!important;
+    }
+    .gift-code-main-content{
+        width: 100vw !important;
+        font-size: 11px!important;
+    }
+    .gift-code-info{
+        left: 9rem;
+    }
+    .gift-code-use-btn{
+        left: 18rem
+    }
+}
