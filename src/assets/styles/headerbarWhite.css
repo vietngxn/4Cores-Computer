@@ -1,0 +1,18 @@
+
+.headerbar-container {
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    background-color: #23201B;
+    padding: 0 20px;
+}
+.headerbar-logo{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.headerbar-container img{
+    width: 140px;
+    margin: auto;
+    filter: brightness(0) invert(1);
+}
