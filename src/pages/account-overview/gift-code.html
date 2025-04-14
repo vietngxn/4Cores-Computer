@@ -129,7 +129,7 @@
             <div class="side-bar-footer">
                 <ul>
                     <li>    
-                        <a href="">
+                        <a href="../account-overview/user-information.html">
                             <img src="../../assets/images/sidebar/Footer.png" alt="">
                             <div class="side-bar-footer-content">
                                 <p class = "title1 hidden-text p1">Welcome Back👋</p>
@@ -378,27 +378,7 @@
       </div>
     <script src="../../assets/styles/js/background.js"></script>
 </body>
-<script>
-    function toggleSubBar() {
-        const subbar = document.querySelector('.subbar-container');
-        const circle = document.getElementById('circle');
-        const logo = document.getElementById('logo');
-        const closeIcon = document.getElementById('close-icon');
-        const circleIcon = document.getElementById('circle-icon');
-  
-        if (subbar.classList.contains('hide')) {
-            subbar.classList.remove('hide');
-            closeIcon.classList.remove('hide');
-            logo.classList.add('hide');
-            circleIcon.classList.add('hide-close');
-            
-        } else {
-            subbar.classList.add('hide');
-            circle.classList.remove('active');
-            closeIcon.classList.add('hide');
-            logo.classList.remove('hide');
-            circleIcon.classList.remove('hide-close');
-        }
-    }
+<script src="../../assets/styles/js/bottombarResponsive.js">
+
   </script>
 </html>

@@ -113,6 +113,8 @@ header{
 }
 .container_about-part_content span{
     color: #B02B19;
+    font-size: 28px;
+    font-family: "Kanit-Regular";
 }
 li svg{
     margin-top: 1px;

@@ -128,7 +128,7 @@
             <div class="side-bar-footer">
                 <ul>
                     <li>    
-                        <a href="">
+                        <a href="../account-overview/user-information.html">
                             <img src="../../assets/images/sidebar/Footer.png" alt="">
                             <div class="side-bar-footer-content">
                                 <p class = "title1 hidden-text p1">Welcome Back👋</p>
@@ -147,25 +147,24 @@
         <div id="content-container">
             <div class="information">
                 <div class="information__header">
-                    <h1 class ="title-header">Thông Tin Cá Nhân</h1>
-                    <p class ="title3">Điền Đầy đủ thông tin trước khi mua hàng</p>
+                    <h1 class="title-header">Thông Tin Cá Nhân</h1>
+                    <p class="title3">Điền Đầy đủ thông tin trước khi mua hàng</p>
                 </div>
                 <div class="information__body">
-                    <form action="">
+                    <form id="user-info-form">
                         <table>
-                            <tr class ="information__body__name">
-                                <td class ="title-label">Họ và Tên</td>
+                            <tr class="information__body__name">
+                                <td class="title-label">Họ và Tên</td>
                             </tr>
-                            <tr class ="information__body__name-input">
+                            <tr class="information__body__name-input">
                                 <td>
-                                    <input type="text" name="" id="" placeholder="Nguyễn Tiến Đạt">
+                                    <input type="text" id="fullName" placeholder="Nguyễn Tiến Đạt">
                                 </td>
                             </tr>
                             <tr class="information__body__sex">
                                 <td class="title-label">Giới Tính</td>
-                            
                                 <td class="information__body__sex-male" onclick="changeGender('male')">
-                                    <input type="radio" name="gender" id="male">
+                                    <input type="radio" name="gender" id="male" value="male">
                                     <span>
                                         <svg width="26" height="38" viewBox="0 0 26 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.6169 11.3768V7.94144H17.6561V3.59604H15.6169V0.492188H10.5187V3.59604H8.27554V7.94144H10.5187V11.3399C4.60486 12.507 0 17.8713 0 24.2969C0 31.5727 5.85065 37.4922 13.0211 37.4922C20.1918 37.4922 26 31.5729 26 24.2969C26 17.9408 21.5308 12.6208 15.6169 11.3768ZM13.0382 32.3189C8.6789 32.3189 5.13222 28.7201 5.13222 24.2967C5.13222 19.8731 8.6789 16.2742 13.0382 16.2742C17.3978 16.2742 20.9445 19.8731 20.9445 24.2967C20.9443 28.7203 17.3978 32.3189 13.0382 32.3189Z" fill="#23201B"/>
@@ -173,9 +172,8 @@
                                     </span>
                                     <span>Nam</span>
                                 </td>
-                            
                                 <td class="information__body__sex-female selected" onclick="changeGender('female')">
-                                    <input type="radio" name="gender" id="female" checked>
+                                    <input type="radio" name="gender" id="female" value="female" checked>
                                     <span>
                                         <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.60884 8.9727C-0.635273 13.7193 -1.85465 22.6325 2.90479 28.8601C7.66423 35.0877 16.6333 36.3146 22.8774 31.568C28.3945 27.3741 29.9321 19.8589 27.0052 13.9639L31.9757 10.1855L31.8303 12.5875L36.5019 12.8082L37 2.82704L27.0974 0.460938L26.0273 5.03674L28.6781 5.69204L23.5861 9.56278C18.5907 5.24048 11.0608 4.82834 5.60884 8.9727ZM19.4654 27.1035C15.6692 29.9893 10.2267 29.2568 7.33309 25.4706C4.4395 21.6845 5.17392 16.2565 8.97008 13.3708C12.7664 10.4849 18.209 11.2174 21.1026 15.0036C23.9962 18.7897 23.2617 24.2177 19.4654 27.1035Z" fill="#23201B"/>
@@ -184,37 +182,35 @@
                                     <span>Nữ</span>
                                 </td>
                             </tr>
-                            
-                            
                             <tr class="information__body__address">
-                                <td class ="title-label">Địa Chỉ</td>
+                                <td class="title-label">Địa Chỉ</td>
                             </tr>
-                            <tr class ="information__body__address-input">
-                                <td><input type="text" name="" id="" placeholder="129 Đường ta13 phường thới an q12"></td>
+                            <tr class="information__body__address-input">
+                                <td><input type="text" id="address" placeholder="129 Đường ta13 phường thới an q12"></td>
                             </tr>
                             <tr class="information__body__phone">
                                 <td class="title-label">Số Điện Thoại</td>
                             </tr>
-                            <tr class ="information__body__phone-input">
-                                <td><input type="text" name="" id="" placeholder="0389269309"></td>
+                            <tr class="information__body__phone-input">
+                                <td><input type="text" id="phone" placeholder="0389269309"></td>
                             </tr>
-                            <tr class ="information__body__email">
-                                <td class ="title-label">Email</td>
+                            <tr class="information__body__email">
+                                <td class="title-label">Email</td>
                             </tr>
-                            <tr class ="information__body__email-input">
-                                <td><input type="text" name="" id="" placeholder="tiendat20051812@gmail.com"></td>
+                            <tr class="information__body__email-input">
+                                <td><input type="text" id="email" placeholder="tiendat20051812@gmail.com"></td>
                             </tr>
-                            <tr class ="information__body__birthday">
-                                <td class ="title-label">Ngày Sinh</td>
+                            <tr class="information__body__birthday">
+                                <td class="title-label">Ngày Sinh</td>
                             </tr>
-                            <tr class ="information__body__birthday-input">
-                                <td><input type="text" name="" id="" placeholder="DD/MM/YYYY"></td>
+                            <tr class="information__body__birthday-input">
+                                <td><input type="text" id="birthday" placeholder="DD/MM/YYYY"></td>
                             </tr>
                         </table>
-                    </form> 
+                    </form>
                 </div>
                 <div class="information__footer">
-                    <button type="submit">Lưu Thông Tin</button>
+                    <button type="submit" form="user-info-form">Lưu Thông Tin</button>
                 </div>
             </div>
         </div>
@@ -315,45 +311,8 @@
                 </a>
         </div>
       </div>
-    <script>
-        function changeGender(gender) {
-    // Xóa class 'selected' khỏi tất cả các lựa chọn
-    document.querySelector(".information__body__sex-male").classList.remove("selected");
-    document.querySelector(".information__body__sex-female").classList.remove("selected");
-
-    // Đánh dấu radio button được chọn
-    document.getElementById(gender).checked = true;
-
-    // Thêm class 'selected' vào lựa chọn được chọn
-    if (gender === "male") {
-        document.querySelector(".information__body__sex-male").classList.add("selected");
-    } else {
-        document.querySelector(".information__body__sex-female").classList.add("selected");
-    }
-}
-    </script>
-    <script>
-        function toggleSubBar() {
-            const subbar = document.querySelector('.subbar-container');
-            const circle = document.getElementById('circle');
-            const logo = document.getElementById('logo');
-            const closeIcon = document.getElementById('close-icon');
-            const circleIcon = document.getElementById('circle-icon');
-      
-            if (subbar.classList.contains('hide')) {
-                subbar.classList.remove('hide');
-                closeIcon.classList.remove('hide');
-                logo.classList.add('hide');
-                circleIcon.classList.add('hide-close');
-                
-            } else {
-                subbar.classList.add('hide');
-                circle.classList.remove('active');
-                closeIcon.classList.add('hide');
-                logo.classList.remove('hide');
-                circleIcon.classList.remove('hide-close');
-            }
-        }
+    <script src="../../assets/styles/js/userInfomation.js"></script>
+    <script src="../../assets/styles/js/bottombarResponsive.js">
       </script>
     <script src="../../assets/styles/js/background.js"></script>
 </body>

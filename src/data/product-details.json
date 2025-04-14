@@ -1,0 +1,416 @@
+[
+  {
+    "id": "PC01",
+    "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/pc_gvn_rx6600_-_3_762ba90a94904a50809a93355cd819a7_grande.png",
+    "title": "PC GVN Intel i3-12100F VGA RX 6500XT",
+    "originalPrice": "12.000.000đ",
+    "discountedPrice": "10.450.000đ",
+    "discount": "-30%",
+    "rating": "3.5",
+    "reviews": "78",
+    "sold": "1.5k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "CPU Intel Core i3-12100F – 4 nhân 8 luồng, xung nhịp cơ bản 3.3GHz và turbo boost lên đến 4.3GHz.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/_12th_m35582_ang03_left_v01_1280x1280_1c859e2e7a104e119b5010143cc9b0fc_cf630872d9ba467584c03c99a625f539_grande.webp",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-CS D4 – thiết kế tối ưu, đảm bảo sự ổn định và tương thích tốt với các linh kiện khác.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/mainboard-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "Adata XPG Spectrix D50 8GB DDR4 3200MHz RGB White – tản nhiệt nổi bật với dải đèn LED RGB đầy màu sắc.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/orsair-dominator-platinum-rgb-white-2_de089f0593aa4b429c6da5e07e53b9f3_c5132186088045dcb50903c233d4b3c7_grande.webp",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "ASUS Radeon RX 6500XT – hiệu năng tốt cho chơi game ở độ phân giải 1080p.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/fwebp__1__f3756f445f9d494b8a00830b370bd05c_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "SSD M.2 NVMe PCIe Gen4 500GB – tốc độ đọc/ghi lên đến 3300/1200 MB/s, giúp khởi động máy và ứng dụng nhanh chóng.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/1-pny-ssd-cs900-fr_482e99a05c2b4929b74a9375f58cf6da_4967e54ad7e74668b37238fa120743c1_grande.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC02",
+    "image": "../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp",
+    "title": "PC GVN Intel i3-12100F VGA RTX 3050",
+    "originalPrice": "12.230.000đ",
+    "discountedPrice": "11.190.000đ",
+    "discount": "-9%",
+    "rating": "3.0",
+    "reviews": "50",
+    "sold": "1.1k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "CPU Intel Core i3-12100F – 4 nhân 8 luồng, xung nhịp cơ bản 3.3GHz và turbo boost lên đến 4.3GHz, mang lại hiệu suất ổn định cho cả chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/linh kien/_12th_m35582_ang03_left_v01_1280x1280_1c859e2e7a104e119b5010143cc9b0fc_cf630872d9ba467584c03c99a625f539_grande.webp",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-CS D4 – bo mạch chủ ổn định, hỗ trợ tốt cho các linh kiện hiện đại.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/mainboard-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "Adata XPG Spectrix D50 8GB DDR4 3200MHz RGB White – thiết kế đẹp mắt với đèn LED RGB, đảm bảo hiệu suất và thẩm mỹ.",
+        "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/linhkien/orsair-dominator-platinum-rgb-white-2_de089f0593aa4b429c6da5e07e53b9f3_c5132186088045dcb50903c233d4b3c7_grande.webp",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "ASUS GeForce RTX 3050 – card đồ họa mạnh mẽ, hỗ trợ công nghệ Ray Tracing và DLSS, phù hợp cho chơi game ở độ phân giải 1080p với thiết lập cao.",
+        "image": "../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/linh kien/asus_dual_geforce_rtx_3050_8gb__11__8d0f0351677f417887073d9608cc76fd_0144a7e57b8848b5bbaf2b0386d44e0c_master-removebg-preview.png",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "M.2 NVMe PCIe Gen4 500GB – tốc độ đọc/ghi nhanh, giúp khởi động hệ thống và ứng dụng mượt mà.",
+        "image": "../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/linh kien/1-pny-ssd-cs900-fr_482e99a05c2b4929b74a9375f58cf6da_4967e54ad7e74668b37238fa120743c1_grande.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC03",
+    "image": "../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/pc_case_xigmatek_-_26_e36ac54740974ec88f65ca6eedfd10a2_grande.webp",
+    "title": "PC GVN Intel i5-12400F VGA RX 6500XT",
+    "originalPrice": "13.420.000đ",
+    "discountedPrice": "12.790.000đ",
+    "discount": "-5%",
+    "rating": "3.3",
+    "reviews": "57",
+    "sold": "1.3k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "CPU Intel Core i5-12400F – 6 nhân 12 luồng, xung nhịp cơ bản 2.5GHz và turbo boost lên đến 4.4GHz. ",
+        "image": "../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/linhkien/n43532-001-arl-5kf-univ_e25bf3b60e52436c8213c5368f5efbc8_grande-removebg-preview.png",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-K D4-CSM – bo mạch chủ với thiết kế tối ưu, đảm bảo sự ổn định và tương thích tốt với các linh kiện khác.",
+        "image": "../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/linhkien/mainboard-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "Adata XPG Spectrix D50 8GB DDR4 3200MHz RGB White – tản nhiệt hiệu quả với dải đèn LED RGB nổi bật.",
+        "image": "../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/linhkien/gearvn-ram-v-color-skywalker-plus-1x8-3600-rgb-black-ddr4-3_250d149db7334b709e0b2f21fdfaf6f1_grande-removebg-preview.png",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "ASUS Radeon RX 6500XT – hiệu năng tốt cho chơi game ở độ phân giải 1080p.",
+        "image": "../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/linhkien/fwebp__6__ddf2a03659904d2a81b0ba841b1939cf_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "SSD M.2 NVMe PCIe Gen4 500GB – tốc độ đọc/ghi nhanh chóng, giúp khởi động hệ thống và ứng dụng mượt mà.",
+        "image": "../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/linh kien/1-pny-ssd-cs900-fr_482e99a05c2b4929b74a9375f58cf6da_4967e54ad7e74668b37238fa120743c1_grande.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC04",
+    "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/gvn07935_aaa9b99c81f044ba81926066e554a4b2_1024x1024.webp",
+    "title": "PC GVN Intel i3-12100F VGA RX 6600",
+    "originalPrice": "12.930.000đ",
+    "discountedPrice": "12.390.000đ",
+    "discount": "-4%",
+    "rating": "3.4",
+    "reviews": "63",
+    "sold": "1.0k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "CPU Intel Core i3-12100F – 4 nhân 8 luồng, xung nhịp cơ bản 3.3GHz và turbo boost lên đến 4.3GHz, mang lại hiệu suất ổn định cho cả chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/linhkien/12100f_d81914f75c254dba985d80033b522662_c3458e8ae6a24c8881b4ae103f0b6a6d_grande-removebg-preview.png",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-K DDR4 – bo mạch chủ ổn định, hỗ trợ tốt cho các linh kiện hiện đại.",
+        "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/linhkien/mainboard-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "V-Color Skywalker Plus 1x8GB 3600MHz RGB Black DDR4 – thiết kế đẹp mắt với đèn LED RGB, đảm bảo hiệu suất và thẩm mỹ.​",
+        "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/linhkien/en_color_list_22d26_r9gc83djaz_3c686ea66ef2444a937c1fd51d008395__1__ae48a53002da4865b402c951dd663848_grande-removebg-preview.png",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "ASUS Dual Radeon RX 6600 V3 8GB – card đồ họa mạnh mẽ, phù hợp cho chơi game ở độ phân giải 1080p với thiết lập cao.​",
+        "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/linhkien/ard-man-hinh-asus-dual-radeon-rx-6600-v2-8gb-gddr6-dual-rx6600-8g-v2-1_9b8f2efba776482c90caf06126d4773f_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "PNY CS900 250GB SATA3 – tốc độ đọc/ghi nhanh, giúp khởi động hệ thống và ứng dụng mượt mà.",
+        "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/linhkien/gearvn-o-cung-ssd-verbatim-vi550-256gb-sata3-1_7ef1024514df4f3484b56186726535d2_grande-removebg-preview.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC06",
+    "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/pc_gvn_rx6600_-_3_df2a8f9c10304557832f4a315a2ef469_grande-removebg-preview.png",
+    "title": "PC GVN Intel i5-12400F VGA RX 6600",
+    "originalPrice": "15.420.000đ",
+    "discountedPrice": "14.490.000đ",
+    "discount": "-6%",
+    "rating": "3.7",
+    "reviews": "89",
+    "sold": "1.7k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "CPU Intel Core i5-12400F – 6 nhân 12 luồng, xung nhịp cơ bản 2.5GHz và turbo boost lên đến 4.4GHz, mang lại hiệu suất ổn định cho cả chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/linhkien/box_t4_i5f_12th_m35582_ang01_right_v01_1280x1280_0d8d3bea75e8441f855b246eba0b7b8a_grande.webp",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-K DDR4 – bo mạch chủ ổn định, hỗ trợ tốt cho các linh kiện hiện đại.",
+        "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/linhkien/bo-mach-chu-asus-prime-h610m-cs-d4-1_c4ae241125424d4699362cd2a66a2563_eff37e1d831348ee8ab6bc6c35f60773_grande-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "T-Group T-Force Delta 1x8GB 3600MHz RGB Black DDR4 – thiết kế đẹp mắt với đèn LED RGB, đảm bảo hiệu suất và thẩm mỹ.​",
+        "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/linhkien/gearvn-pc-gvn-intel-i5-rx6600-3_47ee9d8b2ea04fec99c0664b80c0c292-removebg-preview.png",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "ASUS Dual Radeon RX 6600 V2 8GB GDDR6 – card đồ họa mạnh mẽ, phù hợp cho chơi game ở độ phân giải 1080p với thiết lập cao.​",
+        "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/linhkien/ard-man-hinh-asus-dual-radeon-rx-6600-v2-8gb-gddr6-dual-rx6600-8g-v2-1_9b8f2efba776482c90caf06126d4773f_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "WD Black SN770 500GB M.2 NVMe PCIe Gen4 – tốc độ đọc/ghi nhanh, giúp khởi động hệ thống và ứng dụng mượt mà.​",
+        "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/linhkien/77071_o_cung_ssd_wd_sn580_blue_m_d5ea5db2013245f0bfea6ec5dc117dc5_grande__2_-removebg-preview.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC08",
+    "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/luxs_44f7416f99e54134a7820f1168275f5f_1024x1024_756d5d077691485292e2d608fe2c7826_grande.webp",
+    "title": "PC GVN AMD R5-5600X VGA RX 6600",
+    "originalPrice": "14.990.000đ",
+    "discountedPrice": "14.143.000đ",
+    "discount": "-6%",
+    "rating": "4.5",
+    "reviews": "99",
+    "sold": "2.5k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "CPU AMD Ryzen 5 5600X – 6 nhân 12 luồng, xung nhịp cơ bản 3.7GHz và turbo boost lên đến 4.6GHz, mang lại hiệu suất ổn định cho cả chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/linhkien/gearvn-amd-ryzen-5-5600x-32mb-3-7ghz-boost-4-6ghz-6-nhan-12-luong_0f0c7b078d3e45df98c5a04ef5cd07f6-removebg-preview.png",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME B550M-A – bo mạch chủ ổn định, hỗ trợ tốt cho các linh kiện hiện đại.",
+        "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/linhkien/gearvn-prime-b550m-a-_wi-fi_-01_a72084be317e4abfbaf5b46ba5950462_grande-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "V-Color Skywalker Plus 1x8GB 3600MHz RGB Black DDR4 – thiết kế đẹp mắt với đèn LED RGB, đảm bảo hiệu suất và thẩm mỹ.​",
+        "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/linhkien/gearvn-ram-pny-xlr8-silver-1-x-8gb-3600-rgb_f3cf63ebe57842afb29713db9311dea6_grande-removebg-preview.png",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "ASUS Dual Radeon RX 6600 V3 8GB GDDR6 – card đồ họa mạnh mẽ, phù hợp cho chơi game ở độ phân giải 1080p với thiết lập cao.​",
+        "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/linhkien/fwebp__6__1cce2c81d3374da0ae9116a36cc27d69_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "Kingston NV3 500GB M.2 PCIe NVMe Gen4 – tốc độ đọc/ghi nhanh, giúp khởi động hệ thống và ứng dụng mượt mà.​​",
+        "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/linhkien/77071_o_cung_ssd_wd_sn580_blue_m_d5ea5db2013245f0bfea6ec5dc117dc5_grande__2_-removebg-preview.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC05",
+      "image": "../../assets/images/products/PC05  PC GVN Intel i5-12400F VGA RTX 3050/pc_case_xigmatek_-_26_908426d5fe2147bb9fd246167ac68baa_grande.webp",
+      "title": "PC05  PC GVN Intel i5-12400F VGA RTX 3050",
+      "originalPrice": "15.000.000đ",
+      "discountedPrice": "13.590.000đ",
+      "discount": "-30%",
+      "rating": "3.5",
+    "reviews": "108",
+    "sold": "2.5k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "Intel i5-12400F, hiệu năng mạnh mẽ với 6 nhân 12 luồng, xung nhịp 2.5GHz và turbo boost lên 4.4 GHz, phù hợp cho chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/linhkien/box_t4_i5f_12th_m35582_ang01_right_v01_1280x1280_0d8d3bea75e8441f855b246eba0b7b8a_grande.webp",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-CS D4, thiết kế tối ưu, đảm bảo sự ổn định và tương thích tốt với các linh kiện khác.",
+        "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/linhkien/_asus_tuf_gaming_b760m_plus_wifi_d4_1_d9c072631509461c8fd880c9e48b9344_3547fd3988ef4d41beb979299a72fad9_grande-removebg-preview.png",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "Adata XPG Spectrix D50 8GB DDR4 3200Mhz RGB White, tản nhiệt nổi bật với dải đèn LED RGB đầy màu sắc.",
+        "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/linhkien/gearvn-pc-gvn-intel-i5-rx6600-3_47ee9d8b2ea04fec99c0664b80c0c292-removebg-preview.png",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "VGA RTX 3050, hiệu năng mạnh mẽ với khả năng chơi game 1080p mượt mà.",
+        "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/linhkien/ard-man-hinh-asus-dual-radeon-rx-6600-v2-8gb-gddr6-dual-rx6600-8g-v2-1_9b8f2efba776482c90caf06126d4773f_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "SSD M.2 NVMe PCIe Gen4 500GB, tốc độ đọc/ghi lên đến 3300/1200 MB/s, khởi động máy và ứng dụng nhanh chóng.",
+        "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/linhkien/77071_o_cung_ssd_wd_sn580_blue_m_d5ea5db2013245f0bfea6ec5dc117dc5_grande__2_-removebg-preview.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC07",
+      "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/gvn07935_33fd08b98d774ab69f1efc16f4b90a94_grande.webp",
+      "title": "PC07 PC GVN Intel i5-12400F VGA RX 6600",
+      "originalPrice": "16.000.000đ",
+      "discountedPrice": "14.590.000đ",
+      "discount": "-30%",
+      "rating": "4.5",
+    "reviews": "120",
+    "sold": "1.8k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "Intel i5-12400F, hiệu năng mạnh mẽ với 6 nhân 12 luồng, xung nhịp 2.5GHz và turbo boost lên 4.4 GHz, phù hợp cho chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC05  PC GVN Intel i5-12400F VGA RTX 3050/linhkien/box_t4_i5f_12th_m35582_ang01_right_v01_1280x1280_0d8d3bea75e8441f855b246eba0b7b8a_grande.webp",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-CS D4, thiết kế tối ưu, đảm bảo sự ổn định và tương thích tốt với các linh kiện khác.",
+        "image": "../../assets/images/products/PC05  PC GVN Intel i5-12400F VGA RTX 3050/linhkien/w800__1__ec2c156923e2400abeb67dccc0c5e44e_grande.webp",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "Adata XPG Spectrix D50 8GB DDR4 3200Mhz RGB White, tản nhiệt nổi bật với dải đèn LED RGB đầy màu sắc.",
+        "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/linhkien/en_color_list_22d26_r9gc83djaz_3c686ea66ef2444a937c1fd51d008395__1__ae48a53002da4865b402c951dd663848_grande-removebg-preview.png",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "VGA RX 6600, hiệu năng mạnh mẽ với khả năng chơi game 1080p mượt mà.",
+        "image": "../../assets/images/products/PC05  PC GVN Intel i5-12400F VGA RTX 3050/linhkien/fwebp__6__1cce2c81d3374da0ae9116a36cc27d69_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "SSD M.2 NVMe PCIe Gen4 500GB, tốc độ đọc/ghi lên đến 3300/1200 MB/s, khởi động máy và ứng dụng nhanh chóng.",
+        "image": "../../assets/images/products/PC05  PC GVN Intel i5-12400F VGA RTX 3050/linhkien/wdc-wdblue-sn570_prod-img-hero-250g_7b6bc6aebdf549da8246106a680835f7_grande-removebg-preview.png",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  },
+  {
+    "id": "PC09",
+    "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/4060_ddae7a383d2c4f56b9116644fe20906f_grande-removebg-preview.png",
+    "title": "PC09 PC GVN Intel i5-12400F VGA RTX 4060",
+    "originalPrice": "16.500.000đ",
+    "discountedPrice": "15.090.000đ",
+    "discount": "-30%",
+    "rating": "4.3",
+    "reviews": "110",
+    "sold": "1.9k",
+    "components": [
+      {
+        "name": "Central Processing Unit",
+        "description": "Intel i5-12400F, hiệu năng mạnh mẽ với 6 nhân 12 luồng, xung nhịp 2.5GHz và turbo boost lên 4.4 GHz, phù hợp cho chơi game và công việc đa nhiệm.",
+        "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/linhkien/box_t4_i5f_12th_m35582_ang01_right_v01_1280x1280_0d8d3bea75e8441f855b246eba0b7b8a_grande.webp",
+        "imageStyle": "width: 427px;"
+      },
+      {
+        "name": "Mainboard",
+        "description": "ASUS PRIME H610M-CS D4, thiết kế tối ưu, đảm bảo sự ổn định và tương thích tốt với các linh kiện khác.",
+        "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/linhkien/w800__1__ec2c156923e2400abeb67dccc0c5e44e_grande.webp",
+        "imageStyle": "width: 480px;"
+      },
+      {
+        "name": "Random Access Memory",
+        "description": "Adata XPG Spectrix D50 8GB DDR4 3200Mhz RGB White, tản nhiệt nổi bật với dải đèn LED RGB đầy màu sắc.",
+        "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/linhkien/1001019272_8a27eef0d5f74504bc2a56b99ed1bca3_grande.webp",
+        "imageStyle": "width: 430px; height: 350px;"
+      },
+      {
+        "name": "Graphics Processing Unit",
+        "description": "VGA RTX 4060, hiệu năng mạnh mẽ với khả năng chơi game 1080p mượt mà.",
+        "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/linhkien/-dual-geforce-rtx-4060-evo-oc-edition-8gb-gddr6-dual-rtx4060-o8g-evo-1_062ab4dd84034f039c23612e46a237ea_grande.webp",
+        "imageStyle": "width: 500px;"
+      },
+      {
+        "name": "Solid State Drive",
+        "description": "SSD M.2 NVMe PCIe Gen4 500GB, tốc độ đọc/ghi lên đến 3300/1200 MB/s, khởi động máy và ứng dụng nhanh chóng.",
+        "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/linhkien/77071_o_cung_ssd_wd_sn580_blue_m_d5ea5db2013245f0bfea6ec5dc117dc5_grande-removebg-preview.png ",
+        "imageStyle": "width: 500px; height: 400px;"
+      },
+      {
+        "name": "Full case hắc nguyệt tam nhãn quang"
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+[
+    {
+      "id": "PC01",
+      "image": "../../assets/images/products/PC01  PC GVN Intel i3-12100F VGA RX 6500XT (Powered by ASUS)/pc_gvn_rx6600_-_3_762ba90a94904a50809a93355cd819a7_grande.png",
+      "title": "PC GVN Intel i3-12100F VGA RX 6500XT",
+      "originalPrice": "12.000.000đ",
+      "discountedPrice": "10.450.000đ",
+      "discount": "-30%",
+      "rating": "3.5",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "78 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC01"
+    },
+    {
+      "id": "PC02",
+      "image": "../../assets/images/products/PC02  PC GVN Intel i3-12100F VGA RTX 3050/gvn07935__1__b45c07447bad4fd3ba19046a4ea15744_grande.webp",
+      "title": "PC GVN Intel i3-12100F VGA RTX 3050",
+      "originalPrice": "12.230.000đ",
+      "discountedPrice": "11.190.000đ",
+      "discount": "-9%",
+      "rating": "3.0",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "50 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC02"
+    },
+    {
+      "id": "PC03",
+      "image": "../../assets/images/products/PC03  PC GVN Intel i5-12400F VGA RX 6500XT (H610) (Powered by ASUS)/pc_case_xigmatek_-_26_e36ac54740974ec88f65ca6eedfd10a2_grande.webp",
+      "title": "PC GVN Intel i5-12400F VGA RX 6500XT",
+      "originalPrice": "13.420.000đ",
+      "discountedPrice": "12.790.000đ",
+      "discount": "-5%",
+      "rating": "3.3",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "57 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC03"
+    },
+    {
+      "id": "PC04",
+      "image": "../../assets/images/products/PC04  PC GVN Intel i3-12100F VGA RX 6600/gvn07935_aaa9b99c81f044ba81926066e554a4b2_1024x1024.webp",
+      "title": "PC GVN Intel i3-12100F VGA RX 6600",
+      "originalPrice": "12.930.000đ",
+      "discountedPrice": "12.390.000đ",
+      "discount": "-4%",
+      "rating": "3.4",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "63 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC04"
+    },
+    {
+      "id": "PC06",
+      "image": "../../assets/images/products/PC06  PC GVN Intel i5-12400F VGA RX 6600 (H610)/pc_gvn_rx6600_-_3_df2a8f9c10304557832f4a315a2ef469_grande-removebg-preview.png",
+      "title": "PC GVN Intel i5-12400F VGA RX 6600",
+      "originalPrice": "15.420.000đ",
+      "discountedPrice": "14.490.000đ",
+      "discount": "-6%",
+      "rating": "3.7",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "89 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC06"
+    },
+    {
+      "id": "PC08",
+      "image": "../../assets/images/products/PC08  PC GVN AMD R5-5600X VGA RX 6600/luxs_44f7416f99e54134a7820f1168275f5f_1024x1024_756d5d077691485292e2d608fe2c7826_grande.webp",
+      "title": "PC GVN AMD R5-5600X VGA RX 6600",
+      "originalPrice": "14.990.000đ",
+      "discountedPrice": "14.143.000đ",
+      "discount": "-6%",
+      "rating": "4.5",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "99 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC08"
+    },
+    {
+      "id": "PC05",
+      "image": "../../assets/images/products/PC05  PC GVN Intel i5-12400F VGA RTX 3050/pc_case_xigmatek_-_26_908426d5fe2147bb9fd246167ac68baa_grande.webp",
+      "title": "PC05  PC GVN Intel i5-12400F VGA RTX 3050",
+      "originalPrice": "15.000.000đ",
+      "discountedPrice": "13.590.000đ",
+      "discount": "-30%",
+      "rating": "3.5",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "100 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC05"
+    },
+    {
+      "id": "PC07",
+      "image": "../../assets/images/products/PC07 PC GVN Intel i5-12400F VGA RX 6600/gvn07935_33fd08b98d774ab69f1efc16f4b90a94_grande.webp",
+      "title": "PC07 PC GVN Intel i5-12400F VGA RX 6600",
+      "originalPrice": "16.000.000đ",
+      "discountedPrice": "14.590.000đ",
+      "discount": "-30%",
+      "rating": "4.5",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "120 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC05"
+    },
+    {
+      "id": "PC09",
+      "image": "../../assets/images/products/PC11  PC GVN x Corsair iCUE (Intel i5-12400F VGA RTX 4060)/4060_ddae7a383d2c4f56b9116644fe20906f_grande-removebg-preview.png",
+      "title": "PC09 PC GVN Intel i5-12400F VGA RTX 4060",
+      "originalPrice": "16.500.000đ",
+      "discountedPrice": "15.090.000đ",
+      "discount": "-30%",
+      "rating": "4.3",
+      "ratingIcon": "../../assets/images/icon/Mod_Add-On_1-35-512.webp",
+      "reviews": "110 đánh giá",
+      "detailUrl": "../productByTheme/white_product.html?id=PC05"
+    }
+  ]

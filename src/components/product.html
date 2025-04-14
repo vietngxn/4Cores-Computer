@@ -35,4 +35,19 @@
         </button>
     </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const products = document.querySelectorAll('.product');
+
+    products.forEach(product => {
+        product.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (!event.target.closest('.end-btn')) {
+                const productUrl = product.dataset.url || '/chi-tiet-san-pham'; // Thay bằng URL thực tế
+                window.location.href = productUrl;
+            }
+        });
+    });
+});
+</script>
 </html>

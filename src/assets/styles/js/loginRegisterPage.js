@@ -32,7 +32,15 @@ spacing: 16.00
 })
 let users = JSON.parse(localStorage.getItem('users')) || [];
 function saveUsers() {
-  localStorage.setItem('users', JSON.stringify(users));
+localStorage.setItem('users', JSON.stringify(users));
+}
+let carts = JSON.parse(localStorage.getItem('carts')) || [];
+function saveCarts() {
+localStorage.setItem('carts', JSON.stringify(carts));
+}
+let currentUser = JSON.parse(localStorage.getItem('currentUser')) || [];
+function setCurrentUser() {
+localStorage.setItem('currentUser', JSON.stringify(currentUser));
 }
 
 function dangKi() {
@@ -51,10 +59,10 @@ function dangKi() {
       return false;
     }
 
-    const emailExists = users.some(user => user.email === email);
-    const usernameExists = users.some(user => user.username === username);
+    const emailExists = users.some(user => user.email == email);
+    const usernameExists = users.some(user => user.username == username);
     if (emailExists) {
-      showNotiCustom("Lỗi", "Email đã được sử dụng!");
+      showNotiDuplicate();
       return false;
     }
     if (usernameExists) {
@@ -72,12 +80,19 @@ function dangKi() {
     users.push(newUser);
     saveUsers();
 
+    const newCart = {
+      userId: newUser.id,
+      products: []
+    };
+    carts.push(newCart);
+    saveCarts();
+
     showNotiSuccess();
     setTimeout(() => {
       window.location.href = "loginRegisterPage.html";
     }, 4000);
     return true;
-  }
+}
 }
 
 // Hàm đăng nhập
@@ -93,9 +108,10 @@ function dangNhap() {
       showNotiFail(); 
       return false;
     } else {
+      localStorage.setItem('currentUser', JSON.stringify({ userId: user.id, username: user.username }));
       showNotiSuccess(); 
       setTimeout(() => {
-        window.location.href = "homePage.html"; 
+        window.location.href = "../../../public/index.html"; 
       }, 4000);
       return true;
     }
@@ -120,6 +136,13 @@ function showNotiMissing() {
 
 function showNotiFail() {
   const noti = document.getElementById("noti-fail");
+  noti.classList.add("show");
+  setTimeout(() => {
+    noti.classList.remove("show");
+  }, 3000);
+}
+function showNotiDuplicate() {
+  const noti = document.getElementById("noti-duplicate");
   noti.classList.add("show");
   setTimeout(() => {
     noti.classList.remove("show");

@@ -16,3 +16,12 @@
     margin: auto;
     filter: brightness(0) invert(1);
 }
+@media(width <= 1000px) {
+    /*kich thuoc tablet */
+  } 
+
+@media(width <= 767px){
+    .headerbar-container{
+        display: block;
+    }
+}
