@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #fff;
     padding: 0 20px;
+    display: none;
 }
 .headerbar-logo{
     margin: auto;
@@ -12,6 +13,15 @@
     justify-content: center;
 }
 .headerbar-container img{
-    width: 140px;
+    width: 140px!important;
     margin: auto;
+}
+@media(width <= 1000px) {
+    /*kich thuoc tablet */
+  } 
+
+@media(width <= 767px){
+    .headerbar-container{
+        display: block;
+    }
 }
