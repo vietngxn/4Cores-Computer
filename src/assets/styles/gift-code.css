@@ -138,7 +138,7 @@
 .gift-code-info{
     position: absolute;
     top: 0.7rem;
-    left: 5.5rem;
+    left: 6.5rem;
     text-align: left;
 }
 .gift-code-title{
@@ -174,7 +174,7 @@
 .gift-code-use-btn{
     position: absolute;
     top: 2rem;
-    left: 15rem;
+    left: 17rem;
 }
 .gift-code-use-btn button{
     width: 45px;

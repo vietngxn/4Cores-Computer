@@ -35,6 +35,10 @@
     #list_sanpham_table {
         overflow-x: hidden;
 
+
+    }
+    .next-btn-disable{
+        bottom: 120px;
     }
 
     .giohang {
