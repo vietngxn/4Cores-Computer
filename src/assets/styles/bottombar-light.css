@@ -109,7 +109,7 @@
     opacity: 0; 
 }
 .hide-close {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid #B02B19;
     transform: translateY(-62%) rotate(90deg); 
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -139,4 +139,16 @@
     filter: contrast(1.2) brightness(1.9);
     transition: opacity 0.3s ease, transform 0.3s ease;
     
+}
+.btbar-container{
+    display: none;
+}
+@media(width <= 1000px) {
+
+  } 
+
+@media(width <= 767px){
+    .btbar-container{
+        display: block;
+    }
 }
