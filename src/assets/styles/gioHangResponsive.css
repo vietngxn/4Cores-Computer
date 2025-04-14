@@ -43,7 +43,9 @@
     }
 
     .thongtin_sanpham {
-        width: 80%;
+        margin: 0;
+        padding: 0;
+        width: 90%;
         display: flex;
         align-items: center;
         gap: 10px;
