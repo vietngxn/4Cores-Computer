@@ -1,0 +1,19 @@
+.main-container img{
+    width: 1200px;
+    border-radius: 22px;
+    border: none;
+}
+@media screen and (max-width: 767px) {
+    .main-container{
+        margin: auto;
+        display: block;
+        width: 100vw!important;
+        padding-left: 20px!important;
+        padding: 0;
+        margin: 0;
+    }
+    .main-container img{
+        width: 100vw;
+        height: 30vh;
+    }
+}

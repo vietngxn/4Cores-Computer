@@ -1,0 +1,114 @@
+@media screen and (max-width: 767px) {
+    #background {
+        display: none;
+    }
+
+    .toAddBlur {
+        display: none;
+    }
+
+    .partern {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    html,
+    body {
+        max-width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .giohang,
+    .gio_hang_container,
+    #list_sanpham,
+    #list_sanpham_table {
+        overflow-x: hidden;
+
+    }
+
+    .giohang {
+        width: 100%;
+    }
+
+    .gio_hang_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    #giohang_title {
+        width: 100%;
+    }
+
+    #tongtien {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #list_sanpham {
+        width: 100%;
+    }
+
+    #list_sanpham_table {
+        width: 100% !important;
+        max-height: 300px !important;
+        min-height: 300px !important;
+    }
+
+    .list_sanpham_body {
+        padding: 10%;
+        margin: 0;
+        width: 100%;
+        background-size: cover;
+
+    }
+
+    .thongtin_sanpham {
+        margin: 0;
+        padding: 0;
+        width: 140%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .infomation-form {
+        width: 100%;
+    }
+
+    .input-info {
+        width: 90%;
+    }
+
+    #phuongxaInput {
+        width: 90%;
+    }
+
+    #quanhuyenInput {
+        width: 90%;
+    }
+
+    #tpTinh {
+        width: 90%;
+    }
+
+    #bank {
+        width: 90%;
+    }
+
+
+}
