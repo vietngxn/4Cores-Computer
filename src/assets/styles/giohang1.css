@@ -36,6 +36,7 @@
 
 #giohang_title {
     font-size: 28px;
+    text-align: center;
 }
 
 .img_sanpham {
@@ -114,6 +115,7 @@
 .gia_sanpham {
     color: rgb(176, 43, 25);
     font-weight: bold;
+    margin-top: 7px;
 }
 
 .ten_sanpham {
@@ -134,6 +136,11 @@
     display: block;
     color: #9DA39A;
 
+}
+
+.giavabtnXoadiv{
+    display:flex;
+    gap: 30px;
 }
 #tongtien {
     transform: translate(550px,-30px);
@@ -455,3 +462,10 @@ input[type="checkbox"] {
 .blur-background{
     filter: blur(2px);
 }
+
+
+#list_sanpham_table{
+    max-height: 650px;
+    min-height: 650px;
+}
+

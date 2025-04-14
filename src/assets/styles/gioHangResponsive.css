@@ -1,112 +1,78 @@
 @media screen and (max-width: 767px) {
-    * {
-        box-sizing: border-box !important;
+    #background {
+        display: none;
     }
 
-    body {
-        margin: 0 !important;
-        font-family: Arial, Helvetica, sans-serif !important;
-        background-color: #fff6f3 !important;
-        padding-bottom: 70px !important;
+    .toAddBlur {
+        display: none;
     }
 
-    /* Ẩn sidebar và header */
-    #sidebar,
-    .top-navbar,
-    header,
-    nav {
-        display: none !important;
+    .partern {
+        display: none;
     }
 
-    #main,
-    .cart-container,
-    .product-list {
-        padding: 10px !important;
+    .giohang{
+        width: 100%;
+    }
+    .gio_hang_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #giohang_title {
+        width: 100%;
+    }
+
+    #tongtien {
+        margin-left: -110%;
+    }
+    #list_sanpham{
+        width: 100%;
+    }
+    #list_sanpham_table {
         width: 100% !important;
+        max-height: 300px !important;
+        min-height: 300px !important;
     }
 
-    .cart-container {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+    .list_sanpham_body {
+        padding: 0 !important;
+        margin: 0;
+        width: 100%;
     }
 
-    .product-item {
-        width: 100% !important;
-        background: #ffffff !important;
-        border-radius: 10px !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
-        margin-bottom: 15px !important;
-        padding: 10px !important;
+    .thongtin_sanpham {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
     }
 
-    .product-item img {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: contain !important;
-        border-radius: 8px !important;
+    .infomation-form {
+        width: 100%;
     }
 
-    .product-info {
-        padding: 10px 0 !important;
-        text-align: center !important;
+    .input-info {
+        width: 80%;
     }
 
-    .product-info h4,
-    .product-info .price {
-        font-size: 16px !important;
-        margin: 5px 0 !important;
+    #phuongxaInput {
+        width: 80%;
     }
 
-    .quantity-input {
-        display: flex !important;
-        justify-content: center !important;
-        gap: 10px !important;
+    #quanhuyenInput {
+        width: 80%;
     }
 
-    .quantity-input input {
-        width: 40px !important;
-        text-align: center !important;
+    #tpTinh {
+        width: 80%;
     }
 
-    .checkout-btn {
-        width: 100% !important;
-        padding: 15px !important;
-        background-color: #B02B19 !important;
-        color: white !important;
-        font-weight: bold !important;
-        border: none !important;
-        border-radius: 10px !important;
-        font-size: 18px !important;
-        margin-top: 20px !important;
+    #bank {
+        width: 80%;
     }
 
-    .checkout-btn:hover {
-        background-color: #922313 !important;
-    }
 
-    .mobile-bottom-nav {
-        display: flex !important;
-        justify-content: space-around !important;
-        align-items: center !important;
-        position: fixed !important;
-        bottom: 0 !important;
-        width: 100% !important;
-        background-color: #B02B19 !important;
-        padding: 10px 0 !important;
-        z-index: 999 !important;
-    }
-
-    .mobile-bottom-nav a {
-        color: white !important;
-        text-decoration: none !important;
-        text-align: center !important;
-        font-size: 14px !important;
-    }
-
-    .mobile-bottom-nav svg {
-        width: 24px !important;
-        height: 24px !important;
-        fill: white !important;
-    }
 }
