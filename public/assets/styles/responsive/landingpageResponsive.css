@@ -153,6 +153,8 @@
 
     .container_about-part_content {
         width: 95%;
+        padding-top: 120px;
+
     }
     .content {
         width: 100%;
@@ -256,4 +258,8 @@
         height: 120px;
         background-size: cover;
     }
+    .footer,.social{
+        display: none!important;
+    }
+    
 }
