@@ -18,14 +18,13 @@
 }
 
 .giohang {
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
 }
 
 .gio_hang_container {
     width: 1250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     transform: translate(40vh, 5vh);
     flex-direction: row;
     border-radius: 10px;
@@ -57,7 +56,7 @@
 }
 
 #list_sanpham {
-    width: 800px;
+    max-width: 800px;
 }
 
 .list_sanpham_body {
@@ -65,7 +64,7 @@
     flex-direction: column;
     gap: 20px;
     margin-left: 20px;
-    width: 800px;
+    max-width: 800px;
     margin-top: 20px;
     max-height: 500px;
     overflow-x: auto;
@@ -135,12 +134,11 @@
     font-family: "Inter-regular";
     display: block;
     color: #9DA39A;
-
 }
 
 .giavabtnXoadiv{
     display:flex;
-    gap: 30px;
+    gap:20px;
 }
 #tongtien {
     transform: translate(550px,-30px);
